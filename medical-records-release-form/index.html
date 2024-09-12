@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Records Release Form</title>
+    <link rel="stylesheet" href="../global.css" />
+  </head>
+  <body>
+    <div
+      style="
+        max-width: 800px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <!-- Header -->
+      <div class="header">
+        <h1>Star Home Health Solutions, LLC.</h1>
+        <h2>Medical Records Release Form</h2>
+      </div>
+
+      <!-- Form Fields -->
+      <label for="member-name">Member Name: <input type="text" id="member-name" /></label>
+      <div class="form-group">
+        <label for="dob">Date of Birth: <input type="date" id="dob" /></label>
+        <label for="phone">Phone #: <input type="text" id="phone" /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address: <input type="text" id="address" /></label>
+        <label for="city">City/Town: <input type="text" id="city" /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="state">State: <input type="text" id="state" /></label>
+        <label for="zip-code">Zip Code: <input type="text" id="zip-code" /></label>
+      </div>
+
+        <!-- Description -->
+        <p>
+          Star Home Health Solutions LLC, needs copies of your medical records
+          on file as stated in the MassHealth Adult Foster Care Regulations.
+          This form acts as the release for all Doctors or appointments you may
+          have had or will have. Medical Records Release Form helps us get
+          medical information from your health-care providers.
+        </p>
+        <p>
+          I, <input type="text" style="width: 30%" />, hereby authorize the
+          disclosure of my individual healthcare record to Star Home Health
+          Solutions, LLC and other information about my treatment,
+          hospitalization, or outpatient care for conditions including
+          psychological/psychiatric impairments. I have received information
+          regarding HIPPA and The Privacy Act and understand my rights regarding
+          my healthcare record.
+        </p>
+
+        <!-- Expiration Section -->
+        <div class="form-row">
+          <p>
+            <strong>Expiration:</strong> Select a date/event when authorization
+            will expire. The authorization cannot be processed if this is left
+            blank.
+          </p>
+          <label
+            ><input type="radio" name="expiration" value="1 year" /> One year
+            from the date it is signed</label
+          >
+          <label
+            ><input type="radio" name="expiration" value="other" /> Other
+            <input type="text" class="input-inline" style="width: 40%"
+          /></label>
+        </div>
+
+        <!-- Signature Section -->
+        <div class="form-row">
+          <div class="form-column">
+            <label for="member-signature"
+              >Signature of Member or Legal Representative</label
+            >
+            <input type="text" id="member-signature" />
+          </div>
+          <div class="form-column">
+            <label for="date-member">Date</label>
+            <input type="date" id="date-member" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="rep-signature">Legal Representative Signature</label>
+            <input type="text" id="rep-signature" />
+          </div>
+          <div class="form-column">
+            <label for="date-rep">Date</label>
+            <input type="date" id="date-rep" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="relationship"
+              >Relationship to Member or authority to act for Member</label
+            >
+            <input type="text" id="relationship" />
+          </div>
+          <div class="form-column">
+            <label for="afc-signature">AFC Provider Signature/Title</label>
+            <input type="text" id="afc-signature" />
+          </div>
+          <div class="form-column">
+            <label for="date-afc">Date</label>
+            <input type="date" id="date-afc" />
+          </div>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+        <br /><br />
+      </div>
+    </div>
+  </body>
+</html>

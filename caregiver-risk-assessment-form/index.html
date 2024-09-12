@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caregiver TB Risk Assessment and Screening Form</title>
+    <link rel="stylesheet" href="../global.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo" />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+      <h2>Caregiver TB Risk Assessment and Screening Form</h2>
+      <form>
+        <button class="submit-button">Save Progress</button>
+        <!-- Section 1 -->
+        <br />
+        <h3>1. Date:</h3>
+        <div class="form-group">
+          <label>Date: <input type="date" name="date" /></label>
+        </div>
+        <div class="form-group">
+          <label>Name: <input type="text" name="name" /></label>
+          <label>DOB: <input type="date" name="dob" /></label>
+        </div>
+
+        <!-- Section 2 -->
+        <h2>TB Risk Assessment and Screening Form</h2>
+        <h3>2. TB Risk Assessment</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                1. Were you born in Africa, Asia, Central America, South
+                America, Mexico, Eastern Europe, Caribbean or the Middle East?
+              </td>
+              <td>
+                <input type="radio" name="born_in_region" value="yes" /> Yes
+              </td>
+              <td>
+                <input type="radio" name="born_in_region" value="no" /> No
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <label for="country">In what country were you born?</label>
+        <input type="text" name="country" id="country" />
+
+        <!-- Section 3 -->
+        <h3>3.</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                2. In the past 5 years, have you lived or traveled in Africa,
+                Asia, Central America, South America, Mexico, Eastern Europe,
+                Caribbean or the Middle East for more than one month?
+              </td>
+              <td><input type="radio" name="traveled" value="yes" /> Yes</td>
+              <td><input type="radio" name="traveled" value="no" /> No</td>
+            </tr>
+            <tr>
+              <td>
+                3) In the last 2 years, have you lived with or spent time with
+                someone who has been sick with TB?
+              </td>
+              <td>
+                <input type="radio" name="spent_time_with_tb" value="yes" /> Yes
+              </td>
+              <td>
+                <input type="radio" name="spent_time_with_tb" value="no" /> No
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Section 4 -->
+        <h3>
+          4.4. Do you have (or have you had) any of these medical conditions?
+        </h3>
+        <div class="radio-container">
+          <label
+            >Diabetes
+            <input type="radio" name="medical_condition" value="diabetes"
+          /></label>
+          <label
+            >Kidney Disease
+            <input type="radio" name="medical_condition" value="kidney_disease"
+          /></label>
+          <label
+            >HIV_infection
+            <input type="radio" name="medical_condition" value="HIV_infection"
+          /></label>
+          <label
+            >colitis
+            <input type="radio" name="medical_condition" value="colitis"
+          /></label>
+          <label
+            >Cancer <input type="radio" name="medical_condition" value="Cancer"
+          /></label>
+          <label
+            >Stomach or Intestine Surgery
+            <input
+              type="radio"
+              name="medical_condition"
+              value="Stomach or intestine surgery"
+          /></label>
+          <label
+            >Rheumatoid arthritis
+            <input type="radio" name="medical_condition" value="diabetes"
+          /></label>
+        </div>
+
+        <!-- Section 5 -->
+        <h3>5.</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                5) Are you taking any medications that your doctor said could
+                weaken your immune system or increase your risk for infections?
+              </td>
+              <td><input type="radio" name="traveled" value="yes" /> Yes</td>
+              <td><input type="radio" name="traveled" value="no" /> No</td>
+            </tr>
+            <tr>
+              <td>
+                6) In the past 1 year, have you injected drugs that your doctor
+                did not prescribe?
+              </td>
+              <td>
+                <input type="radio" name="spent_time_with_tb" value="yes" /> Yes
+              </td>
+              <td>
+                <input type="radio" name="spent_time_with_tb" value="no" /> No
+              </td>
+            </tr>
+            <tr>
+              <td>
+                7) Have you ever lived or worked in a prison, jail, homeless
+                shelter or long-term care facility? (example: nursing home,
+                substance abuse treatment, rehabilitation facility)
+              </td>
+              <td>
+                <input type="radio" name="spent_time_with_tb" value="yes" /> Yes
+              </td>
+              <td>
+                <input type="radio" name="spent_time_with_tb" value="no" /> No
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Section 6 -->
+        <h3>
+          6. Symptom Screening – At this time, do you have any of these
+          symptoms?
+        </h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Yes</th>
+              <th>No</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1) Coughing for more than 2-3 weeks?</td>
+              <td><input type="radio" name="symptom1" value="yes" /></td>
+              <td><input type="radio" name="symptom1" value="no" /></td>
+            </tr>
+            <tr>
+              <td>2) Coughing up blood?</td>
+              <td><input type="radio" name="symptom2" value="yes" /></td>
+              <td><input type="radio" name="symptom2" value="no" /></td>
+            </tr>
+            <tr>
+              <td>
+                3) Weight loss of more than 10 pounds for no known reason?
+              </td>
+              <td><input type="radio" name="symptom3" value="yes" /></td>
+              <td><input type="radio" name="symptom3" value="no" /></td>
+            </tr>
+            <tr>
+              <td>4) Fever of 100°F (or 38°C) for over 2 weeks?</td>
+              <td><input type="radio" name="symptom4" value="yes" /></td>
+              <td><input type="radio" name="symptom4" value="no" /></td>
+            </tr>
+            <tr>
+              <td>5) Unusual or heavy sweating at night?</td>
+              <td><input type="radio" name="symptom5" value="yes" /></td>
+              <td><input type="radio" name="symptom5" value="no" /></td>
+            </tr>
+            <tr>
+              <td>6) Unusual weakness or extreme fatigue?</td>
+              <td><input type="radio" name="symptom6" value="yes" /></td>
+              <td><input type="radio" name="symptom6" value="no" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>
+          If you answer “yes” to any of the questions above, you may be at
+          increased risk for TB infection. Please give this form to your medical
+          provider.
+        </h3>
+
+        <br /><br />
+        <label for="name">Caregiver Printed Name</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="signature">RN Printed Name</label>
+        <input type="text" id="signature" name="signature" />
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+
+        <button type="submit" class="submit-button">Submit</button>
+        <br /><br /><br />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Home Health Solutions Form</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo" />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <button class="submit-button">Save Progress</button>
+      <br />
+
+      <form>
+        <!-- Section 1 -->
+        <h3>1. Please enter member information.</h3>
+        <div class="form-group">
+          <label>First Name: <input type="text" name="first_name" /></label>
+          <label
+            >Middle Initial: <input type="text" name="middle_initial"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label>Last Name: <input type="text" name="last_name" /></label>
+          <label>Date of Birth: <input type="date" name="dob" /></label>
+        </div>
+
+        <h3>2. Primary Insurance:</h3>
+        <div class="form-group">
+          <label
+            >Primary Insurance Name:
+            <input type="text" name="primary_insurance"
+          /></label>
+          <label
+            >Member ID / Policy #: <input type="text" name="policy_number"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label>Group Number: <input type="text" name="group_number" /></label>
+        </div>
+
+        <h3>3. Date of Visit:</h3>
+        <input type="date" name="date_of_visit" />
+
+        <h3>4. Current Diagnosis:</h3>
+        <textarea name="current_diagnosis"></textarea>
+
+        <h3>5. Type of Visit Narrative:</h3>
+        <label
+          ><input type="radio" name="visit_type" value="assessment" />
+          Assessment</label
+        >
+        <label
+          ><input type="radio" name="visit_type" value="re-assessment" />
+          Re-Assessment</label
+        >
+
+        <h3>6. Narrative:</h3>
+        <textarea name="narrative" rows="4"></textarea>
+
+        <h3>7. AFC Clinician Name and Title:</h3>
+        <div class="form-group">
+          <label
+            >AFC Clinician Name and Title:
+            <input type="text" name="clinician_name"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label>RN Signature: <input type="text" name="rn_signature" /></label>
+          <label>Date: <input type="date" name="rn_date" /></label>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>

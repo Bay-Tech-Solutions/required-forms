@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFC Referral/Intake Form</title>
+    <link rel="stylesheet" href="../global.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="header-content">
+          <img
+            src="../assets/logo.png"
+            alt="Star Home Health Solutions Logo"
+            class="logo" />
+          <div class="header-info">
+            <p>Star Home Health Solutions, LLC.</p>
+            <p>33 Oak Avenue, Suite 2</p>
+            <p>Worcester, MA 01605</p>
+            <p>info@starhomehs.com</p>
+          </div>
+        </div>
+        <h2>AFC Referral/Intake Form</h2>
+      </div>
+
+      <!-- Form Fields -->
+      <button class="submit-button">Save Progress</button>
+      <!-- Section 1 -->
+      <br />
+      <br />
+      <h3>1. Date of Referral:</h3>
+      <div class="form-group">
+        <label for="date-of-referral"
+          >Date of Referral: <input type="date" id="date-of-referral"
+        /></label>
+        <label for="referral-source"
+          >How did you hear of Star Home Health Solutions?
+          <input type="text" id="referral-source"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="referral-phone"
+          >REFERRAL SOURCE: <input type="text" id="referral-phone"
+        /></label>
+        <label for="referral-phone"
+          >Phone: <input type="text" id="referral-phone"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label>Previously had AFC services?</label>
+        <label
+          ><input type="radio" name="afc-services" value="yes" /> Yes</label
+        >
+        <label><input type="radio" name="afc-services" value="no" /> No</label>
+      </div>
+      <div class="form-group">
+        <label>Currently have AFC services?</label>
+        <label
+          ><input type="radio" name="current-afc-services" value="yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="current-afc-services" value="no" />
+          No</label
+        >
+      </div>
+      <br />
+      <div>
+        <label for="agency-name">If yes, name of agency:</label>
+        <input type="text" id="agency-name" />
+      </div>
+
+      <!-- Section 2 -->
+      <br />
+      <h3>2. MEMBER INFORMATION:</h3>
+
+      <div class="form-group">
+        <label for="member-name"
+          >Name: <input type="text" id="member-name"
+        /></label>
+        <label for="member-dob"
+          >DOB: <input type="date" id="member-dob"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="ssn">SSN: <input type="text" id="ssn" /></label>
+        <label for="gender">Gender: <input type="text" id="gender" /></label>
+        <label for="marital-status"
+          >Marital Status: <input type="text" id="marital-status"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address: <input type="text" id="address" /></label>
+        <label for="apt">Apt/Unit #: <input type="text" id="apt" /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City: <input type="text" id="city" /></label>
+        <label for="state">State: <input type="text" id="state" /></label>
+        <label for="zip">Zip Code: <input type="text" id="zip" /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone: <input type="text" id="phone" /></label>
+        <label for="other-phone"
+          >Other Phone: <input type="text" id="other-phone"
+        /></label>
+      </div>
+
+      <label for="primary-language"
+        >Member's Primary Language: <input type="text" id="primary-language"
+      /></label>
+
+      <!-- Section 3 -->
+      <h3>3. PRIMARY DIAGNOSIS:</h3>
+      <input type="text" id="primary-diagnosis" />
+
+      <!-- Section 4 -->
+      <h3>4. MEMBER INSURANCE INFORMATION:</h3>
+
+      <div class="form-group">
+        <label for="primary-ins"
+          >Primary Ins: <input type="text" id="primary-ins"
+        /></label>
+        <label for="primary-policy"
+          >Policy #: <input type="text" id="primary-policy"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="secondary-ins"
+          >Secondary Ins: <input type="text" id="secondary-ins"
+        /></label>
+        <label for="secondary-policy"
+          >Policy #: <input type="text" id="secondary-policy"
+        /></label>
+      </div>
+
+      <!-- Section 5 -->
+      <h3>5. PHYSICIAN INFORMATION:</h3>
+      <div class="form-group">
+        <label for="md-name">MD Name: <input type="text" id="md-name" /></label>
+        <label for="md-phone">Phone: <input type="text" id="md-phone" /></label>
+        <label for="md-fax">Fax: <input type="text" id="md-fax" /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="md-address"
+          >Address: <input type="text" id="md-address"
+        /></label>
+        <label for="md-city">City: <input type="text" id="md-city" /></label>
+        <label for="md-state">State: <input type="text" id="md-state" /></label>
+        <label for="md-zip">Zip: <input type="text" id="md-zip" /></label>
+      </div>
+
+      <!-- Section 6 -->
+      <h3>6. PHARMACY NAME AND PHONE NUMBER:</h3>
+      <input type="text" id="primary-diagnosis" />
+
+      <!-- Section 7 -->
+      <h3>7. EMERGENCY CONTACT</h3>
+      <div class="form-group">
+        <label for="emergency-name"
+          >Name: <input type="text" id="emergency-name"
+        /></label>
+        <label for="emergency-fax"
+          >Relationship to Member: <input type="text" id="emergency-fax"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="emergency-address"
+          >Address: <input type="text" id="emergency-address"
+        /></label>
+        <label for="emergency-city"
+          >City: <input type="text" id="emergency-city"
+        /></label>
+        <label for="emergency-state"
+          >State: <input type="text" id="emergency-state"
+        /></label>
+        <label for="emergency-zip"
+          >Zip: <input type="text" id="emergency-zip"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="emergency-phone"
+          >Phone: <input type="text" id="emergency-phone"
+        /></label>
+        <label for="emergency-other-phone"
+          >Other Phone: <input type="text" id="emergency-other-phone"
+        /></label>
+      </div>
+
+      <!-- Section 8 -->
+      <h3>8. PRIMARY CAREGIVER INFORMATION:</h3>
+      <div class="form-group">
+        <label for="caregiver-name"
+          >Name: <input type="text" id="caregiver-name"
+        /></label>
+        <label for="caregiver-fax"
+          >Relationship to Referral: <input type="text" id="caregiver-fax"
+        /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="caregiver-address"
+          >Address: <input type="text" id="caregiver-address"
+        /></label>
+        <label for="caregiver-city"
+          >City: <input type="text" id="caregiver-city"
+        /></label>
+        <label for="caregiver-state"
+          >State: <input type="text" id="caregiver-state"
+        /></label>
+        <label for="caregiver-zip"
+          >Zip: <input type="text" id="caregiver-zip"
+        /></label>
+      </div>
+      <div class="form-group">
+        <label for="caregiver-phone"
+          >Phone: <input type="text" id="caregiver-phone"
+        /></label>
+        <label for="caregiver-other-phone"
+          >Other Phone: <input type="text" id="caregiver-other-phone"
+        /></label>
+      </div>
+
+      <!-- Section 9 -->
+      <h3>9.MEMBER'S LEGAL GUARDIAN NAME AND PHONE NUMBER: (if applicable):</h3>
+      <input type="text" id="primary-diagnosis" />
+
+      <!-- Section 10 -->
+      <h3>10. VIEW ATTACHED MEDICATION PROFILE:</h3>
+
+      <!-- Section 11 -->
+      <h3>11.</h3>
+      <div class="form-group">
+        <label for="caregiver-phone"
+          >Person Completing Intake Form:<input
+            type="text"
+            id="caregiver-phone"
+        /></label>
+        <label for="caregiver-other-phone"
+          >Title: <input type="text" id="caregiver-other-phone"
+        /></label>
+      </div>
+
+      <button type="submit" class="submit-button">Submit</button>
+      <br /><br />
+    </div>
+  </body>
+</html>

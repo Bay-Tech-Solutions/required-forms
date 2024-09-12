@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Form</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo" />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+      <form>
+        <button class="submit-button">Save Progress</button>
+        <!-- Section 1 -->
+        <br />
+        <h3>1. Date:</h3>
+        <div class="form-group">
+          <label>Date: <input type="date" name="date" /></label>
+        </div>
+        <div class="form-group">
+          <label>Member Name: <input type="text" name="member_name" /></label>
+          <label>DOB: <input type="date" name="dob" /></label>
+        </div>
+        <div class="form-group">
+          <label>Approved for Level:</label>
+          <label><input type="checkbox" name="level" value="I" /> I</label>
+          <label><input type="checkbox" name="level" value="II" /> II</label>
+        </div>
+        <div class="form-group">
+          <label>Address: <input type="text" name="address" /></label>
+          <label>Apt./Unit #: <input type="text" name="apt" /></label>
+        </div>
+        <div class="form-group">
+          <label>City: <input type="text" name="city" /></label>
+          <label>State: <input type="text" name="state" /></label>
+          <label>Zip Code: <input type="text" name="zip_code" /></label>
+        </div>
+        <div class="form-group">
+          <label>Phone: <input type="text" name="phone" /></label>
+          <label
+            >Primary Insurance Name:
+            <input type="text" name="primary_insurance"
+          /></label>
+          <label>Mass Health #: <input type="text" name="mass_health" /></label>
+        </div>
+
+        <!-- Section 2 -->
+        <h3>2. Current Diagnosis:</h3>
+        <textarea name="current_diagnosis" rows="3"></textarea>
+
+        <!-- Section 3 -->
+        <h3>3. Medications:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Medicine Name</th>
+              <th>Dose and Frequency</th>
+              <th>Reason for Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <textarea
+                  rows="1"
+                  type="text"
+                  name="medicine_name_1"></textarea>
+              </td>
+              <td>
+                <textarea
+                  rows="1"
+                  type="text"
+                  name="dose_frequency_1"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="reason_1"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <textarea
+                  rows="1"
+                  type="text"
+                  name="medicine_name_2"></textarea>
+              </td>
+              <td>
+                <textarea
+                  rows="1"
+                  type="text"
+                  name="dose_frequency_2"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="reason_2"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <textarea
+                  rows="1"
+                  type="text"
+                  name="medicine_name_3"></textarea>
+              </td>
+              <td>
+                <textarea
+                  rows="1"
+                  type="text"
+                  name="dose_frequency_3"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="reason_3"></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Section 4 -->
+        <h3>4. Please enter the details of any allergies:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Allergic To</th>
+              <th>Allergy Type</th>
+              <th>Reaction</th>
+              <th>Severity</th>
+              <th>Date of Onset</th>
+              <th>End Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <textarea rows="1" type="text" name="allergic_to_1"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="allergy_type_1"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="reaction_1"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="severity_1"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="date" name="onset_date_1"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="date" name="end_date_1"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <textarea rows="1" type="text" name="allergic_to_2"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="allergy_type_2"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="reaction_2"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="severity_2"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="date" name="onset_date_2"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="date" name="end_date_2"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <textarea rows="1" type="text" name="allergic_to_3"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="allergy_type_3"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="reaction_3"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="text" name="severity_3"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="date" name="onset_date_3"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" type="date" name="end_date_3"></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Section 5 -->
+        <h3>5. Advanced Directive:</h3>
+        <label
+          ><input type="radio" name="advanced_directive" value="yes" />
+          Yes</label
+        >
+        <label
+          ><input type="radio" name="advanced_directive" value="no" /> No</label
+        >
+
+        <h4>If yes:</h4>
+        <textarea name="advanced_directive_details" rows="2"></textarea>
+
+        <!-- Section 6 -->
+        <h3>6. Evacuation</h3>
+        <label
+          ><input
+            type="radio"
+            name="evacuation"
+            value="independant" />Independant</label
+        >
+        <label
+          ><input type="radio" name="evacuation" value="assist" />Assist</label
+        >
+
+        <!-- Section 7 -->
+        <h3>7. Guardian information (if appplicable):</h3>
+        <label>Guardian name: <input type="text" name="guardian_name" /></label>
+        <div class="form-group">
+          <label
+            >Phone: <input type="text" name="guardian_phone_number"
+          /></label>
+          <label>Email: <input type="email" name="guardian_email" /></label>
+        </div>
+        <label>Address: <input type="text" name="guardian_address" /></label>
+        <div class="form-group">
+          <label>City: <input type="text" name="guardian_city" /></label>
+          <label>State: <input type="text" name="guardian_state" /></label>
+          <label>Zip: <input type="text" name="guardian_zip" /></label>
+        </div>
+
+        <!-- Section 8 -->
+        <h3>8. Physician information:</h3>
+        <label
+          >Guardian name: <input type="text" name="physician_name"
+        /></label>
+        <div class="form-group">
+          <label
+            >Phone: <input type="text" name="physician_phone_number"
+          /></label>
+          <label>Fax: <input type="text" name="physician_fax" /></label>
+        </div>
+        <label>Address: <input type="text" name="physician_address" /></label>
+        <div class="form-group">
+          <label>City: <input type="text" name="physician_city" /></label>
+          <label>State: <input type="text" name="physician_state" /></label>
+          <label>Zip: <input type="text" name="physician_zip" /></label>
+        </div>
+
+        <!-- Section 9 -->
+        <h3>9. Caregiver Information</h3>
+        <div class="form-group">
+          <label
+            >Caregiver name: <input type="text" name="caregiver_name"
+          /></label>
+          <label
+            >Relationship to member:
+            <input type="text" name="caregiver_relationship"
+          /></label>
+        </div>
+
+        <div class="form-group">
+          <label>City: <input type="text" name="caregiver_city" /></label>
+          <label>State: <input type="text" name="caregiver_state" /></label>
+          <label>Zip: <input type="text" name="caregiver_zip" /></label>
+        </div>
+        <div class="form-group">
+          <label
+            >Phone: <input type="text" name="caregiver_phone_number"
+          /></label>
+          <label>Email: <input type="email" name="caregiver_email" /></label>
+        </div>
+
+        <!-- Section 10 -->
+        <h3>10. AFC Provider Contacts</h3>
+        <label>RN name: <input type="text" name="rn_name" /></label>
+        <div class="form-group">
+          <label>Phone: <input type="text" name="rn_phone_number" /></label>
+          <label>Email: <input type="email" name="rn_email" /></label>
+        </div>
+
+        <label>CM name: <input type="text" name="rn_name" /></label>
+        <div class="form-group">
+          <label
+            >Phone: <input type="text" name="caregiver_phone_number"
+          /></label>
+          <label>Email: <input type="email" name="email" /></label>
+        </div>
+
+        <div class="form-group">
+          <label>City: <input type="text" name="caregiver_city" /></label>
+          <label>State: <input type="text" name="caregiver_state" /></label>
+          <label>Zip: <input type="text" name="caregiver_zip" /></label>
+        </div>
+        <div class="form-group">
+          <label
+            >Phone: <input type="text" name="caregiver_phone_number"
+          /></label>
+          <label>Email: <input type="email" name="email" /></label>
+        </div>
+      </form>
+
+      <div>
+        <h2>Notification and Temporary Relocation Emergency Back Up</h2>
+        <p>
+          If member has to evacuate for any reason, (A natural disaster, power
+          outage, leaks, no phone services, or no hot water for more than 24
+          hours) Star Home Health Solutions, LLC has permission to contact the
+          person(s) below. Additionally, member can stay at that residence
+          temporarily until issues are resolved.
+        </p>
+      </div>
+
+      <!-- Section 11 -->
+      <h3>11.1 Emergency Contact:</h3>
+      <div class="form-group">
+        <label>Name: <input type="text" name="emergency_name" /></label>
+        <label
+          >Relationship to member:
+          <input type="text" name="emergency_relationship"
+        /></label>
+      </div>
+      <div class="form-group">
+        <label>Address: <input type="text" name="emergency_address" /></label>
+        <label>Apt./Unit #: <input type="text" name="emergency_apt" /></label>
+      </div>
+      <div class="form-group">
+        <label>City: <input type="text" name="emergency_city" /></label>
+        <label>State: <input type="text" name="emergency_state" /></label>
+        <label>Zip Code: <input type="text" name="emergency_zip_code" /></label>
+      </div>
+      <div class="form-group">
+        <label
+          >Cell Phone: <input type="text" name="emergency_cell_phone"
+        /></label>
+        <label>Phone: <input type="text" name="emergency_work_phone" /></label>
+        <label>Email: <input type="email" name="emergency_email" /></label>
+      </div>
+
+      <h3>11.2 Emergency Contact:</h3>
+      <div class="form-group">
+        <label>Name: <input type="text" name="emergency_name" /></label>
+        <label
+          >Relationship to member:
+          <input type="text" name="emergency_relationship"
+        /></label>
+      </div>
+      <div class="form-group">
+        <label>Address: <input type="text" name="emergency_address" /></label>
+        <label>Apt./Unit #: <input type="text" name="emergency_apt" /></label>
+      </div>
+      <div class="form-group">
+        <label>City: <input type="text" name="emergency_city" /></label>
+        <label>State: <input type="text" name="emergency_state" /></label>
+        <label>Zip Code: <input type="text" name="emergency_zip_code" /></label>
+      </div>
+      <div class="form-group">
+        <label
+          >Cell Phone: <input type="text" name="emergency_cell_phone"
+        /></label>
+        <label>Phone: <input type="text" name="emergency_work_phone" /></label>
+        <label>Email: <input type="email" name="emergency_email" /></label>
+      </div>
+
+      <button type="submit" class="submit-button">Submit</button>
+      <br /><br />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Authorization for Use and Disclosure of Protected Health Information
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <header class="header">
+        <div class="header-info">
+          <p>Phone Number: (508) 879-4760 &nbsp; Fax Number: (508) 879-0099</p>
+          <p>Address: 30 Midstate Drive, Suite 206, Worcester MA 01606</p>
+        </div>
+        <div class="logo">
+          <img
+            src="../assets/logo.png"
+            alt="Star Home Health Solutions Logo"
+            class="logo" />
+        </div>
+      </header>
+
+      <h1>
+        AUTHORIZATION FOR USE AND DISCLOSURE OF PROTECTED HEALTH INFORMATION
+      </h1>
+      <br /><br />
+
+      <p>
+        <strong>PLEASE COMPLETE FORM ENTIRELY.</strong> We need copies of your
+        medical records on file as stated in the MassHealth Adult Foster Care
+        Regulations. This release is not valid unless signed and dated by the
+        member or the legal representative. This release may be revoked at any
+        time by the client or legal representative.
+      </p>
+
+      <p>
+        I, <input type="text" class="short-input" placeholder="Name" />, give
+        permission for all of my medical records or other information about my
+        treatment, hospitalization, or care including any
+        psychological/psychiatric impairments to be shared with Star Home Health
+        Solutions, LLC. Any medical information that the healthcare provider
+        releases to Star Home Health Solutions, LLC will continue to be
+        protected by federal privacy laws.
+      </p>
+      <br /><br />
+
+      <h2>Expiration:</h2>
+      <p>
+        Select a date/event when authorization will expire. The authorization
+        cannot be processed if this is left blank.
+      </p>
+
+      <label for="expire">Choose one:</label>
+      <div>
+        <input type="radio" id="one-year" name="expire" value="one-year" />
+        <label for="one-year">One year from the date it is signed</label>
+      </div>
+      <div>
+        <input type="radio" id="other" name="expire" value="other" />
+        <label for="other">Other</label>
+        <input type="text" class="short-input" placeholder="Specify" />
+      </div>
+
+      <form>
+        <label for="name"
+          >Name of Member / Legal Guardian (If Applicable)</label
+        >
+        <input class="input" type="text" id="name" name="name" />
+
+        <label for="signature"
+          >Signature of Member / Legal Guardian (If Applicable)</label
+        >
+        <input class="input" type="text" id="signature" name="signature" />
+
+        <label for="authority"
+          >Authority of Legal Guardian (If Applicable)</label
+        >
+        <input class="input" type="text" id="authority" name="authority" />
+
+        <label for="date">Date</label>
+        <input class="input" type="date" id="date" name="date" />
+      </form>
+
+      <div class="afc-section">
+        <p>
+          AFC Provider Signature/Title:
+          <input class="input" type="text" class="short-input" /> Date:
+          <input class="input" type="date" class="short-input" />
+        </p>
+      </div>
+
+      <p>
+        <em
+          >Please give us a copy of the document that gives this person the
+          authority to act on behalf of the applicant/member.</em
+        >
+      </p>
+
+      <button type="submit" class="submit-button">Submit</button>
+      <br /><br />
+    </div>
+  </body>
+</html>
