@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caregiver HR Forms: Application</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <form>
+      <button class="submit-button">Save Progress</button>
+      <h2>Personal Information</h2>
+      <label>Name: <input type="text" name="name" id="" /></label>
+
+        <div class="form-group">
+          <label>Address: <textarea rows="1" type="text" name="address" id=""></textarea></label>
+          <label>City: <textarea rows="1" type="text" name="city" id=""></textarea></label>
+          <label>State: <textarea rows="1" type="text" name="state" id=""></textarea></label>
+          <label>Zip: <textarea rows="1" type="text" name="zip" id=""></textarea></label>
+        </div>
+
+        <div class="form-group">
+          <label>Phone number: <input type="text" name="phone_number" id=""/></label>
+          <label>Email address: <input type="text" name="email" id="" /></label>
+        </div>
+
+        <table>
+          <tr>
+            <td>
+              <p>Are you legally eligible to work in the US?</p>
+            </td>
+            <td>
+              <label
+                >Yes: <input type="radio" name="us_work_eligibility"
+              /></label>
+              <label
+                >No: <input type="radio" name="us_work_eligibility"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Are you a veteran?</p>
+            </td>
+            <td>
+              <label>Yes: <input type="radio" name="veteran" /></label>
+              <label>No: <input type="radio" name="veteran" /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Are you a veteran?</p>
+            </td>
+            <td>
+              <label>Yes: <input type="radio" name="veteran" /></label>
+              <label>No: <input type="radio" name="veteran" /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                If selected for employment, are you willing to submit a
+                background check?
+              </p>
+            </td>
+            <td>
+              <label
+                >Yes: <input type="radio" name="background_check" value="yes"
+              /></label>
+              <label
+                >No: <input type="radio" name="background_check" value="no"
+              /></label>
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <h2>Position</h2>
+        <table class="form-table">
+          <tr>
+            <td><label for="position">Position</label></td>
+            <td><label for="start-date">Available Start Date</label></td>
+            <td><label for="desired-pay">Desired Pay</label></td>
+            <td><label for="employment_desired">Employement desired</label></td>
+          </tr>
+          <tr>
+            <td>
+              <textarea type="text" id="position" name="position" rows="1"></textarea>
+            </td>
+            <td>
+              <textarea type="date" id="start-date" name="start-date" rows="1"></textarea>
+            </td>
+            <td>
+              <textarea type="text" id="desired-pay" name="desired-pay" rows="1"></textarea>
+            </td>
+            <td>
+              <label>
+                <input
+                  type="radio"
+                  name="employment_desired"
+                  value="fulltime"
+                  id=""
+                />
+                Fulltime
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="employment_desired"
+                  value="fulltime"
+                  id=""
+                />
+                Part time
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="employment_desired"
+                  value="fulltime"
+                  id=""
+                />
+                Seasonal/temporary
+              </label>
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <h2>Education</h2>
+        <table class="form-table">
+            <tr>
+                <td><label>School name</label></td>
+                <td><label>Location</label></td>
+                <td><label>Years attended</label></td>
+                <td><label>Degree received</label></td>
+                <td><label>Major</label></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="school_name" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="location" id=""></textarea></td>
+                <td><input type="number" name="years_attended" id=""></input></td>
+                <td><textarea rows="1" type="text" name="degree_received" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="major" id=""></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="school_name" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="location" id=""></textarea></td>
+                <td><input type="number" name="years_attended" id=""></input></td>
+                <td><textarea rows="1" type="text" name="degree_received" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="major" id=""></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="school_name" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="location" id=""></textarea></td>
+                <td><input type="number" name="years_attended" id=""></input></td>
+                <td><textarea rows="1" type="text" name="degree_received" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="major" id=""></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="school_name" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="location" id=""></textarea></td>
+                <td><input type="number" name="years_attended" id=""></input></td>
+                <td><textarea rows="1" type="text" name="degree_received" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="major" id=""></textarea></td>
+              </tr>
+        </table>
+
+        <br>
+        <h2>References (business and professional only)</h2>
+        <table class="form-table">
+            <tr>
+                <td><label>Name</label></td>
+                <td><label>Title</label></td>
+                <td><label>Company</label></td>
+                <td><label>Phone</label></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="name" id=""></textarea></td>
+                <td><textarea rows="1" name="title" id=""></textarea rows="1"></td>
+                <td><textarea rows="1" type="text" name="company" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="phone" id=""></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="name_2" id=""></textarea></td>
+                <td><textarea rows="1" type="number" name="title_2" id=""></textarea rows="1"></td>
+                <td><textarea rows="1" type="text" name="company_2" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="phone_2" id=""></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="name_3" id=""></textarea></td>
+                <td><textarea rows="1" type="number" name="title_3" id=""></textarea rows="1"></td>
+                <td><textarea rows="1" type="text" name="company_3" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="phone_3" id=""></textarea></td>
+              </tr>
+              <tr>
+                <td><textarea rows="1" type="text" name="name_4" id=""></textarea></td>
+                <td><textarea rows="1" type="number" name="title_4" id=""></textarea rows="1"></td>
+                <td><textarea rows="1" type="text" name="company_4" id=""></textarea></td>
+                <td><textarea rows="1" type="text" name="phone_4" id=""></textarea></td>
+              </tr>
+        </table>
+
+        <br>
+        <h2>Employement history</h2>
+        <table>
+            <tr>
+                <td>
+                    <label>Employer (1)</label>
+                    <textarea rows="1" type="text" name="employer_1" id=""></textarea>
+                </td>
+                <td>
+                    <label>Job title</label>
+                    <textarea rows="1" type="text" name="job_title_1" id=""></textarea>
+                </td>
+                <td>
+                    <label>Dates employed</label>
+                    <input type="date" name="dates_employed_1" id="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Work phone</label>
+                    <textarea rows="1" type="text" name="work_phone_1" id=""></textarea>
+                </td>
+                <td>
+                    <label>Starting pay-rate</label>
+                    <textarea rows="1" type="text" name="starting_pay_rate_1" id=""></textarea>
+                </td>
+                <td>
+                    <label>Ending pay-rate</label>
+                    <textarea rows="1" type="text" name="ending_pay_rate_1" id=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                    <textarea rows="1" type="text" name="address_1" id=""></textarea>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div>
+                            <label>City</label>
+                            <textarea rows="1" type="text" name="city_1" id=""></textarea>
+                        </div>
+                        <div>
+                            <label>State</label>
+                            <textarea rows="1" type="text" name="state_1" id=""></textarea>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <label>Zip</label>
+                    <textarea rows="1" type="text" name="zip_1" id=""></textarea>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <label>Employer (2)</label>
+                    <textarea rows="1" type="text" name="employer_2" id=""></textarea>
+                </td>
+                <td>
+                    <label>Job title</label>
+                    <textarea rows="1" type="text" name="job_title_2" id=""></textarea>
+                </td>
+                <td>
+                    <label>Dates employed</label>
+                    <input type="date" name="dates_employed_2" id="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Work phone</label>
+                    <textarea rows="1" type="text" name="work_phone_2" id=""></textarea>
+                </td>
+                <td>
+                    <label>Starting pay-rate</label>
+                    <textarea rows="1" type="text" name="starting_pay_rate_2" id=""></textarea>
+                </td>
+                <td>
+                    <label>Ending pay-rate</label>
+                    <textarea rows="1" type="text" name="ending_pay_rate_2" id=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                    <textarea rows="1" type="text" name="address_2" id=""></textarea>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div>
+                            <label>City</label>
+                            <textarea rows="1" type="text" name="city_2" id=""></textarea>
+                        </div>
+                        <div>
+                            <label>State</label>
+                            <textarea rows="1" type="text" name="state_2" id=""></textarea>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <label>Zip</label>
+                    <textarea rows="1" type="text" name="zip_2" id=""></textarea>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <label>Employer (2)</label>
+                    <textarea rows="1" type="text" name="employer_2" id=""></textarea>
+                </td>
+                <td>
+                    <label>Job title</label>
+                    <textarea rows="1" type="text" name="job_title_2" id=""></textarea>
+                </td>
+                <td>
+                  <label>Dates employed</label>
+                    <input type="date" name="dates_employed_2" id="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Work phone</label>
+                    <textarea rows="1" type="text" name="work_phone_2" id=""></textarea>
+                </td>
+                <td>
+                    <label>Starting pay-rate</label>
+                    <textarea rows="1" type="text" name="starting_pay_rate_2" id=""></textarea>
+                </td>
+                <td>
+                    <label>Ending pay-rate</label>
+                    <textarea rows="1" type="text" name="ending_pay_rate_2" id=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                    <textarea rows="1" type="text" name="address_2" id=""></textarea>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div>
+                            <label>City</label>
+                            <textarea rows="1" type="text" name="city_2" id=""></textarea>
+                        </div>
+                        <div>
+                            <label>State</label>
+                            <textarea rows="1" type="text" name="state_2" id=""></textarea>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <label>Zip</label>
+                    <textarea rows="1" type="text" name="zip_2" id=""></textarea>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <label>Employer (3)</label>
+                    <textarea rows="1" type="text" name="employer_3" id=""></textarea>
+                </td>
+                <td>
+                    <label>Job title</label>
+                    <textarea rows="1" type="text" name="job_title_3" id=""></textarea>
+                </td>
+                <td>
+                    <label>Dates employed</label>
+                    <input type="date" name="dates_employed_3" id="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Work phone</label>
+                    <textarea rows="1" type="text" name="work_phone_3" id=""></textarea>
+                </td>
+                <td>
+                    <label>Starting pay-rate</label>
+                    <textarea rows="1" type="text" name="starting_pay_rate_3" id=""></textarea>
+                </td>
+                <td>
+                    <label>Ending pay-rate</label>
+                    <textarea rows="1" type="text" name="ending_pay_rate_3" id=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                    <textarea rows="1" type="text" name="address_3" id=""></textarea>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div>
+                            <label>City</label>
+                            <textarea rows="1" type="text" name="city_3" id=""></textarea>
+                        </div>
+                        <div>
+                            <label>State</label>
+                            <textarea rows="1" type="text" name="state_3" id=""></textarea>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <label>Zip</label>
+                    <textarea rows="1" type="text" name="zip_3" id=""></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <h2>Criminal History</h2>
+        <p>Have you ever been convicted of violating any law? (Please omit minor traffic violations).</p>
+        <div>
+            <label><input type="radio" name="criminal_history" value="yes">Yes</label>
+            <label><input type="radio" name="criminal_history" value="no">No</label>
+        </div>
+        <p>
+            If yes, please list conviction(s), date(s) and location(s).The presence of a criminal record is not an automatic rejection of your application.
+        </p>
+        <textarea name="convictions" id="" cols="3"></textarea>
+        
+        <br><br>
+        <h2>CAREGIVER TELEPHONE REFERENCE CHECK</h2>
+
+        <p>To Whom It May Concern:</p>
+        <p>The applicant named below has submitted an application for employment with our firm. Please verify employment and rate the performance of this candidate. This information will not be given to the employee.</p>
+         
+        <br>
+        <h3>To be filled out by applicant:</h3>
+        
+        <div class="form-group">
+            <label>Date of Application: <input type="date"></label>
+            <label>Applicant Name: <input type="text"></label>
+            <label>Previous Employer: <input type="text"></label>
+        </div>
+        <div class="form-group">
+          <label>Contact Person: <input type="text"></label>
+          <label>Address: <input type="text"></label>
+        </div>
+        <div class="form-group">
+            <label>Phone: <input type="text"></label>
+            <label>Fax: <input type="text"></label>
+        </div>
+          <p>I hereby authorize the following information to be released for all previous employers listed. I release you and all persons and organizations from all claims and liabilities of any nature from any information given.</p>
+        
+          <div class="signature-date">
+            <label>Applicant's Signature: <input type="text"></label>
+            <label>Date: <input type="text"></label>
+          </div>
+        
+           <div class="divider"></div>
+
+           <div class="section-title">To be completed by employer:</div>
+
+           <div class="form-group">
+               <label>Date of employment: From: <input type="text"></label>
+               <label>to: <input type="text"></label>
+           </div>
+
+           <div class="form-group">
+               <label>Position Held: <input type="text"></label>
+           </div>
+        
+            <div>
+                <label>Would you rehire this individual?</label>
+                <label>Yes <input type="radio"></label>
+                <label>No <input type="radio"></label>
+            </div>
+        
+            <br>
+            <div>
+                <label>Please Indicate Responsibilities: <textarea rows="3"></textarea></label>
+            </div>
+            <div>
+                <label>Please Indicate Reason for Leaving: <textarea rows="3"></textarea></label>
+            </div>
+            <div>
+                <label>Additional Comments: <textarea rows="3"></textarea></label>
+            </div>
+
+            <br><br>
+            <div class="form-group">
+              <label>Name of Staff <input type="text" name="name"></label>
+              <label>Position/Title <input type="text" name="position"></label>
+              <label>Date <input type="date" name="date"></label>
+            </div>
+            
+            
+            <h2>Emergency Contact Information</h2>
+            <div class="form-group">
+              <label for="name">Name: <input type="text" id="name" name="name"></label>
+              <label for="relationship">Relationship: <input type="text" id="relationship" name="relationship"></label>
+            </div>
+
+          <div class="form-group">
+              <label for="home-phone">Home Phone Number: <input type="tel" id="home-phone" name="home-phone"></label>
+              <label for="work-phone">Work Phone Number: <input type="tel" id="work-phone" name="work-phone"></label>
+              <label for="cell-phone">Cell Phone Number: <input type="tel" id="cell-phone" name="cell-phone"></label>
+          </div>
+
+          <br><br>
+          <div class="form-group">
+            <label for="name">Name: <input type="text" id="name" name="name"></label>
+            <label for="relationship">Relationship: <input type="text" id="relationship" name="relationship"></label>
+          </div>
+
+          <div class="form-group">
+            <label for="home-phone">Home Phone Number: <input type="tel" id="home-phone" name="home-phone"></label>
+            <label for="work-phone">Work Phone Number: <input type="tel" id="work-phone" name="work-phone"></label>
+            <label for="cell-phone">Cell Phone Number: <input type="tel" id="cell-phone" name="cell-phone"></label>
+          </div>
+        
+          <h2>HIPAA CONFIDENTIALITY AGREEMENT</h2>
+          <h3>EMPLOYEE CONFIDENTIALITY AGREEMENT OF PATIENT HEALTH INFORMATION AND PERSONAL INFORMATION IN ACCORDANCE WITH HIPAA REGULATIONS</h3>
+          <p>This Confidentiality Agreement (the “Agreement”) is made and entered into between Star Home Health Solutions, LLC and <span><input style="max-width: 30%;" type="text" name="name" id=""></span> (“Caregiver”).</p>
+          <h3>RECITALS:</h3>
+          <p>WHEREAS, Covered Entity contracts with Caregiver to provide certain services to Covered Entity. The parties acknowledge that Caregiver may incidentally or inadvertently encounter, view or access certain Confidential Information maintained by Covered Entity which qualifies as Protected Health Information (“PHI”) under section PHI within the meaning of the Health Insurance Portability and Accountability Act of 1996, as amended, and the privacy and security standards promulgated pursuant thereto (“HIPAA”).</p>
+          <p>NOW, THEREFORE, in consideration of the mutual promises contained herein, as well as other good and valuable consideration, the parties hereto agree as follows:</p>
+          <ol>
+              <li>“Confidential Information” means any and all non-public; medical, financial and personal information, including but not limited to, all data and information of a confidential nature of either party. Confidential Information shall include all information which (i) either party has identified in writing as confidential, (ii) is identified at the time of disclosure as confidential, (iii) is commonly regarded as confidential in the healthcare industry, or (iv) is Protected Health Information as defined by HIPAA.</li>
+              <li>Caregiver shall provide AFC services to provider members. For its services, Caregiver shall receive from Covered Entity compensation as agreed to in a separate contractual agreement.</li>
+              <li>It is agreed that there shall be no employment or employer/employee relationship between the parties. Caregiver is free to engage in any other employment of his or her selection. It is further agreed that Caregiver is not the agent of Covered Entity.</li>
+              <li>Caregiver agrees that it does not have a need to access or view Confidential Information and will not attempt to obtain access to Confidential Information.</li>
+              <li>Caregiver agrees that in the event of any incidental viewing of Confidential Information, including Protected Health Information that it may incidentally or in an inadvertent course, view or have access while providing the services under the terms and conditions set forth in this Agreement.</li>
+              <li>
+                Caregiver agrees not to further use or disclose any Confidential Information, including Protected Health Information that it incidentally or inadvertently views or obtains access to and further agrees to implement appropriate safeguards to prevent any further use or disclosure of any Confidential Information that is incidentally or inadvertently accessed
+              </li>
+              <li>Caregiver agrees to cooperate with Covered Entity and perform such activities as it may from time to time direct, in order to mitigate any harmful effects as a result of a wrongful use or disclosure of Confidential Information by Caregiver.</li>
+              <li>CaregiveragreestoreporttotheCoveredEntityanyuseordisclosureofConfidentialInformation in violation of this Agreement, HIPAA or any other federal, state or local law or regulation</li>
+              <li>Caregiver agrees to comply with all applicable laws and regulations, including HIPAA and the HITECH Act, to the extent applicable, in meeting their obligations under this Agreement</li>
+              <li>The obligations of confidentiality and non-use and non-disclosure under this Agreement will continue indefinitely from the effective date of this Agreement</li>
+              <li>This Agreement may be modified or amended only with the written consent of by both parties. No waiver of any provision of this Agreement, including this paragraph, shall be effective unless the waiver is in writing and signed by the party making the waiver.</li>
+              <li>This Agreement shall be governed by and construed in accordance with the laws that govern the underlying contractual agreement between the parties.</li>
+              <li>This Agreement shall be governed by and construed in accordance with the laws that govern the underlying contractual agreement between the parties</li>
+            </ol>
+
+            <p>In witness whereof, the parties have executed this Confidentiality Agreement on <span><input style="max-width: 30%;" type="date" name="date_of_contract" id=""></span></p>
+            <label>Caregiver's name: <span><input style="max-width: 30%;" type="text" name="caregiver_name"></label></span>
+            <label>Signature: <span><input style="max-width: 30%;" type="text" name="caregiver_signature"></span></label>
+
+            <h3>Star Home Health Solutions, LLC</h3>
+            <h3>33 Waldo Street, Suite 2LC</h3>
+            <h3>Worcester, MA 01608</h3>
+
+            <br>
+            <h2>Caregiver TB Risk Assessment and Screening Form </h2>
+
+            <div class="form-group">
+              <label>Name: <input type="text" name="name" /></label>
+              <label>Date: <input type="date" name="name" /></label>
+              <label>DOB: <input type="date" name="name" /></label>
+            </div>
+
+            <h2>TB Risk Assessment and Screening Form</h2>
+
+            <table>
+              <tr>
+                <td></td>
+                <td>Yes</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                  <td>1) Were you born in Africa, Asia, Central America, South America, Mexico, Eastern Europe, Caribbean or the Middle East? In what country were you born?</td>
+                  <td><input type="radio" value="yes" name="tb_q1"></td>
+                  <td><input type="radio" value="no" name="tb_q1"></td>
+              </tr>
+              <tr>
+                  <td>2) In the past 5 years, have you lived or traveled in Africa, Asia, Central America, South America, Mexico, Eastern Europe, Caribbean or the Middle East for more than one month?</td>
+                  <td><input type="radio" value="yes" name="tb_2"></td>
+                  <td><input type="radio" value="no" name="tb_2"></td>
+              </tr>
+              <tr>
+                  <td>3) In the last 2 years, have you lived with or spent time with someone who has been sick with TB?</td>
+                  <td><input type="radio" value="yes" name="tb_q3"></td>
+                  <td><input type="radio" value="no" name="tb_q3"></td>
+              </tr>
+              <tr>
+                  <td>4) Do you have (or have you had) any of these medical conditions? (Diabetes, Kidney disease, HIV infection, Colitis, Cancer, etc.)</td>
+                  <td><input type="radio" value="yes" name="tb_q4"></td>
+                  <td><input type="radio" value="no" name="tb_q4"></td>
+              </tr>
+              <tr>
+                  <td>5) Are you taking any medications that your doctor said could weaken your immune system or increase your risk for infections?</td>
+                  <td><input type="radio" value="yes" name="tb_q5"></td>
+                  <td><input type="radio" value="no" name="tb_q5"></td>
+              </tr>
+              <tr>
+                  <td>6) In the past 1 year, have you injected drugs that your doctor did not prescribe?</td>
+                  <td><input type="radio" value="yes" name="tb_q6"></td>
+                  <td><input type="radio" value="no" name="tb_q6"></td>
+              </tr>
+              <tr>
+                  <td>7) Have you ever lived or worked in a prison, jail, homeless shelter, or long-term care facility?</td>
+                  <td><input type="radio" value="yes" name="tb_q7"></td>
+                  <td><input type="radio" value="no" name="tb_q7"></td>
+              </tr>
+          </table>
+      
+          <h3>Symptom Screening</h3>
+          <table>
+            <tr>
+              <td></td>
+              <td>Yes</td>
+              <td>No</td>
+            </tr>
+              <tr>
+                  <td>1) Coughing for more than 2-3 weeks?</td>
+                  <td><input type="radio" value="yes" name="symptom_q1"></td>
+                  <td><input type="radio" value="no" name="symptom_q1"></td>
+              </tr>
+              <tr>
+                  <td>2) Coughing up blood?</td>
+                  <td><input type="radio" value="yes" name="symptom_q2"></td>
+                  <td><input type="radio" value="no" name="symptom_q2"></td>
+              </tr>
+              <tr>
+                  <td>3) Weight loss of more than 10 pounds for no known reason?</td>
+                  <td><input type="radio" value="yes" name="symptom_q3"></td>
+                  <td><input type="radio" value="no" name="symptom_q3"></td>
+              </tr>
+              <tr>
+                  <td>4) Fever of 100°F (or 38°C) for over 2 weeks?</td>
+                  <td><input type="radio" value="yes" name="symptom_q4"></td>
+                  <td><input type="radio" value="no" name="symptom_q4"></td>
+              </tr>
+              <tr>
+                  <td>5) Unusual or heavy sweating at night?</td>
+                  <td><input type="radio" value="yes" name="symptom_q5"></td>
+                  <td><input type="radio" value="no" name="symptom_q5"></td>
+              </tr>
+              <tr>
+                  <td>6) Unusual weakness or extreme fatigue?</td>
+                  <td><input type="radio" value="yes" name="symptom_q6"></td>
+                  <td><input type="radio" value="no" name="symptom_q6"></td>
+              </tr>
+          </table>
+      
+          <p>If you answer "Yes" to any of the questions above, you may be at increased risk for TB infection. Please give this form to your medical provider.</p>
+          
+          <!-- -------------------------------------------- MASACHUSSETS PART -------------------------------------------- -->
+
+
+
+          <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+          <br>
+          <h2>CORI AUTHORIZATION</h2>
+          <p>Dear Perspective Caregiver, </p>
+          <p>
+            For our member’s safety, and in compliance with Mass Health AFC regulation, it is the policy of
+            Star Home Health Solutions, LLC. that an CORI background check is processed prior to hire and
+            prior to visiting your service location.
+          </p>
+          <p>
+            In order to authenticate and process your CORI background check we must receive copies of the 3 following items:
+          </p>
+
+          <ol>
+            <li><strong>Driver’s License Copy (back and front)</strong></li>
+            <li><strong>Criminal Offender Record Information(CORI)Acknowledgement form</strong></li>
+            <li><strong>This page signed and dated</strong></li>
+          </ol>
+
+          <br>
+          <h3>Please sign below to authorize the collection of the above items 1-3</h3>
+
+          <div class="form-group">
+            <label>Printed Name<span><input type="text" name="printed_name"></span></label>
+            <label>Signature<span><input type="text" name="printed_signature"></span></label>
+            <label>Date<span><input type="text" name="printed_name"></span></label>
+          </div>
+
+          <button class="submit-button">Submit</button>
+          <br><br>
+      </form>
+        
+      </div>
+  </body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CM Assessment/Placement Visit Note</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <h2>CM Assessment/Placement Visit Note</h2>
+
+      <form>
+        <button class="submit-button">Save Progress</button>
+        <br /><br /><br />
+
+        <br />
+        <!-- SECTION 1 -->
+        <h3>1.</h3>
+        <div class="form-group">
+          <label>Date: <input type="date" name="date" id="" /></label>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <p>Location:</p>
+            <label
+              ><input
+                type="radio"
+                name="home-in-person-visit"
+                id="home-in-person-visit"
+              />Home/In-person visit</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="telephone"
+                id="telephone"
+              />Telephone</label
+            >
+            <label><input type="radio" name="video" id="video" />Video</label>
+          </div>
+          <div>
+            <p>Visit:</p>
+            <label
+              ><input
+                type="radio"
+                name="assessment"
+                id="assessment"
+              />Assessment</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="placement"
+                id="placement"
+              />Placement</label
+            >
+          </div>
+        </div>
+
+        <br />
+        <!-- SECTION 2 -->
+        <h3>2.</h3>
+        <div class="form-group">
+          <label>Member Name: <input type="text" name="member_name" /></label>
+          <label
+            >Member Date of Birth: <input type="date" name="member_dob"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label>Address: <input type="text" name="insurance_policy" /></label>
+          <label
+            >Apt./Unit #: <input type="text" name="insurance_policy"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label>City: <input type="text" name="city" /></label>
+          <label>State: <input type="text" name="state" /></label>
+          <label>Zip Code: <input type="text" name="zip_code" /></label>
+        </div>
+
+        <div class="form-group">
+          <label
+            >Member Telephone Number:
+            <input type="text" name="member_telephone"
+          /></label>
+          <label
+            >Caregiver Name/Relations: <input type="text" name="caregiver_name"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label
+            >Caregiver Telephone Number:
+            <input type="text" name="caregiver_telephone"
+          /></label>
+          <label
+            >Member's Preferred Language:
+            <input type="text" name="members_language"
+          /></label>
+        </div>
+
+        <br />
+        <!-- SECTION 3 -->
+        <h3>3. Primary Insurance</h3>
+        <div class="form-group">
+          <label
+            >Primary Insurance Company:
+            <input type="text" name="primary_insurance_company"
+          /></label>
+          <label
+            >Member ID/Policy Number:
+            <input type="text" name="member_policy_number"
+          /></label>
+          <label>Group Number: <input type="text" name="group_number" /></label>
+        </div>
+
+        <p>Client Relationship to Insured</p>
+        <div>
+          <label><input type="radio" name="self" id="self" />Self</label>
+          <label><input type="radio" name="spouse" id="spouse" />Spouse</label>
+          <label><input type="radio" name="child" id="child" />Child</label>
+          <label><input type="radio" name="other" id="other" />Other</label>
+        </div>
+
+        <br />
+        <!-- SECTION 4 -->
+        <h3>4. Current Diagnoses</h3>
+        <textarea name="current_diagnoses" id="" cols="3"></textarea>
+
+        <br />
+        <!-- SECTION 5 -->
+        <h3>5. Inital Home Study</h3>
+        <label
+          >Is the home qualified?
+          <textarea name="home_qualified" cols="4"></textarea>
+        </label>
+        <label
+          >Description of Setting:
+          <textarea name="home_qualified" cols="4"></textarea>
+        </label>
+
+        <br />
+        <!-- SECTION 6 -->
+        <h3>6.</h3>
+        <p>In the last year has the member had:</p>
+        <div>
+          <label><input type="radio" name="falls" id="falls" />Falls</label>
+          <label
+            ><input type="radio" name="er_visits" id="er_visits" />ER
+            visits</label
+          >
+          <label
+            ><input type="radio" name="urgent_care" id="urgent_care" />Urgent
+            care</label
+          >
+        </div>
+        <label>Notes: <textarea name="notes" cols="4"></textarea></label>
+
+        <br />
+        <!-- SECTION 7 -->
+        <h3>7. Medical Appointments:</h3>
+        <textarea name="medical_appointments" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 8 -->
+        <h3>8.</h3>
+        <div>
+          <label
+            ><input type="radio" name="refills" id="refills" />Refills</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="new_medications"
+              id="new_medications"
+            />New medications</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="no_new_medications"
+              id="no_new_medications"
+            />No new medications</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="discontinued_medications"
+              id="discontinued_medications"
+            />Discontinued medications</label
+          >
+        </div>
+        <label>Notes: <textarea name="8_notes" cols="4"></textarea></label>
+
+        <br />
+        <!-- SECTION 9 -->
+        <h3>9. Assistive Devices:</h3>
+        <textarea name="assistive_devices" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 10 -->
+        <h3>10.</h3>
+        <p>Changes to:</p>
+        <div>
+          <label
+            ><input type="radio" name="oral_health" id="oral_health" />Oral
+            health</label
+          >
+          <label
+            ><input type="radio" name="appetite" id="appetite" />Appetite</label
+          >
+          <label><input type="radio" name="weight" id="weight" />Weight</label>
+          <label
+            ><input
+              type="radio"
+              name="dietary_restrictions"
+              id="dietary_restrictions"
+            />Dietary restrictions</label
+          >
+        </div>
+        <label>Notes: <textarea name="8_notes" cols="4"></textarea></label>
+
+        <br />
+        <!-- SECTION 11 -->
+        <h3>11. Skin integrity:</h3>
+        <textarea name="skin_integrity" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 12 -->
+        <h3>12. Sleeping patterns:</h3>
+        <textarea name="sleeping_patterns" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 13 -->
+        <h3>13. Pain:</h3>
+        <textarea name="pain" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 14 -->
+        <h3>14. Continence:</h3>
+        <textarea name="continence" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 15 -->
+        <h3>15. Address Members:</h3>
+        <label
+          >Memory:<textarea name="address_members" cols="4"></textarea>
+        </label>
+        <label>Sensory:<textarea name="sensory" cols="4"></textarea></label>
+        <label>Cognition:<textarea name="cognition" cols="4"></textarea></label>
+
+        <br />
+        <!-- SECTION 16 -->
+        <h3>16. Behavioral Psychosocial:</h3>
+        <textarea name="behavioral_psychosocial" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 17 -->
+        <h3>17. ADLs and IADLs:</h3>
+        <textarea name="adls_iadls" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 18 -->
+        <h3>18.</h3>
+        <div class="form-group">
+          <label><input type="checkbox" name="vna" value="vna" />VNA</label>
+          <label
+            ><input
+              type="checkbox"
+              name="day_health_care"
+              value="day_health_care"
+            />Day health care</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="meals_wheels"
+              value="meals_wheels"
+            />Meals on wheels</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="physical_therapy"
+              value="physical_therapy"
+            />Physical therapy</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="occupational_therapy"
+              value="occupational_therapy"
+            />Occupational therapy</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="speech_therapy"
+              value="speech_therapy"
+            />Speech therapy</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="social_worker_in_home"
+              value="social_worker_in_home"
+            />Social worker in home</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="volunteer_services"
+              value="volunteer_services"
+            />Volunteer services</label
+          >
+        </div>
+        <br />
+        <label
+          >Notes: <textarea name="18_notes" id="18_notes"></textarea>
+        </label>
+
+        <br />
+        <!-- SECTION 19 -->
+        <h3>19.</h3>
+        <div>
+          <label
+            ><input
+              type="radio"
+              name="social_contacts"
+              id="social_contacts"
+            />Social contacts</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="personal_relationship"
+              id="personal_relationship"
+            />Personal relationship</label
+          >
+        </div>
+        <label
+          >Notes: <textarea name="19_notes" id="18_notes"></textarea>
+        </label>
+
+        <br />
+        <!-- SECTION 20 -->
+        <h3>20. CG Stress Management: Alternate caregiver in place?</h3>
+        <textarea name="cg_stress_management" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 21 -->
+        <h3>21. Unsupervised Time approved by AFC RN:</h3>
+        <textarea name="unsupervised_time" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 22 -->
+        <h3>22. AFC Log Education:</h3>
+        <textarea name="afc_log_education" cols="4"></textarea>
+
+        <br />
+        <!-- SECTION 23 -->
+        <h3>23. Fire Safety:</h3>
+        <div>
+          <label
+            ><input
+              type="radio"
+              name="fire_drills_reviewed"
+              id="fire_drills_reviewed"
+            />Fire drills reviewed</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="fire_extinguisher_present"
+              id="fire_extinguisher_present"
+            />Fire extinguisher present in the home</label
+          >
+        </div>
+        <br />
+        <label
+          >Notes:<textarea name="fire_safety_notes" cols="4"></textarea>
+        </label>
+
+        <br />
+        <!-- SECTION 24 -->
+        <h3>24. CG Education</h3>
+        <div class="form-group">
+          <label><input type="radio" name="" id="" />Review of member care packet</label>
+          <label><input type="radio" name="" id="" />Review of caregiver packet</label>
+          <label><input type="radio" name="" id="" />Approval process</label>
+          <label><input type="radio" name="" id="" />AFC requirements</label>
+          <label><input type="radio" name="" id="" />Caregiver responsibility</label>
+          <label><input type="radio" name="" id="" />Scope of services</label>
+          <label><input type="radio" name="" id="" />Human rights</label>
+          <label><input type="radio" name="" id="" />Emergency procedures</label>
+          <label><input type="radio" name="" id="" />Ethics in care giving</label>
+          <label><input type="radio" name="" id="" />MassHealth Regulations</label>
+          <label><input type="radio" name="" id="" />AFC provider information</label>
+          <label><input type="radio" name="" id="" />Policies and Procedures</label>
+          <label><input type="radio" name="" id="" />Roles and responsibilities of AFC Staff, Caregiver, and Member</label>
+          <label><input type="radio" name="" id="" />Local health</label>
+          <label><input type="radio" name="" id="" />Fire safety</label>
+          <label><input type="radio" name="" id="" />Provider notifications of certain events</label>
+        </div>
+        <br>
+        <label
+          >Notes:<textarea name="fire_safety_notes" cols="4"></textarea>
+        </label>
+
+        <br />
+        <!-- SECTION 25 -->
+        <h3>25. Interim POC:</h3>
+        <label
+          >Goal:<textarea name="interim_poc_goal" cols="4"></textarea>
+        </label>
+        <label>Barries:<textarea name="interim_poc_barriers" cols="4"></textarea></label>
+        <label>Interventions:<textarea name="interim_poc_interventions" cols="4"></textarea></label>
+        <label>Progress:<textarea name="interim_poc_propgress" cols="4"></textarea></label>
+
+        <br />
+        <!-- SECTION 26 -->
+        <h3>26. Interim POC:</h3>
+        <label
+          >Goal:<textarea name="interim_poc_goal_2" cols="4"></textarea>
+        </label>
+        <label>Barries:<textarea name="interim_poc_barriers_2" cols="4"></textarea></label>
+        <label>Interventions:<textarea name="interim_poc_interventions_2" cols="4"></textarea></label>
+        <label>Progress:<textarea name="interim_poc_propgress_2" cols="4"></textarea></label>
+
+        <br />
+        <!-- SECTION 27 -->
+        <h3>27. CM Narrative—please note any issues or concerns:</h3>
+        <textarea name="cm_narrative" cols="4"></textarea>
+
+        <br>
+        <!-- SECTION 28 -->
+         <h3>28.  Next CM home visit scheduled for:</h3>
+         <input type="month" name="next_schedule" id="" style="max-width: 50%;">
+
+         <br>
+         <!-- SECTION 29 -->
+          <h3>29. CM Name</h3>
+          <div class="form-group">
+            <label>CM Name: <input type="text" name="cm_name" id=""></label>
+            <label>Signature: <input type="text" name="cm_signature" id=""></label>
+            <label>Date: <input type="date" name="cm_date" id=""></label>
+          </div>
+
+          <button class="submit-button">Submit</button>
+          <br><br><br>
+      </form>
+    </div>
+  </body>
+</html>

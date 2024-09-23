@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychosocial Analysis</title>
+    <link rel="stylesheet" href="../global.css">
+    <script src="../app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../assets/logo.png" alt="Star Home Health Solutions Logo" class="logo">
+            <div class="company-info">
+                <p>Star Home Health Solutions, LLC<br>
+                   33 Waldo Street, Suite 2LC<br>
+                   Worcester MA 01608<br>
+                   info@starhomehs.com
+                </p>
+             </div>
+        </div>
+        <h2>Psychosocial Analysis</h2>
+        <form>
+            <button class="submit-button">Save Progress</button>
+            <br>
+
+            <br>
+            <!-- SECTION 1 -->
+            <h3>1. Client Information:</h3>
+            <div class="form-group">
+                <label>Member Name: <input type="text" name="member_name"></label>
+                <label>DOB: <input type="date" name="dob"></label>
+            </div>
+            <div class="form-group">
+                <label>Gender: <input type="text" name="gender"></label>
+                <label>Marital status: <input type="text" name="marital-status"></label>
+                <label>Race: <input type="text" name="race"></label>
+            </div>
+            <div class="form-group">
+                <label>Person providing information: <input type="text" name="info_provider"></label>
+                <label>Relationship to client: <input type="text" name="apt"></label>
+            </div>
+            <div class="form-group">
+                <label>Preferred language(s): <input type="text" name="languages"></label>
+                <label>Siblings: <input type="text" name="siblings"></label>
+                <label>Children: <input type="text" name="children"></label>
+            </div>
+
+            <br>
+            <!-- SECTION 2 -->
+             <h3>Health Information</h3>
+            <label>Allergies: <textarea rows="1" name="allergies" id="allergies"></textarea></label>
+            <br>
+            
+            <h3>Current Medical Diagnosis</h3>
+            <label>Current Diagnosis: <textarea rows="1" name="current_diagnosis" id="current_diagnosis"></textarea></label>
+
+            <label>Have you had a serious accident/illness or hospitalization in the past 6 months?</label>
+            <div class="form-group">
+                <label><input type="radio" name="serios_illness" value="yes" /> Yes</label>
+                <label><input type="radio" name="serios_illness" value="no" /> No</label>
+            </div>
+            <br>
+            <label>List all past hospitalizations, surgeries, accidents, or illnesses below: 
+                <textarea rows="1" name="past_hospitalization" id="past_hospitalization"></textarea>
+            </label>
+
+            <br>
+            <!-- SECTION 3 -->
+            <h3>3. Medications:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medication</th>
+                        <th>Purpose</th>
+                        <th>Frequency</th>
+                        <th>Taken as prescribed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><textarea rows="1" type="text" name="medicine_name_1"></textarea></td>
+                        <td><textarea rows="1" type="text" name="reason_1"></textarea></td>
+                        <td><textarea rows="1" type="text" name="dose_frequency_1"></textarea></td>
+                        <td><textarea rows="1" type="text" name="taken_prescribed_1"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea rows="1" type="text" name="medicine_name_2"></textarea></td>
+                        <td><textarea rows="1" type="text" name="reason_2"></textarea></td>
+                        <td><textarea rows="1" type="text" name="dose_frequency_2"></textarea></td>
+                        <td><textarea rows="1" type="text" name="taken_prescribed_2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea rows="1" type="text" name="medicine_name_3"></textarea></td>
+                        <td><textarea rows="1" type="text" name="reason_3"></textarea></td>
+                        <td><textarea rows="1" type="text" name="dose_frequency_3"></textarea></td>
+                        <td><textarea rows="1" type="text" name="taken_prescribed_3"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <!-- SECTION 4 -->
+            <h3>4. Do you have any medication concerns?</h3>
+            <div class="form-group">
+                <label><input type="radio" name="serios_illness" value="yes" /> Yes</label>
+                <label><input type="radio" name="serios_illness" value="no" /> No</label>
+            </div>
+            <br>
+            <label>If Yes, What are the concerns? <br><br>
+                <textarea rows="1" name="medical_concerns" id="medical_concerns"></textarea>
+            </label>
+
+            <h2>Advance Healthcare Directives Preferences</h2>
+
+            <br>
+            <!-- SECTION 5 -->
+            <h3>5. Living will:</h3>
+            <label>Do you have a living will? <br><br>
+                <div class="form-group">
+                    <label><input type="radio" name="living_will" value="yes" /> Yes</label>
+                    <label><input type="radio" name="living_will" value="no" /> No</label>
+                </div>
+            </label>
+
+            <br>
+            <!-- SECTION 6 -->
+            <h3>6. Durable Power of Attorney for Healthcare:</h3>
+            <label>
+                Do you have a healthcare Surrogate / Power of Attorney/ Legal Guardian?<br><br>
+                <div class="form-group">
+                    <label><input type="radio" name="living_will" value="yes" /> Yes</label>
+                    <label><input type="radio" name="living_will" value="no" /> No</label>
+                </div>
+            </label>
+            <label>If yes, please provide name <input type="text" name="attorney_name" /></label>
+
+            <label>
+                If No, do you want to appoint a healthcare agent to make medical decisions on your behalf if you are
+                unable to do so?<br><br>
+                <div class="form-group">
+                    <label><input type="radio" name="living_will" value="yes" /> Yes</label>
+                    <label><input type="radio" name="living_will" value="no" /> No</label>
+                </div>
+            </label>
+            <label>
+                If yes, provide the name of the healthcare agent and specify their authority and limitations. <br><br>
+                <textarea rows="1" name="healthcare_agent"></textarea>
+            </label>
+
+            
+            <br>
+            <!-- SECTION 7  -->
+            <h3>7. Do Not Resuscitate (DNR) Orders:</h3>
+            <label>
+                Do you have a Do Not Resuscitate (DNR) order in place?<br><br>
+                <div class="form-group">
+                    <label><input type="radio" name="dnr_order" value="yes" /> Yes</label>
+                    <label><input type="radio" name="dnr_order" value="no" /> No</label>
+                </div>
+            </label>
+            
+            <label>
+                If yes, Copy in office:?<br><br>
+                <div class="form-group">
+                    <label><input type="radio" name="dnr_order_office_copy" value="yes" /> Yes</label>
+                    <label><input type="radio" name="dnr_order_office_copy" value="no" /> No</label>
+                </div>
+            </label>
+
+            <br>
+            <!-- SECTION 8  -->
+             <h3>8. Do Not Intubate (DNI) Orders:</h3>
+             <label>
+                Do you have a Do Not Intubate (DNI) order in place?<br><br>
+                <div class="form-group">
+                    <label><input type="radio" name="dni_order" value="yes" /> Yes</label>
+                    <label><input type="radio" name="dni_order" value="no" /> No</label>
+                </div>
+            </label>
+
+            <label>
+                If yes, Copy in office:?<br><br>
+                <div class="form-group">
+                    <label><input type="radio" name="dni_order_office_copy" value="yes" /> Yes</label>
+                    <label><input type="radio" name="dni_order_office_copy" value="no" /> No</label>
+                </div>
+            </label>
+            
+            <br>
+            <!-- SECTION 9 -->
+             <h3>9. Coping and Support:</h3>
+             <label>
+                Coping Skills / Client Strengths / Support System: <br><br>
+                <textarea name="coping_support" id="" rows="1"></textarea>
+             </label>
+
+             <br>
+            <!-- SECTION 10 -->
+             <h3>10.  Cultural Background:</h3>
+             <label>
+                Languages, Cultural Identity, Race, Ethnicity, Influence on Health: <br><br>
+                <textarea name="cultural_background" id="" rows="1"></textarea>
+             </label>
+
+             <br>
+             <!-- SECTION 11 -->
+              <lable><strong>11.</strong> Education</lable>
+              <div style="margin-top: 0.75rem; display: flex; flex-wrap: wrap;">
+                <label><input type="radio" name="education" value="no_education" /> No Formal Education</label>
+                <label><input type="radio" name="education" value="elementary_school" /> Completed elementary school</label>
+                <label><input type="radio" name="education" value="middle_school" /> Completed middle school</label>
+                <label><input type="radio" name="education" value="high_school" /> Completed high school</label>
+                <label><input type="radio" name="education" value="some_college_training" /> Some college or vocational training</label>
+                <label><input type="radio" name="education" value="college_university" /> Completed college/university</label>
+                <label><input type="radio" name="education" value="graduate_postgraduate" /> Graduate or postgraduate education</label>
+              </div>
+              <br>
+              
+              <label>Finances: </label>
+              <div class="form-group">
+                <label><input type="radio" name="finances" value="independant" /> Independant</label>
+                <label><input type="radio" name="finances" value="dependant" /> Dependant</label>
+                <label><input type="radio" name="finances" value="need_help" /> Need some help</label>
+              </div>
+
+              <br>
+              <label>
+                Comments: <br><br>
+                <textarea rows="1" name="_comments"></textarea>
+              </label>
+
+              <!-- SECTION 12 -->
+            <h3>12. Spiritual Assessment</h3>
+            <label>Religious Affiliation:</label>
+            <div>
+                <label><input type="radio" name="religion" value="none" /> None</label>
+                <label><input type="radio" name="religion" value="christian" /> Christian</label>
+                <label><input type="radio" name="religion" value="muslim" /> Muslim</label>             
+                <label><input type="radio" name="religion" value="jewish" /> Jewish</label>             
+                <label><input type="radio" name="religion" value="hindu" /> Hindu</label>             
+                <label><input type="radio" name="religion" value="buddhist" /> Buddhist</label>             
+                <label><input type="radio" name="religion" value="sikh" /> Sikh</label>             
+                <label><input type="radio" name="religion" value="other" /> Other</label>             
+            </div>
+            <br>
+            <label>If other, please specify: <input type="text" name="other_religion"></label>
+
+            <label>Spiritual community:</label>
+            <div>
+                <label><input type="radio" name="religious_community" value="none" /> None</label>
+                <label>
+                    <input type="radio" name="religious_community" value="active" /> 
+                    Active participation in a religious community 
+                </label>
+                <label>
+                    <input type="radio" name="religious_community" value="spiritual_gatherings" /> 
+                    Attend spiritual gatherings or retreats
+                </label>             
+                <label>
+                    <input type="radio" name="religious_community" value="with_like_minded_minds" />
+                    Have a support network of like-minded individuals
+                </label>             
+            </div>
+            <br>
+            <label>Comments: <textarea type="text" name="religion_comments"></textarea></label>   
+            
+            <br>
+            <!-- SECTION 13 -->
+             <h3>13. Hobbies / Leisure Activities / Community Resources / Day Programs:</h3>
+             <textarea name="hobbies" id="hobbies" rows="1"></textarea>
+
+             <br>
+             <!-- SECTION 14 -->
+             <h3>14. Employment Assessment:</h3>
+            <div>
+                <label><input type="radio" name="employment" value="none" /> Not working</label>
+                <label><input type="radio" name="employment" value="retired" /> Retired</label>
+                <label><input type="radio" name="employment" value="full_time" /> Full Time</label>
+                <label><input type="radio" name="employment" value="part_time" /> Part Time</label>
+                <label><input type="radio" name="employment" value="seasonal" /> Seasonal</label>
+            </div>
+            <br>
+            <label>Comments: <textarea type="text" name="religion_comments"></textarea></label>   
+
+            <br>
+            <!-- SECTION 15 -->
+             <h3>15. Mobility and Functional Status:</h3>
+             <div>
+                <label>
+                    Ability to walk and move around independently?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="ability_to_work" value="yes" /> Yes</label>
+                        <label><input type="radio" name="ability_to_work" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Use of assistive devices like canes, walkers, or wheelchairs.<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="use_assisstive_devices" value="yes" /> Yes</label>
+                        <label><input type="radio" name="use_assisstive_devices" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Any recent falls or balance issues?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="balance_issues" value="yes" /> Yes</label>
+                        <label><input type="radio" name="balance_issues" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Comments:
+                    <textarea name="mobility_status_comments" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 16 -->
+             <h3>16. Activities of Daily Living (ADLs):</h3>
+             <div>
+                <label>
+                    Ability to perform basic self-care tasks, such as bathing, dressing, grooming, toileting, and feeding.<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="basic_tasks" value="yes" /> Yes</label>
+                        <label><input type="radio" name="basic_tasks" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Any difficulties or need for assistance with ADLs.
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="assistance_adls" value="yes" /> Yes</label>
+                        <label><input type="radio" name="assistance_adls" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Comments:
+                    <textarea name="adls_comments" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 17 -->
+             <h3>17. Instrumental Activities of Daily Living (IADLs):</h3>
+             <div>
+                <label>
+                    Ability to perform more complex daily tasks, such as cooking, cleaning, managing finances, and shopping.<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="complex_tasks" value="yes" /> Yes</label>
+                        <label><input type="radio" name="complex_tasks" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Any difficulties or need for assistance with IADLs.
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="assistance_iadls" value="yes" /> Yes</label>
+                        <label><input type="radio" name="assistance_iadls" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Comments:
+                    <textarea name="adls_comments" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 18 -->
+             <h3>18. Exercise and Physical Activity:</h3>
+             <div>
+                <label>
+                    Frequency and type of physical activity or exercise.<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="physical_frequency_activity" value="yes" /> Yes</label>
+                        <label><input type="radio" name="physical_frequency_activity" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Any barriers to engaging in physical activity.
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="activity_barriers" value="yes" /> Yes</label>
+                        <label><input type="radio" name="activity_barriers" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Comments:
+                    <textarea name="physical_frequency_activity_comments" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 19 -->
+             <h3>19. Do you have a history of being abused:</h3>
+             <div>
+                <label>
+                    As an adult?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="adult_abuse" value="yes" /> Yes</label>
+                        <label><input type="radio" name="adult_abuse" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    As a child?
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="child_abuse" value="yes" /> Yes</label>
+                        <label><input type="radio" name="child_abuse" value="no" /> No</label>
+                    </div>
+                </label>
+
+                <div>
+                    <label><input type="checkbox" name="abuse_type" id="">Verbal</label>
+                    <label><input type="checkbox" name="abuse_type" id="">Physical</label>
+                    <label><input type="checkbox" name="abuse_type" id="">Emotional</label>
+                    <label><input type="checkbox" name="abuse_type" id="">Sexual</label>
+                    <label><input type="checkbox" name="abuse_type" id="">Neglect</label>
+                    <label><input type="checkbox" name="abuse_type" id="">Exploitation</label>
+                    <label><input type="checkbox" name="abuse_type" id="">Other</label>
+                    <label>Verbal<input type="text" name="other_abuse_type" id=""></label>
+                </div>
+
+                <div>
+                    <p>Are you currently being abused?</p>
+                    <label><input type="checkbox" name="current_abuse_type" id="">Verbal</label>
+                    <label><input type="checkbox" name="current_abuse_type" id="">Physical</label>
+                    <label><input type="checkbox" name="current_abuse_type" id="">Emotional</label>
+                    <label><input type="checkbox" name="current_abuse_type" id="">Sexual</label>
+                    <label><input type="checkbox" name="current_abuse_type" id="">Neglect</label>
+                    <label><input type="checkbox" name="current_abuse_type" id="">Exploitation</label>
+                    <label><input type="checkbox" name="current_abuse_type" id="">Other</label>
+                    <label>Verbal<input type="text" name="current_other_abuse_type" id=""></label>
+                </div>
+
+                <label>
+                    Explain:
+                    <textarea name="abuse_comments" id=""></textarea>
+                </label>
+             </div>
+
+             <br>
+             <h2>Cognitive/Mental Status</h2>
+             <br>
+             <!-- SECTION 20 -->
+             <h3>20. Orientation</h3>
+             <div>
+                <label>
+                    Is the patient alert and awake?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="patient_awake" value="yes" /> Yes</label>
+                        <label><input type="radio" name="patient_awake" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Is the patient oriented to person? (Does the patient know their own name and identity?)
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="patient_oriented" value="yes" /> Yes</label>
+                        <label><input type="radio" name="patient_oriented" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Is the patient oriented to place? (Does the patient know where they are?)
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="patient_oriented_2" value="yes" /> Yes</label>
+                        <label><input type="radio" name="patient_oriented_2" value="no" /> No</label>
+                    </div>
+                </label>
+             </div>
+
+             <!-- SECTION 21 -->
+             <h3>21.</h3>
+             <div>
+                <label>
+                    Have you experienced significant changes in your mood, such as feeling consistently sad or anxious for an extended period?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="mood_change" value="yes" /> Yes</label>
+                        <label><input type="radio" name="mood_change" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Do you have trouble concentrating or making decisions on a regular basis?
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="trouble_concentration" value="yes" /> Yes</label>
+                        <label><input type="radio" name="trouble_concentration" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Have you noticed any significant changes in your memory, such as forgetfulness or difficulty recalling recent events? <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="memory_changes" value="yes" /> Yes</label>
+                        <label><input type="radio" name="memory_changes" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Do you often feel overwhelmed or have racing thoughts?
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="assistance_adls" value="yes" /> Yes</label>
+                        <label><input type="radio" name="assistance_adls" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Have you had difficulty sleeping, such as trouble falling asleep or staying asleep?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="sleepy_difficulty" value="yes" /> Yes</label>
+                        <label><input type="radio" name="sleepy_difficulty" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Have you ever had thoughts of self-harm or suicide?
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="self_harm_thoughts" value="yes" /> Yes</label>
+                        <label><input type="radio" name="self_harm_thoughts" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Do you experience hallucinations (seeing, hearing, or sensing things that others don't)?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="hallucinations" value="yes" /> Yes</label>
+                        <label><input type="radio" name="hallucinations" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Have you had any recent changes in appetite or weight without an obvious cause?
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="appetite_change" value="yes" /> Yes</label>
+                        <label><input type="radio" name="appetite_change" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Have you experienced a significant decrease in interest or pleasure in activities you used to enjoy?<br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="pleasure_activities" value="yes" /> Yes</label>
+                        <label><input type="radio" name="pleasure_activities" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Do you find it challenging to manage your daily responsibilities, such as work or household tasks?
+                    <br><br>
+                    <div class="form-group">
+                        <label><input type="radio" name="difficulty_managing_activities" value="yes" /> Yes</label>
+                        <label><input type="radio" name="difficulty_managing_activities" value="no" /> No</label>
+                    </div>
+                </label>
+                <label>
+                    Comments:
+                    <textarea name="adls_comments" id=""></textarea>
+                </label>
+             </div>
+
+             <br>
+             <h2>Mental Health</h2>
+
+             <!-- SECTION 22 -->
+             <h3>22. Do you have any current unmet mental health concerns or symptoms?</h3>
+             <div>
+                <div class="form-group">
+                    <label><input type="radio" name="any_mental_health" value="yes" /> Yes</label>
+                    <label><input type="radio" name="any_mental_health" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, Please explain:
+                    <textarea name="mental_health_explanation" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 23 -->
+             <h3>23. Have you ever received a mental health diagnosis?</h3>
+             <div>
+                <div class="form-group">
+                    <label><input type="radio" name="mental_diagnosis" value="yes" /> Yes</label>
+                    <label><input type="radio" name="mental_diagnosis" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, what was the diagnosis:
+                    <textarea name="mental_health_diagnosis" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 24 -->
+             <h3>24. Have you ever been hospitalized for mental health concerns?</h3>
+             <div>
+                <div class="form-group">
+                    <label><input type="radio" name="mental_hospitalized" value="yes" /> Yes</label>
+                    <label><input type="radio" name="mental_hospitalized" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, When were you hospitalized?
+                    <textarea name="mental_hospitalized_explanation" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 25 -->
+             <h3>25. Are you currently linked to any mental health care provider(s)?</h3>
+             <div>
+                <div class="form-group">
+                    <label><input type="radio" name="mental_care_provider" value="yes" /> Yes</label>
+                    <label><input type="radio" name="mental_care_provider" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes: Provide Name, Telephone Number, Last Time Seen:
+                    <textarea name="mental_care_provider_explanation" id=""></textarea>
+                </label>
+             </div>
+
+             <!-- SECTION 26 -->
+             <h3>If no: Would you like a referral for mental health services?</h3>
+             <div>
+                <div class="form-group">
+                    <label><input type="radio" name="unmet_health_care" value="yes" /> Yes</label>
+                    <label><input type="radio" name="unmet_health_care" value="no" /> No</label>
+                </div>
+             </div>
+
+             <br>
+             <h2>Sensory Concerns</h2>
+
+             <!-- SECTION 27 -->
+              <br>
+             <h3>27. Section 1: Vision</h3>
+             <div>
+                <p>Do you wear corrective lenses (glasses or contacts)?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="glasses" value="yes" /> Yes</label>
+                    <label><input type="radio" name="glasses" value="no" /> No</label>
+                </div>
+                <p>How would you rate your overall vision without corrective lenses?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="vision_rating" value="excellent" /> Excellent</label>
+                    <label><input type="radio" name="vision_rating" value="good" /> Good</label>
+                    <label><input type="radio" name="vision_rating" value="fair" /> Fair</label>
+                    <label><input type="radio" name="vision_rating" value="poor" /> Poor</label>
+                </div>
+                <p>Have you noticed any changes in your vision recently?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="vision_changes" value="yes" /> Yes</label>
+                    <label><input type="radio" name="vision_changes" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, please describe:
+                    <textarea name="vision_changes_description" id=""></textarea>
+                </label>
+
+                <p>Have you ever been diagnosed with a visual impairment or eye condition? (e.g., glaucoma, cataracts)</p>
+                <div class="form-group">
+                    <label><input type="radio" name="visual_impairment_diagnosis" value="yes" /> Yes</label>
+                    <label><input type="radio" name="visual_impairment_diagnosis" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, please specify:
+                    <textarea name="visual_impairment_diagnosis_explanation" id=""></textarea>
+                </label>
+
+                <p>Can you read small print without difficulty?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="small_print" value="yes" /> Yes</label>
+                    <label><input type="radio" name="small_print" value="no" /> No</label>
+                </div>
+                <label>
+                    If no, please describe any issues:
+                    <textarea name="small_print_explanation" id=""></textarea>
+                </label>
+
+                <p>Do you experience any visual disturbances like floaters, flashes of light, or blind spots?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="visual_disturbance" value="yes" /> Yes</label>
+                    <label><input type="radio" name="visual_disturbance" value="no" /> No</label>
+                </div>
+                <label>
+                    If no, please describe any issues:
+                    <textarea name="visual_disturbance_explanation" id=""></textarea>
+                </label>
+
+                <!--  -->
+                <br>
+                <h3>28. Section 2: Hearing</h3>
+
+                <p>Do you have any hearing aids or other hearing devices?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="hearing_aid" value="yes" /> Yes</label>
+                    <label><input type="radio" name="hearing_aid" value="no" /> No</label>
+                </div>
+
+                <p>How would you rate your overall hearing without hearing aids or devices?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="hearing_rating" value="excellent" /> Excellent</label>
+                    <label><input type="radio" name="hearing_rating" value="good" /> Good</label>
+                    <label><input type="radio" name="hearing_rating" value="fair" /> Fair</label>
+                    <label><input type="radio" name="hearing_rating" value="poor" /> Poor</label>
+                </div>
+
+                <p>Have you noticed any changes in your hearing recently?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="hearing_changes" value="yes" /> Yes</label>
+                    <label><input type="radio" name="hearing_changes" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, please describe:
+                    <textarea name="hearing_changes_description" id=""></textarea>
+                </label>
+
+                <p>Have you ever been diagnosed with a hearing impairment or ear condition? (e.g., tinnitus, hearing loss)</p>
+                <div class="form-group">
+                    <label><input type="radio" name="hearing_diagnosis" value="yes" /> Yes</label>
+                    <label><input type="radio" name="hearing_diagnosis" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, please specify:
+                    <textarea name="hearing_diagnosis_description" id=""></textarea>
+                </label>
+
+                <p>Do you experience any difficulty hearing conversations or sounds in noisy environments?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="hearing_difficulty" value="yes" /> Yes</label>
+                    <label><input type="radio" name="hearing_difficulty" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, please specify:
+                    <textarea name="hearing_difficulty_description" id=""></textarea>
+                </label>
+
+                <br>
+                <h3>Section 29: Communication</h3>
+                
+                <p>How would you rate your ability to communicate effectively with others?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="communication_rating" value="excellent" /> Excellent</label>
+                    <label><input type="radio" name="communication_rating" value="good" /> Good</label>
+                    <label><input type="radio" name="communication_rating" value="fair" /> Fair</label>
+                    <label><input type="radio" name="communication_rating" value="poor" /> Poor</label>
+                </div>
+
+                <p>Are you comfortable using verbal communication to express your thoughts and feelings?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="verbal_communication_comfort" value="yes" /> Yes</label>
+                    <label><input type="radio" name="verbal_communication_comfort" value="no" /> No</label>
+                </div>
+                <label>
+                    If no, please explain:
+                    <textarea name="verbal_communication_explanation" id=""></textarea>
+                </label>
+
+                <p>Do you have any speech or language difficulties, such as stuttering or difficulty articulating words?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="language_difficulty" value="yes" /> Yes</label>
+                    <label><input type="radio" name="language_difficulty" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, please describe:
+                    <textarea name="language_difficulty_description" id=""></textarea>
+                </label>
+
+                <p>Are you proficient in any sign language or alternative forms of communication?</p>
+                <div class="form-group">
+                    <label><input type="radio" name="sign_language_profeciency" value="yes" /> Yes</label>
+                    <label><input type="radio" name="sign_language_profeciency" value="no" /> No</label>
+                </div>
+                <label>
+                    If yes, please specify:
+                    <textarea name="sign_language_profeciency_description" id=""></textarea>
+                </label>
+
+                <h2>Substance Use Assessment</h2>
+
+                <h3>30.</h3>
+                <label>History of Substance Use:</label>
+                <div class="form-group">
+                    <label><input type="radio" name="substance_abuse">No prior substance use</label>
+                    <label><input type="radio" name="substance_abuse">Experimental use</label>
+                    <label><input type="radio" name="substance_abuse">Recreational use</label>
+                    <label><input type="radio" name="substance_abuse">Regular use</label>
+                    <label><input type="radio" name="substance_abuse">Chronic use</label>
+                </div>
+
+                <label>Frequency of use:</label>
+                <div class="form-group">
+                    <label><input type="radio" name="substance_frequency">N/A</label>
+                    <label><input type="radio" name="substance_frequency">Daily</label>
+                    <label><input type="radio" name="substance_frequency">Weekly</label>
+                    <label><input type="radio" name="substance_frequency">Monthly</label>
+                    <label><input type="radio" name="substance_frequency">Rarely</label>
+                </div>
+
+                <label>Duration of use:</label>
+                <div class="form-group">
+                    <label><input type="radio" name="substance_duration">N/A</label>
+                    <label><input type="radio" name="substance_duration">Less than 6 months</label>
+                    <label><input type="radio" name="substance_duration">6 months to 1 year</label>
+                    <label><input type="radio" name="substance_duration">1 to 5 years</label>
+                    <label><input type="radio" name="substance_duration">Over 5 years</label>
+                </div>
+
+                <label>Previous Treatment/Recovery Efforts: (Check all that apply):</label>
+                <div class="form-group">
+                    <label><input type="checkbox" name="previous_treatment">None</label>
+                    <label><input type="checkbox" name="previous_treatment">Outpatient Counseling </label>
+                    <label><input type="checkbox" name="previous_treatment">Inpatient/Residential Treatment</label>
+                    <label><input type="checkbox" name="previous_treatment">12-Step Program (e.g., AA, NA)</label>
+                    <label><input type="checkbox" name="previous_treatment">Medication-Assisted Treatment</label>
+                    <label><input type="checkbox" name="previous_treatment">Self-Help Group</label>
+                    <label><input type="checkbox" name="previous_treatment">Other</label>
+                </div>
+                <label>Other (specify): <textarea name="other_treatment" id=""></textarea></label>
+
+                <label>Family History of Substance Use (Check all that apply):</label>
+                <div>
+                    <label><input type="checkbox" name="family_substance_history">None</label>
+                    <label><input type="checkbox" name="family_substance_history">Family members with a history of substance use</label>
+                    <label><input type="checkbox" name="family_substance_history">Family members in recovery</label>
+                    <label><input type="checkbox" name="family_substance_history">Family members with legal issues related to substance use</label>
+                </div>
+
+                <h2>Risk Assessment</h2>
+                <div>
+                    <label><input type="checkbox" name="risk_assessment">Behavioral Risk Factors</label>
+                    <label><input type="checkbox" name="risk_assessment">Cognitive Functioning</label>
+                    <label><input type="checkbox" name="risk_assessment">Communication Skills</label>
+                    <label><input type="checkbox" name="risk_assessment">Emotional Well-being</label>
+                    <label><input type="checkbox" name="risk_assessment">Developmental Milestones</label>
+                    <label><input type="checkbox" name="risk_assessment">Physical Limitations</label>
+                    <label><input type="checkbox" name="risk_assessment">Environmental Factors</label>
+                    <label><input type="checkbox" name="risk_assessment">Social and Support System</label>
+                    <label><input type="checkbox" name="risk_assessment">Cultural and Religious Considerations</label>
+                    <label><input type="checkbox" name="risk_assessment">Mental Health</label>
+                    <label><input type="checkbox" name="risk_assessment">Other Risk Factors</label>
+                </div>
+                <label>Risk Mitigation and Action Plan (Comments): <textarea name="risk_mitigation_comments"></textarea></label>
+
+
+                <h3>32. Comments</h3>
+                <textarea name="overall_comments" id=""></textarea>
+
+                <h3>33.</h3>
+                <div class="form-group">
+                    <label>Case manager name and title <input type="text" name="manager_name_title" id=""></label>
+                    <label>Signature <input type="text" name="signature" id=""></label>
+                    <label>Date <input type="date" name="date" id=""></label>
+                </div>
+             </div>
+
+
+            <button type="submit" class="submit-button">Submit</button>
+            <br><br>
+
+        </form>
+    </div>
+</body>
+</html>

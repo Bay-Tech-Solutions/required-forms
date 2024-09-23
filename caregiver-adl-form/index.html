@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caregiver ADL/IADL Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        border-color: #000;
+        margin-bottom: 3rem;
+      }
+
+      .logo {
+        margin-right: 20px;
+        flex: 0 0 80px;
+        width: 12rem;
+      }
+      
+      .company-info {
+        font-size: 14px;
+        line-height: 1.5;
+        min-width: 200px;
+        text-align: right;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 5px;
+        text-align: center;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .wide {
+        text-align: left;
+        padding-left: 10px;
+      }
+      .signature-row td {
+        height: 40px;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        padding: 4px;
+      }
+      .day-input{
+        text-align: center;
+      }
+      .submit-button {
+        color: #fff;
+        background-color: #0057b4;
+        box-shadow: none;
+        border: none;
+        padding: 0.65rem 1.5rem;
+        border-radius: 0.25rem;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+      
+      <button class="submit-button">Save Progress</button>
+      <h3>Caregiver ADL/IADL Form</h3>
+
+    <br>
+    <div style="display: flex; gap: 1rem;">
+        <label
+          >Provider Name: <span><input type="text" /></span
+        ></label>
+        <label
+          >Member Name: <span><input type="text" /></span
+        ></label>
+        <label
+          >Month/Year: <span><input type="month" /></span
+        ></label>
+    </div>
+
+    <br />
+    <table>
+        <tr>
+            <span>ADLs</span> Use Codes: 0 - independent (no help needed) 1 - Set-up 2- Supervision 3 - Physical Assist 4 - Dependent 8 - Activity did not occur
+        </tr>
+      <tr>
+        <th style="width: 12rem">
+          Supervision and/or Assistance through the task
+        </th>
+        <th colspan="31">Days</th>
+      </tr>
+      <tr>
+        <!-- Day numbers 1 through 31 -->
+        <th></th>
+        <th>01</th>
+        <th>02</th>
+        <th>03</th>
+        <th>04</th>
+        <th>05</th>
+        <th>06</th>
+        <th>07</th>
+        <th>08</th>
+        <th>09</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+        <th>19</th>
+        <th>20</th>
+        <th>21</th>
+        <th>22</th>
+        <th>23</th>
+        <th>24</th>
+        <th>25</th>
+        <th>26</th>
+        <th>27</th>
+        <th>28</th>
+        <th>29</th>
+        <th>30</th>
+        <th>31</th>
+      </tr>
+
+      <!-- ADLs Section with inputs for each day -->
+      <tr>
+        <td class="wide">Positioning in bed/chair</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+      </tr>
+      <tr>
+        <td class="wide">Transferring</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+      <tr>
+        <td class="wide">Locomotion/ambulation home</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Locomotion/ambulation outside</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Dressing upper Body</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Dressing lower Body</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Eating</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Bathing</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Personal Hygiene</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Toileting</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide"><h3>Incontinence care</h3></td>
+        <td colspan="31">Record the number of times scheduled toileting or incontinence care provided. -------------- For catheter care record
+            --------------------- C For colostomy care record CL</td>
+      </tr>
+      
+      <tr>
+        <td class="wide">Bowel</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <tr>
+        <td class="wide">Bladder</td>
+        <!-- Inputs for each day -->
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above -->
+      </tr>
+
+      <!-- IADLs Section with inputs for each day -->
+      <tr>
+        <th rowspan="2">IADLs</th>
+        <th colspan="31">Days</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+        <th>19</th>
+        <th>20</th>
+        <th>21</th>
+        <th>22</th>
+        <th>23</th>
+        <th>24</th>
+        <th>25</th>
+        <th>26</th>
+        <th>27</th>
+        <th>28</th>
+        <th>29</th>
+        <th>30</th>
+        <th>31</th>
+      </tr>
+
+      <tr>
+        <td class="wide">Meal Preparation</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above for other days -->
+        <td colspan="30"><!-- More input fields --></td>
+      </tr>
+
+
+      <tr>
+        <td class="wide">Ordinary housework</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above for other days -->
+        <td colspan="30"><!-- More input fields --></td>
+      </tr>
+
+
+      <tr>
+        <td class="wide">Managing finances</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above for other days -->
+        <td colspan="30"><!-- More input fields --></td>
+      </tr>
+
+
+      <tr>
+        <td class="wide">Med MGT- Taken as prescribed</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above for other days -->
+        <td colspan="30"><!-- More input fields --></td>
+      </tr>
+
+
+      <tr>
+        <td class="wide">Phone Use</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above for other days -->
+        <td colspan="30"><!-- More input fields --></td>
+      </tr>
+
+
+      <tr>
+        <td class="wide">Shopping</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <!-- Repeat as above for other days -->
+        <td colspan="30"><!-- More input fields --></td>
+      </tr>
+
+
+      <tr>
+        <td class="wide">Transportation</td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+        <td><input type="text" class="day-input"/></td>
+      </tr>
+
+      <tr>
+        <td><h3>OTHER SERVICES</h3></td>
+        <td colspan="31">Check all that occurred</td>
+      </tr>
+
+      <tr>
+        <td class="wide">Adult Day Health</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td class="wide">Alternate Placement</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td class="wide">Skilled nursing visit</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td class="wide">MD visit</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td class="wide">Hospitalized</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td class="wide">ER visit</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td class="wide">Day habilitation</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td class="wide">Other</td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <!-- Add similar rows for other services -->
+    </table>
+
+    <!-- Caregiver Initials and Signatures -->
+    <table>
+      <tr class="signature-row">
+        <td class="wide">Primary Caregiver Initial/Signature:</td>
+        <td colspan="5"><input type="text" /></td>
+      </tr>
+      <tr class="signature-row">
+        <td class="wide">Alternate Caregiver Initial/Signature:</td>
+        <td colspan="5"><input type="text" /></td>
+      </tr>
+      <tr class="signature-row">
+        <td class="wide">Reviewed By (RN/CM):</td>
+        <td colspan="5"><input type="text" /></td>
+      </tr>
+      <tr>
+        <td class="wide">Date of Review:</td>
+        <td colspan="5"><input type="date" /></td>
+      </tr>
+      <tr>
+        <td class="wide">Level of Care:</td>
+        <td colspan="5"><input type="text" /></td>
+      </tr>
+    </table>
+    
+    
+    <br><br><br><br>
+
+    <header>
+        <h1>Caregiver Monthly ADL Log</h1>
+        <div class="header-info">
+            <table>
+                <tr>
+                    <td class="wide"><strong>Provider Name:</strong> <input type="text"></td>
+                    <td class="wide"><strong>Member Name:</strong> <input type="text"></td>
+                    <td><strong>Date:</strong> <input type="date"></td>
+                    <td><strong>Month/Year:</strong> <input type="month"></td>
+                    <td><strong>Initials:</strong> <input type="text"></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Behavior</th>
+                <th>Intervention</th>
+                <th>Outcome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="wide">
+                    1. Wandering<br>
+                    2. Verbally Abusive<br>
+                    3. Physically Abusive<br>
+                    4. Socially Inappropriate<br>
+                    5. Resists Care<br>
+                    6. Other
+                </td>
+                <td class="wide">
+                    1. 1:1<br>
+                    2. Snack<br>
+                    3. Diversion activity (per Care Plan)<br>
+                    4. Other (per Care Plan)<br>
+                    5. Other
+                </td>
+                <td class="wide">
+                    1. No change<br>
+                    2. Improved<br>
+                    3. Worsened
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead><td colspan="32"><h3>Daily Behavior Intervention</h3></td></thead>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <!-- Assuming a 31-day log -->
+                <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                <th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th>
+                <th>21</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th><th>29</th><th>30</th>
+                <th>31</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead><td colspan="32"><h3>Behavior document # times/day</h3></td></thead>
+        <thead>
+            <tr>
+                <th></th>
+                <!-- Assuming a 31-day log -->
+                <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                <th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th>
+                <th>21</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th><th>29</th><th>30</th>
+                <th>31</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table>
+        <thead><td colspan="32"><h3>Intervention</h3></td></thead>
+        <tbody>
+            <tr>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+            <tr>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead><td colspan="32"><h3>Easily redirected use Codes: 0 - No 1 - Yes</h3></td></thead>
+        <tbody>
+            <tr>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+            <tr>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+            <tr>
+                <!-- Daily input fields for behavior -->
+                <td>Outcome: </td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+            <tr>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+            <tr>
+                <!-- Daily input fields for behavior -->
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+                <td><input class="day-input" type="text"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tr>
+            <td class="signature-row"><strong>Caregiver Initials:</strong> <input type="text"></td>
+            <td class="wide"><strong>Primary Caregiver Initial/Signature:</strong> <input type="text"></td>
+            <td class="wide"><strong>Alternate Caregiver Initial/Signature:</strong> <input type="text"></td>
+        </tr>
+    </table>
+
+        <button class="submit-button">Submit</button>
+        <br><br><br>
+    </div>
+
+  </body>
+</html>

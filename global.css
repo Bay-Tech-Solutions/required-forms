@@ -69,7 +69,10 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="date"] {
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="month"] {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -84,8 +87,8 @@ textarea {
   overflow: hidden; /* Prevents the scroll bar from appearing */
   resize: none; /* Prevents manual resizing by the user */
   min-height: 20px; /* Minimum height */
-  padding: 4px;
-  border: 1px solid #ddd;
+  padding: 8px;
+  border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
   box-sizing: border-box;
@@ -100,7 +103,7 @@ input[type="checkbox"] {
 .form-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .form-group label {
@@ -120,6 +123,7 @@ td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  width: auto;
 }
 
 th {

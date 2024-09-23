@@ -1,0 +1,3171 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caregiver ADL/IADL Form</title>
+    <link rel="stylesheet" href="../global.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <form>
+        <button class="submit-button">Save Progress</button>
+        <h3>SECTION AA. NAME AND IDENTIFICATION NUMBERS</h3>
+        <label>1. NAME OF CLIENT</label>
+        <div class="form-group">
+          <input
+            type="text"
+            style="max-width: 31%"
+            placeholder="a. (Last/Family Name)"
+          />
+          <input
+            type="text"
+            style="max-width: 31%"
+            placeholder="b. (First Name)"
+          />
+          <input
+            type="text"
+            style="max-width: 31%"
+            placeholder="c. (Middle Initial)"
+          />
+        </div>
+
+        <br />
+        <label>2. CASE RECORD NO.</label>
+        <input type="text" />
+
+        <br /><br />
+        <label>3. GOVERNMENT PENSION AND HEALTH INSURANCE NUMBERS</label>
+
+        <label>a. Pension (Social Security) Number</label>
+        <input type="text" class="ssn" />
+
+        <label
+          >b. Health insurance number (or other comparable insurance
+          number)</label
+        >
+        <input type="text" class="health" />
+
+        <br /><br />
+        <h3>SECTION BB. PERSONAL ITEMS (Complete at Intake Only)</h3>
+
+        <table>
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <label><input type="radio" name="gender" value="male" />Male</label>
+              <label
+                ><input type="radio" name="gender" value="female" />Female</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Birthdate</label>
+            </td>
+            <td>
+              <input type="date" placeholder="Date of birth" min="1" max="12" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Race/ethnicity</label></td>
+            <td>
+              <p>Check all that apply</p>
+              <div class="form-group">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ethnicity"
+                    value="native_american"
+                  />Native American/Alaskan Native</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ethnicity"
+                    value="asian"
+                  />Asian</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ethnicity"
+                    value="african_american"
+                  />Black/Africa american</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ethnicity"
+                    value="native_hawaiian"
+                  />Native Hawaiian or other Pacific Islander</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="ethnicity"
+                    value="native_hawaiian"
+                  />Native Hawaiian or other Pacific Islander</label
+                >
+                <label
+                  ><input type="checkbox" name="ethnicity" value="white" />Native
+                  White</label
+                >
+                <label
+                  ><input type="checkbox" name="ethnicity" value="latino" />Native
+                  Latino/Hispanic</label
+                >
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Marital status</label></td>
+            <td>
+              <div class="form-group">
+                <label
+                  ><input
+                    type="radio"
+                    name="marital_status"
+                    value="never_married"
+                  />1. Never married</label
+                >
+                <label
+                  ><input type="radio" name="marital_status" value="married" />2.
+                  Married</label
+                >
+                <label
+                  ><input type="radio" name="marital_status" value="widowed" />3.
+                  Widowed</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="marital_status"
+                    value="separated"
+                  />4. Separated</label
+                >
+                <label
+                  ><input type="radio" name="marital_status" value="divorced" />5.
+                  Divorced</label
+                >
+                <label
+                  ><input type="radio" name="marital_status" value="other" />6.
+                  Other</label
+                >
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Language</label></td>
+            <td>
+              <div class="form-group">
+                <label
+                  ><input type="radio" name="language" value="english" />1.
+                  English</label
+                >
+                <label
+                  ><input type="radio" name="language" value="spanish" />2.
+                  Spanish</label
+                >
+                <label
+                  ><input type="radio" name="language" value="other" />3.
+                  Other</label
+                >
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Education <br />(Highest level completed)</label>
+            </td>
+            <td>
+              <div class="radio-group">
+                <label
+                  ><input type="radio" name="education" value="no_schooling" />0.
+                  No schooling</label
+                >
+                <label
+                  ><input type="radio" name="education" value="grades_1_8" />1.
+                  1-8 grades</label
+                >
+                <label
+                  ><input type="radio" name="education" value="grades_9_11" />2.
+                  9-11 grades</label
+                >
+                <label
+                  ><input type="radio" name="education" value="high_school" />3.
+                  High school</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="education"
+                    value="technical_trade"
+                  />5. Technical or trade school</label
+                >
+                <label
+                  ><input type="radio" name="education" value="some_college" />6.
+                  Some college</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="education"
+                    value="bachelors_degree"
+                  />7. Bachelor's degree</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="education"
+                    value="graduate_degree"
+                  />8. Graduate degree</label
+                >
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label>RESPONSIBILITY/ADVANCED DIRECTIVES</label></td>
+            <td>
+              <div class="form-group">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="responsibility"
+                    value="legal_guardian"
+                  />a. Client has a legal guardian</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="responsibility"
+                    value="medical_directives"
+                  />b. Client has advanced medical directives in place (for
+                  example, a do not hospitalize order)</label
+                >
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <br /><br />
+
+        <h3>
+          SECTION CC. REFERRAL ITEMS (Complete at Intake Only)
+        </h3>
+
+        <table>
+          <tr>
+            <th colspan="6">1. DATE CASE OPENED/REOPENED</th>
+          </tr>
+          <tr>
+            <td>Month</td>
+            <td><input type="text" class="small-input" /></td>
+            <td>Day</td>
+            <td><input type="text" class="small-input" /></td>
+            <td>Year</td>
+            <td><input type="text" class="small-input" /></td>
+          </tr>
+          <tr>
+            <th colspan="6">2. REASON FOR REFERRAL</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                <input type="checkbox" />1. Post hospital care
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />2. Community chronic care
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />3. Home placement screen
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />4. Eligibility for home care
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />5. Day care
+              </div>
+              <div class="checkbox-group"><input type="checkbox" />6. Other</div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="6">3. GOALS OF CARE</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                Code for client/family understanding of goals
+                <input type="text" class="small-input" />
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />0. No <input type="checkbox" />1. Yes
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />a. Skilled nursing treatments
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />b. Monitoring to avoid clinical
+                complications
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />c. Client/family education
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />d. Family respite
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />e. Palliative care
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="6">4. TIME SINCE LAST HOSPITAL STAY</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                Time since discharge from last in-patient setting (Code for most
+                recent instance in LAST 180 DAYS)
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />0. No hospitalization within 180 days
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />1. Within last week
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />2. Within 8 to 14 days
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />3. Within 15 to 30 days
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />4. More than 30 days ago
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="6">5. WHERE LIVED AT TIME OF REFERRAL</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                <input type="checkbox" />1. Private home/apt with no home care
+                services
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />2. Private home/apt with home care
+                services
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />3. Board and care/assisted living/group
+                home
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />4. Nursing home
+              </div>
+              <div class="checkbox-group"><input type="checkbox" />5. Other</div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="6">6. WHO LIVED WITH AT REFERRAL</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                <input type="checkbox" />1. Lived alone
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />2. Lived with spouse only
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />3. Lived with spouse and other(s)
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />4. Lived with child (not spouse)
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />5. Lived with parent(s) (no spouse or
+                children)
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />6. Lived in group setting with
+                non-relatives
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="6">7. PRIOR NH PLACEMENT</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                Resided in a nursing home at anytime during 5 YEARS prior to case
+                opening
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />0. No <input type="checkbox" />1. Yes
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="6">8. RESIDENTIAL HISTORY</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                Moved to current residence within last two years
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />0. No <input type="checkbox" />1. Yes
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <br /><br />
+        <h3>SECTION A: ASSESSMENT INFORMATION</h3>
+        <table>
+          <tr>
+            <th colspan="6">1. ASSESSMENT REFERENCE DATE</th>
+          </tr>
+          <tr>
+            <td>Month</td>
+            <td><input type="text" class="small-input" /></td>
+            <td>Day</td>
+            <td><input type="text" class="small-input" /></td>
+            <td>Year</td>
+            <td><input type="text" class="small-input" /></td>
+          </tr>
+          <tr>
+            <th colspan="6">2. REASON FOR REFERRAL</th>
+          </tr>
+          <tr>
+            <td colspan="6">
+              <div class="checkbox-group">
+                <input type="checkbox" />1. Initial Assessment
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />2. Follow-up assessment
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />3. Routine assessment at fixed intervals
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />4. Review within 30-day period prior to
+                discharge from the program
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />5. Review at return from hospital
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" />6. Change in status
+              </div>
+              <div class="checkbox-group"><input type="checkbox" />7. Other</div>
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <h3 class="section-title">SECTION B. COGNITIVE PATTERNS</h3>
+        <table>
+          <tr>
+            <td class="sub-section-title">1. MEMORY RECALL ABILITY</td>
+            <td colspan="2">
+              Code for recall of what was learned or known (select all that may
+              apply)
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <input type="checkbox" name="" />a. Short-term memory
+              OK—seems/appears to recall after 5 minutes
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <input type="checkbox" name="" />b. Procedural memory OK—can
+              perform all or almost all steps in a multi-step sequence without
+              cues for initiation
+            </td>
+          </tr>
+          <tr>
+            <td class="sub-section-title">
+              2. COGNITIVE SKILLS FOR DAILY DECISION-MAKING
+            </td>
+            <td colspan="2">
+              (How well did resident make decisions about organizing the day
+              (e.g., when to get up or have meals, which clothes to wear or
+              activities to do)?)
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="code">
+              <input type="radio" name="cognitive_daily" />
+              0. INDEPENDENT—Decisions consistent/reasonable
+            </td>
+            <td>
+              <input type="radio" name="cognitive_daily" />
+              1. MODIFIED INDEPENDENCE—Some difficulty in new situations only
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="code">
+              <input type="radio" name="cognitive_daily" />
+              2. MODERATELY IMPAIRED—Decisions poor; cues/supervision required
+            </td>
+            <td>
+              <input type="radio" name="cognitive_daily" />
+              3. SEVERELY IMPAIRED—Never/rarely made decisions
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              a. Worsening of decision making as compared to 90 DAYS AGO (or since
+              last assessment if less than 90 days)
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="code">
+              <input type="radio" name="condition-worsening" />
+              0. No
+            </td>
+            <td>
+              <input type="radio" name="condition-worsening" />
+              1. Yes
+            </td>
+          </tr>
+          <tr>
+            <td class="sub-section-title">3. INDICATORS OF DELIRIUM</td>
+            <td colspan="2">(Code for behavior in the last 7 days)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              a. Inattention—easily distracted, out of touch or difficulty
+              following what is said
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              b. Disorganized thinking—rambling, irrelevant conversation, unclear
+              or illogical flow of ideas, or unpredictable switching from subject
+              to subject
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              c. Altered level of consciousness—e.g., vigilant, lethargic,
+              stuporous, or comatose
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              d. Psychomotor retardation—e.g., slowed speech, lethargy, or
+              decreased alertness
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              e. Worsening of any of the above as compared to 90 DAYS AGO (or
+              since last assessment if less than 90 days)
+            </td>
+          </tr>
+        </table>
+
+        <br />
+        <h3>SECTION C: COMMUNICATION/HEARING PATTERNS</h3>
+        <table>
+          <tr>
+            <th colspan="2" class="sub-section-title">
+              1. HEARING (With hearing appliance if used)
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              0. HEARS ADEQUATELY—Normal talk, TV, phone, doorbell
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              1. MINIMAL DIFFICULTY—When not in quiet setting
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              2. HEARS IN SPECIAL SITUATIONS ONLY—Speaker has to adjust tonal
+              quality and speak distinctly
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="delirium_indicators" />
+              3. HIGHLY IMPAIRED —Absence of useful hearing
+            </td>
+          </tr>
+          <!-- -------------------------------------------- -->
+          <tr>
+            <th colspan="2" class="sub-section-title">
+              2. MAKING SELF UNDERSTOOD (Expression) [Expressing information
+              content—however able]
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="expression" />
+              0. UNDERSTOOD—Expresses ideas without difficulty
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="expression" />
+              1. USUALLY UNDERSTOOD—Difficulty finding words or finishing thoughts
+              BUT if given time, little or no prompting required
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="expression" />
+              2. OFTEN UNDERSTOOD—Difficulty finding words or finishing thoughts,
+              prompting usuallly required
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="expression" />
+              3. SOMETIMES UNDERSTOOD—Ability is limited to making concrete
+              requests
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="expression" />
+              4. RARELY/NEVER UNDERSTOOD
+            </td>
+          </tr>
+
+          <!-- --------------------------------------------------------- -->
+
+          <tr>
+            <th colspan="2" class="sub-section-title">
+              3. ABILITY TO UNDERSTAND OTHERS (Comprehension)
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="comprehension" />
+              0. UNDERSTANDS—Expresses ideas without difficulty
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="comprehension" />
+              1. USUALLY UNDERSTANDS—Difficulty finding words or finishing
+              thoughts BUT if given time, little or no prompting required
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="comprehension" />
+              2. OFTEN UNDERSTANDS—Difficulty finding words or finishing thoughts,
+              prompting usuallly required
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="comprehension" />
+              3. SOMETIMES UNDERSTANDS—Ability is limited to making concrete
+              requests
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="comprehension" />
+              4. RARELY/NEVER UNDERSTANDS
+            </td>
+          </tr>
+        </table>
+        <!-- ------------------------------------------------------------ -->
+
+        <br />
+        <h3>SECTION D. VISION PATTERNS</h3>
+        <table>
+          <tr>
+            <th colspan="2" class="sub-section-title">
+              1. VISION (Ability to see in adequate light and with glasses if
+              used)
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="vision" />
+              0.ADEQUATE—Sees fine detail, including regular print in newspapers/
+              books
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="vision" />
+              1.IMPAIRED—Sees large print, but not regular print in newspapers/
+              books
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="vision" />
+              2.MODERATELY IMPAIRED—Limited vision; not able to see newspaper
+              headlines, but can identify objects
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="vision" />
+              3.HIGHLY IMPAIRED—Object identification in question, but eyes appear
+              to follow objects
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="vision" />
+              4. SEVERELY IMPAIRED—No vision or sees only light, colors, or
+              shapes; eyes do not appear to follow objects
+            </td>
+          </tr>
+          <!--  -->
+          <tr>
+            <th colspan="2" class="sub-section-title">
+              2. VISUAL LIMITATION/DIFFICULTIES
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Saw halos or rings around lights, curtains over eyes, or flashes of
+              lights
+
+              <br />
+              <div class="form-group">
+                <label>
+                  <input type="radio" name="visual_difficulty" />
+                  Yes
+                </label>
+                <label>
+                  <input type="radio" name="visual_difficulty" />
+                  No
+                </label>
+              </div>
+            </td>
+          </tr>
+          <!--  -->
+          <tr>
+            <th colspan="2" class="sub-section-title">3. VISION DECLINE</th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Worsening of vision as compared to status of 90 DAYS AGO (or since
+              last assessment if less than 90 days)
+
+              <br />
+              <div class="form-group">
+                <label>
+                  <input type="radio" name="visual_decline" />
+                  Yes
+                </label>
+                <label>
+                  <input type="radio" name="visual_decline" />
+                  No
+                </label>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!--  -->
+        <br /><br />
+        <h3>SECTION E: MOOD AND BEHAVIOR PATTERNS</h3>
+        <table>
+          <tr>
+            <th colspan="12">1. INDICATORS OF DEPRESSED, ANXIOUS, OR SAD MOOD</th>
+          </tr>
+          <tr>
+            <td colspan="1">
+              <p>
+                (Code for observed indicators irrespective of the assumed cause)
+              </p>
+              <p>0. Indicator not exhibited in last 3 days</p>
+              <p>1. Exhibited 1-2 of last 3 days</p>
+              <p>2. Exhibited on each of last 3 days</p>
+            </td>
+
+            <td>
+              <p>
+                a. A FEELING OF SADNESS OR BEING DEPRESSED, that life is not worth
+                living, that nothing matters, that he or she is of no use to
+                anyone or would rather be dead
+              </p>
+              <label>
+                <input type="radio" name="indicators_depression"> 0
+              </label>
+                <input type="radio" name="indicators_depression"> 1
+              </label>
+              <label>
+                <input type="radio" name="indicators_depression"> 2
+              </label>  
+            </td>
+            <td>
+              <p>
+                f. SAD, PAINED, WORRIED FACIAL EXPRESSIONS — e.g., furrowed brows
+              </p>
+                <label>
+                  <input type="radio" name="sad_expressions"> 0
+                </label>
+                  <input type="radio" name="sad_expressions"> 1
+                </label>
+                <label>
+                  <input type="radio" name="sad_expressions"> 2
+                </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <td>
+                <p>
+                  b. PERSISTENT ANGER WITH SELF OR OTHERS — e.g., easily annoyed, anger at care received
+                </p>
+                  <label>
+                    <input type="radio" name="persistent_anger"> 0
+                  </label>
+                    <input type="radio" name="persistent_anger"> 1
+                  </label>
+                  <label>
+                    <input type="radio" name="persistent_anger"> 2
+                  </label>
+              </td>
+              <td>
+                <p>
+                  g.RECURRENT CRYING, TEARFULNESS
+                </p>
+                  <label>
+                    <input type="radio" name="recurrent_crying"> 0
+                  </label>
+                    <input type="radio" name="recurrent_crying"> 1
+                  </label>
+                  <label>
+                    <input type="radio" name="recurrent_crying"> 2
+                  </label>
+              </td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <td>
+                <p>
+                  c. EXPRESSIONS OF WHAT APPEAR TO BE UNREALISTIC FEARS — e.g., fear of being abandoned, left alone, being with others
+                </p>
+                  <label>
+                    <input type="radio" name="expression_unreal"> 0
+                  </label>
+                    <input type="radio" name="expression_unreal"> 1
+                  </label>
+                  <label>
+                    <input type="radio" name="expression_unreal"> 2
+                  </label>
+              </td>
+              <td>
+                <p>
+                  h.WITHDRAWAL FROM ACTIVITIES OF INTEREST—e.g., no interest in long standing activities or being with family/friends
+                </p>
+                  <label>
+                    <input type="radio" name="recurrent_crying"> 0
+                  </label>
+                    <input type="radio" name="recurrent_crying"> 1
+                  </label>
+                  <label>
+                    <input type="radio" name="recurrent_crying"> 2
+                  </label>
+              </td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <td>
+                <p>
+                  d. REPETITIVE HEALTH COMPLAINTS—e.g., persistently seeks medical attention, obsessive concern with body functions
+                </p>
+                  <label>
+                    <input type="radio" name="health_complaints"> 0
+                  </label>
+                    <input type="radio" name="health_complaints"> 1
+                  </label>
+                  <label>
+                    <input type="radio" name="health_complaints"> 2
+                  </label>
+              </td>
+              <td>
+                <p>
+                  h. REDUCED SOCIAL INTERACTION
+                </p>
+                  <label>
+                    <input type="radio" name="health_complaints"> 0
+                  </label>
+                    <input type="radio" name="health_complaints"> 1
+                  </label>
+                  <label>
+                    <input type="radio" name="health_complaints"> 2
+                  </label>
+              </td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <td>
+                <p>
+                  e.REPETITIVE ANXIOUS COMPLAINTS, CONCERNS—e.g., persistently seeks attention/reassurance regarding schedules, meals, laundry, clothing, relationship issues
+                </p>
+                <label>
+                  <input type="radio" name="repitive_complaints"> 0
+                </label>
+                  <input type="radio" name="repitive_complaints"> 1
+                </label>
+                <label>
+                  <input type="radio" name="repitive_complaints"> 2
+                </label>  
+              </td>
+              <td></td>
+            </td>
+          </tr>
+          <!-- --------------------------- -->
+          <tr>
+            <th colspan="3">2. MOOD DECLINE</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="form-group">
+                <label><input type="radio" name="mood_decline">Yes</label>
+                <label><input type="radio" name="mood_decline">No</label>
+              </div>
+            </td>
+          </tr>
+          <!-- ---------------------------- -->
+          <tr>
+            <th colspan="12">3. BEHAVIORAL SYMPTOMS</th>
+          </tr>
+          <tr>
+            <td colspan="1">
+              <p>
+                (Code for observed indicators irrespective of the assumed cause)
+              </p>
+              <p>0. Indicator not exhibited in last 3 days</p>
+              <p>1. Exhibited 1-2 of last 3 days</p>
+              <p>2. Exhibited on each of last 3 days</p>
+            </td>
+
+            <td colspan="2">
+              <p>
+                a. WANDERING—Moved with no rational purpose, seemingly oblivious
+                to needs or safety
+              </p>
+              <label>
+                <input type="radio" name="wandering"> 0
+              </label>
+                <input type="radio" name="wandering"> 1
+              </label>
+              <label>
+                <input type="radio" name="wandering"> 2
+              </label>  
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1"></td>
+            <td colspan="2">
+              <p>
+                b. VERBALLY ABUSIVE BEHAVIORAL SYMPTOMS—Threatened,
+                screamed at, cursed at others
+              </p>
+              <label>
+                <input type="radio" name="verbally_abusive"> 0
+              </label>
+                <input type="radio" name="verbally_abusive"> 1
+              </label>
+              <label>
+                <input type="radio" name="verbally_abusive"> 2
+              </label>  
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1"></td>
+            <td colspan="2">
+              <p>
+                c. PHYSICALLY ABUSIVE BEHAVIORAL SYMPTOMS—Hit, shoved,
+                scratched, sexually abused others
+              </p>
+              <label>
+                <input type="radio" name="physically_abusive"> 0
+              </label>
+                <input type="radio" name="physically_abusive"> 1
+              </label>
+              <label>
+                <input type="radio" name="physically_abusive"> 2
+              </label>  
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1"></td>
+            <td colspan="2">
+              <p>
+                d. SOCIALLY INAPPROPRIATE/DISRUPTIVE BEHAVIORAL SYMPTOMS—Disruptive sounds, noisiness, screaming, self-abusive acts,
+                sexual behavior or disrobing in public, smears/throws food/feces,
+                rummaging, repetitive behavior, rises early and causes disruption              
+              </p>
+              <label>
+                <input type="radio" name="socially_inapropriate"> 0
+              </label>
+                <input type="radio" name="socially_inapropriate"> 1
+              </label>
+              <label>
+                <input type="radio" name="socially_inapropriate"> 2
+              </label>  
+            </td>
+          </tr>
+          <tr>
+            <td colspan="1"></td>
+            <td colspan="2">
+              <p>
+                RESISTS CARE—Resisted taking medications/injections, ADL assistance, eating, or changes in position
+              </p>
+              <label>
+                <input type="radio" name="resitst_care"> 0
+              </label>
+                <input type="radio" name="resitst_care"> 1
+              </label>
+              <label>
+                <input type="radio" name="resitst_care"> 2
+              </label>  
+            </td>
+          </tr>
+          <!-- ------------------------- -->
+          <tr>
+            <th colspan="3">4. CHANGES IN BEHAVIOR SYMPTOMS</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <p>
+                Behavioral symptoms have become worse or are less well tolerated by family as compared to 90 DAYS AGO (or since last assessment if less than 90 days)
+              </p>
+              <div class="form-group">
+                <label><input type="radio" name="changes_in_behavior">Yes</label>
+                <label><input type="radio" name="changes_in_behavior">No</label>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!--  -->
+        <br /><br />
+        <h3>SECTION F. SOCIAL FUNCTIONING</h3>
+          <table>
+              <tr>
+                  <th colspan="3" class="question-title">1. INVOLVEMENT</th>
+              </tr>
+              <tr>
+                  <td>a. At ease interacting with others (e.g., likes to spend time with others)</td>
+                  <td class="radio-cell"><input type="radio" name="involvement_a" value="0">Not at ease</td>
+                  <td class="radio-cell"><input type="radio" name="involvement_a" value="1">At ease</td>
+              </tr>
+              <tr>
+                  <td>b. Openly expresses conflict or anger with family/friends</td>
+                  <td class="radio-cell"><input type="radio" name="involvement_b" value="0">No</td>
+                  <td class="radio-cell"><input type="radio" name="involvement_b" value="1">Yes</td>
+              </tr>
+              <tr>
+                  <th colspan="3" class="question-title">2. CHANGE IN SOCIAL ACTIVITIES</th>
+              </tr>
+              <tr>
+                  <td colspan="3">As compared to <b>90 DAYS AGO</b> (or since last assessment if less than 90 days ago), decline in the client's level of participation in social, religious, occupational or other preferred activities. IF THERE WAS A DECLINE, client distressed by this fact</td>
+              </tr>
+              <tr>
+                  <td>a. No decline</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="change_in_social_activities" value="0"></td>
+              </tr>
+              <tr>
+                  <td>b. Decline, not distressed</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="change_in_social_activities" value="1"></td>
+              </tr>
+              <tr>
+                  <td>c. Decline, distressed</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="change_in_social_activities" value="2"></td>
+              </tr>
+              <tr>
+                  <th colspan="3" class="question-title">3. ISOLATION</th>
+              </tr>
+              <tr>
+                  <td colspan="3">a. Length of time client is alone during the day (morning and afternoon)</td>
+              </tr>
+              <tr>
+                  <td>0. Never or hardly ever</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="isolation_length" value="0"></td>
+                
+              </tr>
+              <tr>
+                  <td>1. About one hour</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="isolation_length" value="1"></td>
+                
+              </tr>
+              <tr>
+                  <td>2. Long periods of time—e.g., all morning</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="isolation_length" value="2"></td>
+                
+              </tr>
+              <tr>
+                  <td>3. All of the time</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="isolation_length" value="3"></td>
+                
+              </tr>
+              <tr>
+                  <td colspan="3">b. Client says or indicates that he/she feels lonely</td>
+              </tr>
+              <tr>
+                  <td>0. No</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="isolation_lonely" value="0"></td>
+                
+              </tr>
+              <tr>
+                  <td>1. Yes</td>
+                  <td colspan="2" class="radio-cell"><input type="radio" name="isolation_lonely" value="1"></td>
+                
+              </tr>
+          </table>
+
+        <!--  -->
+        <h3>SECTION G: INFORMAL SUPPORT SERVICES</h3>
+        <table>
+          <tr>
+              <th colspan="2">1. TWO KEY INFORMAL HELPERS</th>
+              <th colspan="2">NAME OF PRIMARY AND SECONDARY HELPERS</th>
+          </tr>
+          <tr>
+              <td colspan="2">Primary (A)</td>
+              <td>a. <input type="text" placeholder="Last/Family Name" /></td>
+              <td>b. <input type="text" placeholder="First Name" /></td>
+          </tr>
+          <tr>
+              <td colspan="2">Secondary (B)</td>
+              <td>c. <input type="text" placeholder="Last/Family Name" /></td>
+              <td>d. <input type="text" placeholder="First Name" /></td>
+          </tr>
+          <tr>
+              <th colspan="4">e. Lives with client</th>
+          </tr>
+          <tr>
+              <td colspan="2">(A) Primary</td>
+              <td><label><input type="radio" name="lives_primary" value="yes" /> Yes</label></td>
+              <td><label><input type="radio" name="lives_primary" value="no" /> No</label></td>
+          </tr>
+          <tr>
+              <td colspan="2">(B) Secondary</td>
+              <td><label><input type="radio" name="lives_secondary" value="yes" /> Yes</label></td>
+              <td><label><input type="radio" name="lives_secondary" value="no" /> No</label></td>
+          </tr>
+          <tr>
+              <th colspan="4">f. Relationship to client</th>
+          </tr>
+          <tr>
+              <td>(A) Primary</td>
+              <td colspan="3">
+                  <label><input type="radio" name="relation_primary" value="child" /> Child or child-in-law</label><br />
+                  <label><input type="radio" name="relation_primary" value="spouse" /> Spouse</label><br />
+                  <label><input type="radio" name="relation_primary" value="relative" /> Other Relative</label><br />
+                  <label><input type="radio" name="relation_primary" value="friend" /> Friend/neighbor</label>
+              </td>
+          </tr>
+          <tr>
+              <td>(B) Secondary</td>
+              <td colspan="3">
+                  <label><input type="radio" name="relation_secondary" value="child" /> Child or child-in-law</label><br />
+                  <label><input type="radio" name="relation_secondary" value="spouse" /> Spouse</label><br />
+                  <label><input type="radio" name="relation_secondary" value="relative" /> Other Relative</label><br />
+                  <label><input type="radio" name="relation_secondary" value="friend" /> Friend/neighbor</label>
+              </td>
+          </tr>
+          <tr>
+              <th colspan="4">Areas of help (select options that may apply)</th>
+          </tr>
+          <tr>
+              <td>(A) Primary</td>
+              <td colspan="3">
+                  <label><input type="checkbox" /> g. Advice or emotional support</label><br />
+                  <label><input type="checkbox" /> h. IADL care</label><br />
+                  <label><input type="checkbox" /> i. ADL care</label>
+              </td>
+          </tr>
+          <tr>
+              <td>(B) Secondary</td>
+              <td colspan="3">
+                  <label><input type="checkbox" /> g. Advice or emotional support</label><br />
+                  <label><input type="checkbox" /> h. IADL care</label><br />
+                  <label><input type="checkbox" /> i. ADL care</label>
+              </td>
+          </tr>
+        <tr>
+            <th colspan="4">If needed, willingness (with ability) to increase help:</th>
+        </tr>
+        <tr>
+            <td>(A) Primary</td>
+            <td colspan="3">
+                <label><input type="radio" name="increase_primary" value="more_than_2_hours" /> More than 2 hours</label><br />
+                <label><input type="radio" name="increase_primary" value="1_to_2_hours" /> 1-1.2 hours per day</label><br />
+                <label><input type="radio" name="increase_primary" value="no" /> No</label>
+            </td>
+        </tr>
+        <tr>
+            <td>(B) Secondary</td>
+            <td colspan="3">
+                <label><input type="radio" name="increase_secondary" value="more_than_2_hours" /> More than 2 hours</label><br />
+                <label><input type="radio" name="increase_secondary" value="1_to_2_hours" /> 1-1.2 hours per day</label><br />
+                <label><input type="radio" name="increase_secondary" value="no" /> No</label>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">2. CAREGIVER STATUS (Check all that apply)</th>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" name="caregiver_status" value="unable" /> A caregiver is unable to continue in caring activities (e.g., decline in health).</label></td>
+            <td><label><input type="checkbox" name="caregiver_status" value="dissatisfied" /> Primary caregiver not satisfied with family/friends' support.</label></td>
+            <td><label><input type="checkbox" name="caregiver_status" value="distress" /> Primary caregiver expresses feelings of distress, anger, or depression.</label></td>
+            <td><label><input type="checkbox" name="caregiver_status" value="none" /> NONE OF ABOVE</label></td>
+        </tr>
+        <tr>
+            <th colspan="4">3. EXTENT OF INFORMAL HELP (HOURS OF CARE, ROUNDED)</th>
+        </tr>
+        <tr>
+            <td colspan="3">a. Sum of time across five weekdays</td>
+            <td><input type="text" placeholder="HOURS" /></td>
+        </tr>
+        <tr>
+            <td colspan="3">b. Sum of time across two weekend days</td>
+            <td><input type="text" placeholder="HOURS" /></td>
+        </tr>
+    </table>
+
+        <!--  -->
+        <br /><br />
+        <h3>SECTION H: PHYSICAL FUNCTIONING</h3>
+        
+            <table>
+              <tr>
+                <th colspan="4">1. IADL PERFORMANCE IN 7 DAYS • ADL PERFORMANCE IN 3 DAYS</th>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  Code for functioning in routine activities around the home or in the community during the LAST 7 DAYS. <br>
+                    <strong>(A)</strong> IADL SELF-PERFORMANCE CODE (Code for client’s performance during LAST 7 DAYS):<br>
+                    0. <strong>INDEPENDENT</strong>—No help or oversight<br>
+                    1. <strong>SOME HELP</strong>—Performed with help part of the time<br>
+                    2. <strong>FULL HELP</strong>—Performed with help all of the time<br>
+                    <br>
+                    <strong>(B)</strong> IADL DIFFICULTY CODE - how difficult it is (or would be) for the client to do the activity:<br>
+                    0. <strong>NO DIFFICULTY</strong><br>
+                    1. <strong>SOME DIFFICULTY</strong> (e.g., needs some help, is slow, very fatigued)<br>
+                    2. <strong>GREAT DIFFICULTY</strong> (e.g., little or no involvement in the activity)
+                </td>
+              </tr>
+          <tr>
+              <th>a. IADL SELF-PERFORMANCE</th>
+              <th>(A) Performance</th>
+              <th>(B) Difficulty</th>
+          </tr>
+          <tr>
+              <td>
+                  <label><input type="radio" name="iadl_performance_1" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_performance_1" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_performance_1" value="2"> 2</label>
+              </td>
+              <td>
+                <label><input type="radio" name="iadl_difficulty_1" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_difficulty_1" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_difficulty_1" value="2"> 2</label>
+              </td>
+          </tr>
+          <tr>
+              <th>b. MEAL PREPARATION</th>
+              <th>(A) Performance</th>
+              <th>(B) Difficulty</th>
+          </tr>
+          <tr>
+              <td>How meals are prepared (e.g., planning meals, cooking, assembling ingredients).</td>
+              <td>
+                  <label><input type="radio" name="iadl_performance_2" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_performance_2" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_performance_2" value="2"> 2</label>
+              </td>
+              <td>
+                <label><input type="radio" name="iadl_difficulty_2" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_difficulty_2" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_difficulty_2" value="2"> 2</label>
+              </td>
+          </tr>
+        
+          <tr>
+              <th>c. ORDINARY HOUSEWORK</th>
+              <th>(A) Performance</th>
+              <th>(B) Difficulty</th>
+          </tr>
+          <tr>
+              <td>How ordinary housework is performed (e.g., cleaning the house, laundering clothes, light yard work).</td>
+              <td>
+                  <label><input type="radio" name="iadl_performance_3" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_performance_3" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_performance_3" value="2"> 2</label>
+              </td>
+              <td>
+                <label><input type="radio" name="iadl_difficulty_3" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_difficulty_3" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_difficulty_3" value="2"> 2</label>
+              </td>
+          </tr>
+        
+          <tr>
+              <th>d. MANAGING FINANCES</th>
+              <th>(A) Performance</th>
+              <th>(B) Difficulty</th>
+          </tr>
+          <tr>
+              <td>How managing finances is handled (e.g., balancing checkbooks, paying bills).</td>
+              <td>
+                  <label><input type="radio" name="iadl_performance_4" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_performance_4" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_performance_4" value="2"> 2</label>
+              </td>
+              <td>
+                <label><input type="radio" name="iadl_difficulty_4" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_difficulty_4" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_difficulty_4" value="2"> 2</label>
+              </td>
+          </tr>
+        
+          <tr>
+              <th>e. MANAGING MEDICATIONS</th>
+              <th>(A) Performance</th>
+              <th>(B) Difficulty</th>
+          </tr>
+          <tr>
+              <td>How medications are managed (e.g., preparing and taking medicines, opening bottles, taking correct dosage).</td>
+              <td>
+                  <label><input type="radio" name="iadl_performance_5" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_performance_5" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_performance_5" value="2"> 2</label>
+              </td>
+              <td>
+                <label><input type="radio" name="iadl_difficulty_5" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_difficulty_5" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_difficulty_5" value="2"> 2</label>
+              </td>
+          </tr>
+        
+          <tr>
+              <th>f. PHONE USE</th>
+              <th>(A) Performance</th>
+              <th>(B) Difficulty</th>
+          </tr>
+          <tr>
+              <td>How telephone use is managed (e.g., receiving or making calls).</td>
+              <td>
+                  <label><input type="radio" name="iadl_performance_6" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_performance_6" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_performance_6" value="2"> 2</label>
+              </td>
+              <td>
+                <label><input type="radio" name="iadl_difficulty_6" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_difficulty_6" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_difficulty_6" value="2"> 2</label>
+              </td>
+          </tr>
+        
+          <tr>
+              <th>g. TRANSPORTATION</th>
+              <th>(A) Performance</th>
+              <th>(B) Difficulty</th>
+          </tr>
+          <tr>
+              <td>How client travels by vehicle (e.g., places beyond walking distance).</td>
+              <td>
+                  <label><input type="radio" name="iadl_performance_7" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_performance_7" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_performance_7" value="2"> 2</label>
+              </td>
+              <td>
+                <label><input type="radio" name="iadl_difficulty_7" value="0"> 0</label><br>
+                  <label><input type="radio" name="iadl_difficulty_7" value="1"> 1</label><br>
+                  <label><input type="radio" name="iadl_difficulty_7" value="2"> 2</label>
+              </td>
+          </tr>
+        <tr>
+          <th colspan="4">2. ADL SELF-PERFORMANCE</th>
+        </tr>
+          <tr>
+              <td colspan="4">
+                <p>
+                  The following address the client's physical functioning in routine personal activities of daily life, for example, dressing, eating, etc. during the <strong>LAST 3 DAYS, considering all episodes of these activities</strong>. For clients who performed an activity independently, be sure to determine and record whether others encouraged the activity or were present to supervise or oversee the activity [Note—For bathing, code for most dependent single episode in <strong>LAST 7 DAYS</strong>
+                </p>
+                <br>
+                <p>
+                  0. INDEPENDENT—No help, setup, or oversight —OR— Help, setup, oversight provided only 1 or 2 times (with any task or subtask) <br />
+                  1. SETUP HELP ONLY—Article or device provided within reach of client 3 or more times<br />
+                  2. SUPERVISION—Oversight, encouragement or cueing provided 3 or more times during last
+                  3 days —OR— Supervision (1 or more times) plus physical assistance provided only 1 or
+                  2 times (for a total of 3 or more episodes of help or supervision)
+                  <br />3. LIMITED ASSISTANCE—Client highly involved in activity; received physical help in guided
+                  maneuvering of limbs or other non-weight bearing assistance 3 or more times —OR—
+                  Combination of non-weight bearing help with more help provided only 1 or 2 times during
+                  period (for a total of 3 or more episodes of physical help)
+                  <br />4. EXTENSIVE ASSISTANCE—Client performed part of activity on own (50% or more of
+                  subtasks), but help of following type(s) were provided 3 or more times:
+                  — Weight-bearing support —OR—
+                  — Full performance by another during part (but not all) of last 3 days
+                  <br />5. MAXIMAL ASSISTANCE—Client involved and completed less than 50% of subtasks on
+                  own (includes 2+ person assist), received weight bearing help or full performance of certain
+                  subtasks 3 or more times
+                  <br />6. TOTAL DEPENDENCE—Full performance of activity by another
+                  8. ACTIVITY DID NOT OCCUR (regardless of ability)
+                </p>
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">a.MOBILITY IN BED—Including moving to and from lying position, turning side to side, and positioning body while in bed.</td>
+              <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td colspan="2">b. TRANSFER—Including moving to and between surfaces—to/from bed, chair, wheelchair, standing position. [Note—Excludes to/from bath/toilet</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td  colspan="2">c. LOCOMOTION IN HOME—[Note—If in wheelchair, self-sufficiency once in chair]</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td colspan="2">d. LOCOMOTION OUTSIDE OF HOME—[Note—If in wheelchair, self-sufficiency once in chair]</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td colspan="2">e.DRESSING UPPER BODY—How client dresses and undresses (street clothes, underwear) above the waist, includes prostheses, orthotics, fasteners, pullovers, etc.</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td colspan="2">f. DRESSING LOWER BODY—How client dresses and undresses (street clothes, under- wear) from the waist down, includes prostheses, orthotics, belts, pants, skirts, shoes and fasteners</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td  colspan="2">g.EATING—Including taking in food by any method, including tube feedings.</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td colspan="2">h.TOILET USE—Including using the toilet room or commode, bedpan, urinal, transferring on/off toilet, cleaning self after toilet use or incontinent episode, changing pad, managing any special devices required (ostomy or catheter), and adjusting clothes.</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td colspan="2">i. PERSONAL HYGIENE—Including combing hair, brushing teeth, shaving, applying makeup washing/drying face and hands (EXCLUDE baths and showers)</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td colspan="2">j. BATHING—How client takes full-body bath/shower or sponge bath (EXCLUDE washing of back and hair). Includes how each part of body is bathed: arms, upper and lower legs chest, abdomen, perineal area. Code for most dependent episode in LAST 7 DAYS</td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <th colspan="4">3. ADL DECLINE</th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              ADL status has become worse (i.e., now more impaired in self performance) as compared to status 90 days ago (or since last assessment if less than 90 days)
+              <div class="form-group">
+                <label for="">Yes <input type="radio" name="adl_decline"></label>
+                <label for="">No <input type="radio" name="adl_decline"></label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="4">4. PRIMARY MODES OF LOCOMOTION</th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              Codes for means of transport <br>
+              0. No assistive device <br>
+              1. Cane <br>
+              2. Walker/crutch <br>
+              3. Scooter <br>
+              4. Wheelchair (e.g., Amigo) <br>
+              8. ACTIVITY DID NOT OCCUR <br>
+            </td>
+          </tr>
+          <tr>
+            <td>Indoors</td>
+            <td colspan="4"><input type="number"></td>
+          </tr>
+          <tr>
+            <td>Outdoors</td>
+            <td colspan="4"><input type="number"></td>
+          </tr>
+          <!--  -->
+          <tr>
+            <th colspan="4">5. STAIR CLIMBING</th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <p>In the <strong>last 3 days</strong>, how client went up and down stairs (e.g., single or multiple steps, using handrail as needed)</p>
+              <label>
+                <input type="radio" name="stair_climbing">
+                Up and down stairs without help
+              </label>
+              <label>
+                <input type="radio" name="stair_climbing">
+                Up and down stairs with help
+              </label>
+              <label>
+                <input type="radio" name="stair_climbing">
+                Not go up and down stairs
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="4">6. STAMINA</th>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                a. In a typical week, during the LAST 30 DAYS (or since last assessment), code the number of days client usually went out of the house or building in which client lives (no matter how short a time period)
+              </p>
+              <label>
+                <input type="radio" name="stamina">
+                Everyday
+              </label>
+              <label>
+                <input type="radio" name="stamina">
+                2-6 days a week
+              </label>
+              <label>
+                <input type="radio" name="stamina">
+                1 day a week
+              </label>
+              <label>
+                <input type="radio" name="stamina">
+                No days
+              </label>
+            </td>
+            <td colspan="2">
+              <p>
+                b. Hours of physical activities in the last 3 days (e.g., walking, cleaning house, exercise)
+              </p>
+              <label>
+                <input type="radio" name="hours_activities">
+                Two or more hours
+              </label>
+              <label>
+                <input type="radio" name="hours_activities">
+                Less than two hours
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="4">7. FUNCTIONING POTENTIAL</th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <label>
+                <input type="radio" name="stamina">
+                Client believes he/she capable of increased functional independence (ADL, IADL, mobility)
+              </label>
+              <label>
+                <input type="radio" name="stamina">
+                Caregivers believe client is capable of increased functional independence (ADL, IADL, mobility)
+              </label>
+              <label>
+                <input type="radio" name="stamina">
+                Good prospects of recovery from current disease or conditions, improved health status expected
+              </label>
+              <label>
+                <input type="radio" name="stamina">
+                NONE OF ABOVE
+              </label>
+            </td>
+          </tr>
+      </table>
+
+      <!--  -->
+      <br><br>
+      <h3>SECTION I: CONTINENCE IN LAST 7 DAYS</h3>
+        <table>
+            <tr>
+              <th colspan="4">1. BLADDER CONTINENCE</th>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  a. <span>In LAST 7 DAYS</span> control of urinary bladder function (with appliances such as catheters or incontinence program employed) [Note—if dribbles, volume insufficient to soak through underpants]
+                </p>
+                <label>
+                  <input type="radio" name="bladder_continence">
+                  CONTINENT — Complete control; DOES NOT USE any type of catheter or other urinary collection device
+                </label>
+                <label>
+                  <input type="radio" name="bladder_continence">
+                  CONTINENT WITH CATHETER—Complete control with use of any type of catheter or urinary collection device that does not leak urine
+                </label>
+                <label>
+                  <input type="radio" name="bladder_continence">
+                  USUALLY CONTINENT—Incontinent episodes once a week or less
+                </label>
+                <label>
+                  <input type="radio" name="bladder_continence">
+                  OCCASIONALLY INCONTINENT—Incontinent episodes 2 or more times a week but not daily
+                </label>
+                <label>
+                  <input type="radio" name="bladder_continence">
+                  FREQUENTLY INCONTINENT—Tends to be incontinent daily, but some control present
+                </label>
+                <label>
+                  <input type="radio" name="bladder_continence">
+                  INCONTINENT—Inadequate control, multiple daily episodes
+                </label>
+                <label>
+                  <input type="radio" name="bladder_continence">
+                  DID NOT OCCUR —No urine output from bladder
+                </label>
+              </td>
+              <td colspan="2">
+                <p>
+                  b. Worsening of bladder incontinence as compared to status <span>90 DAYS AGO</span> (or since last assessment if less than 90 days)
+                </p>
+                <label>
+                  <input type="radio" name="worsening_bladder">
+                  No
+                </label>
+                <label>
+                  <input type="radio" name="worsening_bladder">
+                  Yes
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="4">BLADDER DEVICES</th>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <p>(Check all that apply in LAST 7 DAYS)</p>
+                <label>
+                  <input type="radio" name="bladder_devices">
+                  Use of pads or briefs to protect against wetness
+                </label>
+                <label>
+                  <input type="radio" name="bladder_devices">
+                  Use of an indwelling urinary catheter
+                </label>
+                <label>
+                  <input type="radio" name="bladder_devices">
+                  NONE OF ABOVE
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="4">BLADDER DEVICES</th>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <p>
+                  In <span>LAST 7 DAYS</span>, control of bowel movement (with appliance or bowel continence program if employed)
+                </p>
+                <label>
+                  <input type="radio" name="bowel_continence">
+                  CONTINENT—Complete control; DOES NOT USE ostomy device
+                </label>
+                <label>
+                  <input type="radio" name="bowel_continence">
+                  CONTINENT WITH OSTOMY—Complete control with use of ostomy device that does not leak stool
+                </label>
+                <label>
+                  <input type="radio" name="bowel_continence">
+                  USUALLY CONTINENT—Bowel incontinent episodes less than weekly
+                </label>
+                <label>
+                  <input type="radio" name="bowel_continence">
+                  USUALLY CONTINENT—Bowel incontinent episodes less than weekly
+                </label>
+                <label>
+                  <input type="radio" name="bowel_continence">
+                  OCCASIONALLY INCONTINENT—Bowel incontinent episode once a week
+                </label>
+                <label>
+                  <input type="radio" name="bowel_continence">
+                  INCONTINENT—Bowel incontinent all (or almost all) of the time
+                </label>
+                <label>
+                  <input type="radio" name="bowel_continence">
+                  DID NOT OCCUR—No bowel movement during entire 7 day assessment period
+                </label>
+              </td>
+            </tr>
+        </table>
+
+        <!--  -->
+        <br><br>
+      <h3>SECTION J. DISEASE DIAGNOSES</h3>
+        <table>
+          <tr>
+            <td colspan="4">
+              <p>
+                Disease/infection that doctor has indicated is present and affects client's status, requires treatment, or symptom management. Also include if disease is monitored by a home care professional or is the reason for a hospitalization in LAST 90 DAYS (or since last assessment if less than 90 days)
+              </p>
+              <ul>
+                <li>[blank]. Not present</li>
+                <li>1. Present—not subject to focused treatment or monitoring by home care professional</li>
+                <li>2. Present—monitored or treated by home care professional</li>
+                <p>[If no disease in list, check J1ac, None of Above]</p>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>1. DISEASES</th>
+            <th colspan="2">Selection</th>
+          </tr>
+          <tr>
+            <th colspan="4">HEART/CIRCULATION</th>
+          </tr>
+          <tr>
+              <td>Cerebrovascular accident (stroke)</td>
+              <td>
+                  <label><input type="radio" name="disease_stroke" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_stroke" value="2"> 2</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Congestive heart failure</td>
+              <td>
+                  <label><input type="radio" name="disease_heart_failure" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_heart_failure" value="2"> 2</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Coronary artery disease</td>
+              <td>
+                  <label><input type="radio" name="disease_coronary" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_coronary" value="2"> 2</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Hypertension</td>
+              <td>
+                  <label><input type="radio" name="disease_hypertension" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_hypertension" value="2"> 2</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Irregularly irregular pulse</td>
+              <td>
+                  <label><input type="radio" name="disease_irregular_pulse" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_irregular_pulse" value="2"> 2</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Peripheral vascular disease</td>
+              <td>
+                  <label><input type="radio" name="disease_peripheral_vascular" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_peripheral_vascular" value="2"> 2</label>
+              </td>
+          </tr>
+      
+          <tr>
+              <th colspan="4">NEUROLOGICAL</th>
+          </tr>
+          <tr>
+              <td>Alzheimer's</td>
+              <td>
+                  <label><input type="radio" name="disease_alzheimers" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_alzheimers" value="2"> 2</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Dementia other than Alzheimer's</td>
+              <td>
+                  <label><input type="radio" name="disease_dementia" value="1"> 1</label>
+              </td>
+              <td>
+                  <label><input type="radio" name="disease_dementia" value="2"> 2</label>
+              </td>
+          </tr>
+          
+          <tr>
+            <td>Head trauma</td>
+            <td>
+              <label><input type="radio" name="disease_head_trauma" value="1"> 1</label>
+            </td>
+            <td>
+              <label><input type="radio" name="disease_head_trauma" value="2"> 2</label>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Hemiplegia/hemiparesis</td>
+            <td>
+                <label><input type="radio" name="hemiplegia" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="hemiplegia" value="2"> 2</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Multiple sclerosis</td>
+            <td>
+              <label><input type="radio" name="multiple_sclerosis" value="1"> 1</label>
+            </td>
+            <td>
+              <label><input type="radio" name="multiple_sclerosis" value="2"> 2</label>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Parkinsonism</td>
+            <td>
+                <label><input type="radio" name="parkinsonism" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="parkinsonism" value="2"> 2</label>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="4">MUSCULO-SKELETAL</th>
+          </tr>
+          <tr>
+            <td>Arthritis</td>
+            <td>
+                <label><input type="radio" name="arthritis" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="arthritis" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Parkinsonism</td>
+            <td>
+                <label><input type="radio" name="parkinsonism" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="parkinsonism" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Hip fracture</td>
+            <td>
+                <label><input type="radio" name="hip_fracture" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="hip_fracture" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Other fractures (e.g., wrist, vertebral)</td>
+            <td>
+                <label><input type="radio" name="other_fractures" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="other_fractures" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Osteoporosis</td>
+            <td>
+                <label><input type="radio" name="osteoporosis" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="osteoporosis" value="2"> 2</label>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="4">SENSES</th>
+          </tr>
+          <tr>
+            <td>Cataract</td>
+            <td>
+                <label><input type="radio" name="cataract" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="cataract" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Glaucoma</td>
+            <td>
+                <label><input type="radio" name="glaucoma" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="glaucoma" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="4">PSYCHIATRIC/MOOD</th>
+          </tr>
+          <tr>
+            <td>Any psychiatric diagnosis</td>
+            <td>
+                <label><input type="radio" name="psychiatric_diagnosis" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="psychiatric_diagnosis" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="5">INFECTIONS</th>
+          </tr>
+          <tr>
+            <td>HIV infection</td>
+            <td>
+                <label><input type="radio" name="hiv_infection" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="hiv_infection" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Pneumonia</td>
+            <td>
+                <label><input type="radio" name="pneumonia" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="pneumonia" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Tuberculosis</td>
+            <td>
+                <label><input type="radio" name="tuberculosis" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="tuberculosis" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Urinary tract infection (in LAST 30 DAYS)</td>
+            <td>
+                <label><input type="radio" name="urinary_tract" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="urinary_tract" value="2"> 2</label>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="4">OTHER DISEASES</th>
+          </tr>
+          <tr>
+            <td>Cancer—(in past 5 years) not including skin cancer</td>
+            <td>
+                <label><input type="radio" name="cancer" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="cancer" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Emphysema/COPD/asthma</td>
+            <td>
+                <label><input type="radio" name="emphysema" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="emphysema" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Renal Failure</td>
+            <td>
+                <label><input type="radio" name="renal_failure" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="renal_failure" value="2"> 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Thyroid disease (hyper or hypo)</td>
+            <td>
+                <label><input type="radio" name="renal_failure" value="1"> 1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="renal_failure" value="2"> 2</label>
+            </td>
+          </tr>
+          <!-- Add more rows as needed for each disease and condition -->
+          
+          <tr>
+              <th colspan="3"><strong>ac. NONE OF ABOVE</strong></th>
+          </tr>
+          <tr>
+              <td>None of the above conditions are present</td>
+              <td colspan="2">
+                  <label><input type="checkbox" name="disease_none"> None of the above</label>
+              </td>
+          </tr>
+
+          <tr>
+            <th colspan="4">OTHER CURRENT OR MORE DETAILED DIAGNOSES AND ICD-9 CODES</th>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <label>a.<textarea name=""></textarea></label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <label>b.<textarea name=""></textarea></label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <label>c.<textarea name=""></textarea></label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <label>d.<textarea name=""></textarea></label>
+            </td>
+          </tr>
+      </table>
+
+
+      <!--  -->
+      <br>
+      <h3>SECTION K. HEALTH CONDITIONS AND PREVENTIVE HEALTH MEASURES</h3>
+      <table>
+        <tr>
+            <th>Category</th>
+            <th>Question</th>
+            <th colspan="2">Selection</th>
+        </tr>
+    
+        <!-- PREVENTIVE HEALTH Section -->
+        <tr>
+            <td rowspan="5"><strong>1. PREVENTIVE HEALTH</strong></td>
+            <td>Check all that apply— in PAST 2 YEARS</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>Blood pressure measured</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="blood_pressure"></td>
+        </tr>
+        <tr>
+            <td>Received influenza vaccination</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="influenza_vaccine"></td>
+        </tr>
+        <tr>
+            <td>Test for blood in stool or screening endoscopy</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="endoscopy"></td>
+        </tr>
+        <tr>
+            <td>If FEMALE: Received breast examination or mammography</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="mammography"></td>
+        </tr>
+        <tr>
+            <td colspan="2">NONE OF ABOVE</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="none_preventive"></td>
+        </tr>
+    
+        <!-- PROBLEM CONDITIONS Section -->
+        <tr>
+            <td rowspan="4"><strong>2. PROBLEM CONDITIONS (Present on 2 OR MORE DAYS)</strong></td>
+            <td>Check all that were present on at least 2 of the last 3 days</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>Diarrhea</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="diarrhea"></td>
+        </tr>
+        <tr>
+            <td>Difficulty urinating or urinating 3 or more times at night</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="urination_difficulty"></td>
+        </tr>
+        <tr>
+            <td>Fever</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="fever"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Loss of appetite</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="appetite_loss"></td>
+        </tr>
+        <tr>
+            <td colspan="2">NONE OF ABOVE</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="none_problem_conditions"></td>
+        </tr>
+    
+        <!-- PROBLEM CONDITIONS (Physical and Mental Health) Section -->
+        <tr>
+            <td rowspan="5"><strong>3. PROBLEM CONDITIONS</strong></td>
+            <td colspan="3">Check all that were present at any point during the last 3 days</td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>PHYSICAL HEALTH</strong></td>
+        </tr>
+        <tr>
+            <td>Chest pain/pressure at rest or on exertion</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="chest_pain"></td>
+        </tr>
+        <tr>
+            <td>No bowel movement in 3 days</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="bowel_movement"></td>
+        </tr>
+        <tr>
+            <td>Edema</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="edema"></td>
+        </tr>
+    
+        <tr>
+            <td colspan="4"><strong>MENTAL HEALTH</strong></td>
+        </tr>
+        <tr>
+            <td>Shortness of breath</td>
+            <td colspan="3" class="checkbox-column"><input type="checkbox" name="shortness_of_breath"></td>
+        </tr>
+        <tr>
+            <td>Delusions</td>
+            <td colspan="3" class="checkbox-column"><input type="checkbox" name="delusions"></td>
+        </tr>
+        <tr>
+            <td>Hallucinations</td>
+            <td colspan="3" class="checkbox-column"><input type="checkbox" name="hallucinations"></td>
+        </tr>
+        <tr>
+            <td colspan="2">NONE OF ABOVE</td>
+            <td colspan="2" class="checkbox-column"><input type="checkbox" name="none_physical_mental_conditions"></td>
+        </tr>
+    
+        <!-- PAIN Section (from previous image) -->
+        <tr>
+            <td rowspan="4"><strong>4. PAIN</strong></td>
+            <td>a. Frequency with which client complains or shows evidence of pain</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_frequency" value="1"> 1. Less than daily</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_frequency" value="2"> 2. Daily—one period</label>
+            </td>
+        </tr>
+        <tr>
+            <td>b. Intensity of pain</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_intensity" value="1"> 1. Mild</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_intensity" value="2"> 2. Moderate</label>
+            </td>
+        </tr>
+        <tr>
+            <td>c. From client's point of view, does pain limit usual activities</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_limitation" value="0"> 0. No</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_limitation" value="1"> 1. Yes</label>
+            </td>
+        </tr>
+        <tr>
+            <td>d. Does medication adequately control pain?</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_med_control" value="0"> 0. No</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="pain_med_control" value="1"> 1. Yes</label>
+            </td>
+        </tr>
+    
+        <!-- FALLS Section -->
+        <tr>
+            <td rowspan="3"><strong>5. FALLS</strong></td>
+            <td>a. Number of times fallen in the LAST 90 DAYS</td>
+            <td colspan="2">
+                <input type="number" name="fall_frequency" min="0" max="99">
+            </td>
+        </tr>
+        <tr>
+          <td>b. Unsteady gait</td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="unsteady_gait" value="0"> 0. No</label>
+          </td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="unsteady_gait" value="1"> 1. Yes</label>
+          </td>
+        </tr>
+        <tr>
+          <td>c. Client limits going outdoors due to fear of falling (e.g., stopped using bus, goes out only with others)</td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="outdoor_fear" value="0"> 0. No</label>
+          </td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="outdoor_fear" value="1"> 1. Yes</label>
+          </td>
+        </tr>
+    
+        <!-- LIFESTYLE Section -->
+        <tr>
+            <td rowspan="3"><strong>6. LIFESTYLE</strong></td>
+            <td>a. In the LAST 90 DAYS (or since last assessment if less than 90 days), client felt the need or was told by others to cut down on drinking, or others were concerned with client's drinking</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="lifestyle_drinking" value="0"> 0. No</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="lifestyle_drinking" value="1"> 1. Yes</label>
+            </td>
+        </tr>
+        <tr>
+            <td>b. In the LAST 90 DAYS (or since last assessment if less than 90 days), client had to have a drink first thing in the morning to steady nerves (i.e., an "eye opener") or has been in trouble because of drinking</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="lifestyle_smoking_2" value="0"> 0. No</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="lifestyle_smoking_2" value="1"> 1. Yes</label>
+            </td>
+        </tr>
+        <tr>
+          <td>c. Smoked or chewed tobacco daily</td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="lifestyle_smoking_3" value="0"> 0. No</label>
+          </td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="lifestyle_smoking_3" value="1"> 1. Yes</label>
+          </td>
+      </tr>
+      <tr>
+        <td><strong>7. HEALTH STATUS INDICATORS</strong></td>
+        <td colspan="4">
+          <p>(Check all that apply)</p>
+          <label>
+            <input type="checkbox" name="health_status_indicators">
+            Client feels he/she has poor health (when asked)
+          </label>
+          <label>
+            <input type="checkbox" name="health_status_indicators">
+            Has conditions or diseases that make cognition, ADL, mood, or behavior patterns unstable (fluctuations, precarious, or deteriorating)
+          </label>
+          <label>
+            <input type="checkbox" name="health_status_indicators">
+            Experiencing a flare-up of a recurrent or chronic problem
+          </label>
+          <label>
+            <input type="checkbox" name="health_status_indicators">
+            Treatments changed in <strong>LAST 30 DAYS</strong> (or since last assessment if less than 30 days) because of a new acute episode or condition
+          </label>
+          <label>
+            <input type="checkbox" name="health_status_indicators">
+            Prognosis of less than six months to live—e.g., physician has told client or client's family that client has end-stage disease
+          </label>
+          <label>
+            <input type="checkbox" name="health_status_indicators" />
+            NONE OF ABOVE
+          </label>
+        </td>
+      </tr>
+        <tr>
+          <td><strong>8. OTHER STATUS INDICATORS</strong></td>
+          <td colspan="4">
+            <p>(Check all that apply)</p>
+            <label>
+            <input type="checkbox" name="other_status_indicators">
+            Fearful of a family member or caregiver
+          </label>
+          <label>
+            <input type="checkbox" name="other_status_indicators">
+            Unusually poor hygiene
+          </label>
+          <label>
+            <input type="checkbox" name="other_status_indicators">
+            Experiencing a flare-up of a recurrent or chronic problem
+          </label>
+          <label>
+            <input type="checkbox" name="other_status_indicators">
+            Unexplained injuries, broken bones, or burns
+          </label>
+          <label>
+            <input type="checkbox" name="other_status_indicators">
+            Neglected, abused, or mistreated
+          </label>
+          <label>
+            <input type="checkbox" name="other_status_indicators">
+            Physically restrained (e.g., limbs restrained, used bed rails, constrained to chair when sitting)
+            </label>
+            <label>
+              <input type="checkbox" name="other_status_indicators" />
+              NONE OF ABOVE
+            </label>
+          </td>
+        </tr>
+        <!-- Add remaining sections for health indicators, etc. as needed -->
+      </table>
+
+      <!-- --- -->
+      <br>
+      <h3>SECTION L. NUTRITION/HYDRATION STATUS</h3>
+
+      <table>
+        <tr>
+            <th>Category</th>
+            <th>Question</th>
+            <th colspan="2">Selection</th>
+        </tr>
+    
+        <!-- PAIN Section (from previous image) -->
+        <tr>
+            <td rowspan="4"><strong>1. WEIGHT</strong></td>
+            <td>a. Unintended weight loss of 5% or more in the LAST 30 DAYS [or 10% or more in the LAST 180 DAYS]</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="weight_loss" value="0">No</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="weight_loss" value="1">Yes</label>
+            </td>
+        </tr>
+        <tr>
+            <td>b. Severe malnutrion (cachexia)</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="severe_malnutrition" value="0">No</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="severe_malnutrition" value="1">Yes</label>
+            </td>
+        </tr>
+        <tr>
+          <td>c. Morbid obesity</td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="morbid_obesity" value="0">No</label>
+          </td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="morbid_obesity" value="1">Yes</label>
+          </td>
+        </tr>
+        <tr></tr>
+        <!-- --------------------------------- -->
+        <tr>
+          <td rowspan="4"><strong>2. CONSUMPUMPTION</strong></td>
+          <td>a. <span>In at least 2 of the last 3 days</span>, ate one or fewer meals a day</td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="consumption" value="0">No</label>
+          </td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="consumption" value="1">Yes</label>
+          </td>
+        </tr>
+        <tr>
+            <td>b. <span>In last 3 days</span>, noticeable decrease in the amount of food client
+              usually eats or fluids usually consumes</td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="decrease_food_amount" value="0">No</label>
+            </td>
+            <td class="checkbox-column">
+                <label><input type="radio" name="decrease_food_amount" value="1">Yes</label>
+            </td>
+        </tr>
+        <tr>
+          <td>c. Insufficient fluid—did not consume all/almost all fluids during last
+          3 days</td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="insufficient_fluid" value="0">No</label>
+          </td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="insufficient_fluid" value="1">Yes</label>
+          </td>
+        </tr>
+        <tr>
+          <td>d. Enteral tube feeding</td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="enteral_feeding_tube" value="0">No</label>
+          </td>
+          <td class="checkbox-column">
+              <label><input type="radio" name="enteral_feeding_tube" value="1">Yes</label>
+          </td>
+        </tr>
+
+
+        <!-- --------------------------------- -->
+        <tr>
+          <td rowspan="4"><strong>3. SWALLOWING</strong></td>
+          <td colspan="4">
+            <label><input type="checkbox" name="swallowing">0. NORMAL—Safe and efficient swallowing of all diet consistencies</label>
+            <label><input type="checkbox" name="swallowing">1. REQUIRES DIET MODIFICATION TO SWALLOW SOLID FOODS (mechanical diet or able to ingest specific foods only)</label>
+            <label><input type="checkbox" name="swallowing">2. . REQUIRES MODIFICATION TO SWALLOW SOLID FOODS AND LIQUIDS (puree, thickened liquids)</label>
+            <label><input type="checkbox" name="swallowing">3. COMBINED ORAL AND TUBE FEEDING</label>
+            <label><input type="checkbox" name="swallowing">4. NO ORAL INTAKE (NPO)</label>
+          </td>
+        </tr>
+      </table>
+
+      <!--  -->
+      <br>
+      <h3>SECTION M. DENTAL STATUS (ORAL HEALTH)</h3>
+      <table>
+        <tr>
+          <td rowspan="4"><strong>1. ORAL STATUS</strong></td>
+          <td colspan="4">
+            <p>(Check all that apply)</p><br>
+            <label><input type="checkbox" name="oral_status">
+              Problem chewing (e.g., poor mastication, immobile jaw, surgical resection, decreased sensation/motor control, pain while eating)
+            </label>
+            <label><input type="checkbox" name="oral_status">
+              Mouth is "dry" when eating a meal
+            </label>
+            <label><input type="checkbox" name="oral_status">
+              Problem brushing teeth or dentures
+            </label>
+            <label><input type="checkbox" name="oral_status">
+              NONE OF ABOVE
+            </label>
+          </td>
+        </tr>
+      </table>
+
+      <!--  -->
+      <br>
+      <h3>SECTION N: SKIN CONDITION</h3>
+      <table>
+        <tr>
+          <th colspan="4">1. SKIN PROBLEMS</th>
+        </tr>
+        <tr>
+          <td colspan="4">Any troubling skin conditions or changes in skin condition (e.g., burns, bruises, rashes, itching, body lice, scabies)</td>
+        </tr>
+        <tr>
+          <td><label>0. No</label></td>
+          <td><input type="radio" name="skin_problems" value="no" /></td>
+          <td><label>1. Yes</label></td>
+          <td><input type="radio" name="skin_problems" value="yes" /></td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">2. ULCERS (Pressure/Stasis)</th>
+        </tr>
+        <tr>
+          <td colspan="4">Presence of an ulcer anywhere on the body:</td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <p>
+              Ulcers include any area of persistent skin redness (Stage 1); partial loss of skin layers (Stage 2); deep craters in the skin (Stage 3); breaks in skin exposing muscle or bone (Stage 4).
+              <br />
+              <b>Code 0 if no ulcer, otherwise record the highest ulcer stage (Stage 1-4).</b>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Stage 1</label></td>
+          <td><input type="radio" name="ulcer_stage" value="stage1" /></td>
+          <td><label>Stage 3</label></td>
+          <td><input type="radio" name="ulcer_stage" value="stage3" /></td>
+        </tr>
+        <tr>
+          <td><label>Stage 2</label></td>
+          <td><input type="radio" name="ulcer_stage" value="stage2" /></td>
+          <td><label>Stage 4</label></td>
+          <td><input type="radio" name="ulcer_stage" value="stage4" /></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <label><input type="checkbox" name="pressure_ulcer" /> a. Pressure ulcer—any lesion caused by pressure, shear forces, resulting in damage of underlying tissues</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <label><input type="checkbox" name="stasis_ulcer" /> b. Stasis ulcer—open lesion caused by poor circulation in the lower extremities</label>
+          </td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">3. OTHER SKIN PROBLEMS REQUIRING TREATMENT</th>
+        </tr>
+        <tr>
+          <td colspan="4">Check all that apply</td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" /> a. Burns (second or third degree)</label></td>
+          <td><label><input type="checkbox" /> b. Open lesions other than ulcers, rashes, cuts (e.g., cancer lesions)</label></td>
+          <td><label><input type="checkbox" /> c. Skin tears or cuts</label></td>
+          <td><label><input type="checkbox" /> d. Surgical wound</label></td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" /> e. Corns, calluses, structural problems, infections, fungi</label></td>
+          <td colspan="3"><label><input type="checkbox" /> f. NONE OF ABOVE</label></td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">4. HISTORY OF RESOLVED PRESSURE ULCERS</th>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <p>Client previously had (at any time) or has an ulcer anywhere on the body.</p>
+          </td>
+        </tr>
+        <tr>
+          <td><label>0. No</label></td>
+          <td><input type="radio" name="resolved_ulcer_history" value="no" /></td>
+          <td><label>1. Yes</label></td>
+          <td><input type="radio" name="resolved_ulcer_history" value="yes" /></td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">5. WOUND/ULCER CARE</th>
+        </tr>
+        <tr>
+          <td colspan="4">Check for formal care in LAST 7 DAYS</td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" /> a. Antibiotics, systemic or topical</label></td>
+          <td><label><input type="checkbox" /> b. Dressings</label></td>
+          <td><label><input type="checkbox" /> c. Surgical wound care</label></td>
+          <td><label><input type="checkbox" /> d. Other wound/ulcer care (e.g., pressure relieving devices, nutrition, turning/repositioning)</label></td>
+        </tr>
+        <tr>
+          <td colspan="4"><label><input type="checkbox" /> e. NONE OF ABOVE</label></td>
+        </tr>
+      </table>
+      
+      <!--  -->
+      
+      <br>
+      <h3>SECTION O: ENVIRONMENTAL ASSESSMENT</h3>
+
+      <table border="1">
+        <tr>
+          <th colspan="2">1. HOME ENVIRONMENT</th>
+        </tr>
+        <tr>
+          <td>Lighting in evening (including inadequate or no lighting in living room, sleeping room, kitchen, toilet, corridors)</td>
+          <td><input type="checkbox" name="lighting" value="1"> Check</td>
+        </tr>
+        <tr>
+          <td>Flooring and carpeting (e.g., holes in floor, electric wires where client walks, saturate carpet)</td>
+          <td><input type="checkbox" name="flooring" value="1"> Check</td>
+        </tr>
+        <tr>
+          <td>Bathroom (e.g., dangerous stove, non-operating toilet, leaking pipes, no rails or rugged, slippery bathtub, unsafe tiles)</td>
+          <td><input type="checkbox" name="bathroom" value="1"> Check</td>
+        </tr>
+        <tr>
+          <td>Kitchen (e.g., dangerous stove, inoperative refrigerator, infestation by ants/bugs and rodents)</td>
+          <td><input type="checkbox" name="kitchen" value="1"> Check</td>
+        </tr>
+        <tr>
+          <td>Heating and cooling (e.g., too hot in summer, too cold in winter, wood stove in a home with an asthmatic)</td>
+          <td><input type="checkbox" name="heating_cooling" value="1"> Check</td>
+        </tr>
+        <tr>
+          <td>Personal safety (e.g., fear of violence, safety problem in going to mailbox or visiting neighbors, heavy traffic in street)</td>
+          <td><input type="checkbox" name="personal_safety" value="1"> Check</td>
+        </tr>
+        <tr>
+          <td>Access to home (e.g., difficulty entering/leaving home)</td>
+          <td><input type="checkbox" name="home_access" value="1"> Check</td>
+        </tr>
+        <tr>
+          <th colspan="2">2. LIVING ARRANGEMENT</th>
+        </tr>
+        <tr>
+          <td>New arranged with others since last assessment, client or others moved in with client.</td>
+          <td><input type="radio" name="living_arrangement" value="1"> Yes<br>
+              <input type="radio" name="living_arrangement" value="0"> No</td>
+        </tr>
+        <tr>
+          <td>Client or primary caregiver feels that client would be better off in another living environment</td>
+          <td>Client only <input type="radio" name="living_better" value="1"><br>
+              Caregiver only <input type="radio" name="living_better" value="2"><br>
+              Client and caregiver <input type="radio" name="living_better" value="3"></td>
+        </tr>
+      </table>
+
+      <!--  -->
+      <br>
+      <h3>SECTION P: SERVICE UTILIZATION (IN LAST 7 DAYS)</h3>
+      <table border="1" cellpadding="5">
+        <tr>
+          <th rowspan="2">Extent of care or care management in LAST 7 DAYS (or since last assessment if less than 7 days) involving</th>
+          <th colspan="3"># of</th>
+        </tr>
+        <tr>
+          <th>Days</th>
+          <th>Hours</th>
+          <th>Mins</th>
+        </tr>
+      
+        <tr>
+          <td>a. Home health aides</td>
+          <td><input type="number" name="home_health_days" min="0" max="7"></td>
+          <td><input type="number" name="home_health_hours" min="0" max="24"></td>
+          <td><input type="number" name="home_health_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>b. Visiting nurses</td>
+          <td><input type="number" name="visiting_nurses_days" min="0" max="7"></td>
+          <td><input type="number" name="visiting_nurses_hours" min="0" max="24"></td>
+          <td><input type="number" name="visiting_nurses_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>c. Homemaking services</td>
+          <td><input type="number" name="homemaking_services_days" min="0" max="7"></td>
+          <td><input type="number" name="homemaking_services_hours" min="0" max="24"></td>
+          <td><input type="number" name="homemaking_services_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>d. Meals</td>
+          <td><input type="number" name="meals_days" min="0" max="7"></td>
+          <td><input type="number" name="meals_hours" min="0" max="24"></td>
+          <td><input type="number" name="meals_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>e. Volunteer services</td>
+          <td><input type="number" name="volunteer_services_days" min="0" max="7"></td>
+          <td><input type="number" name="volunteer_services_hours" min="0" max="24"></td>
+          <td><input type="number" name="volunteer_services_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>f. Physical therapy</td>
+          <td><input type="number" name="physical_therapy_days" min="0" max="7"></td>
+          <td><input type="number" name="physical_therapy_hours" min="0" max="24"></td>
+          <td><input type="number" name="physical_therapy_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>g. Occupational therapy</td>
+          <td><input type="number" name="occupational_therapy_days" min="0" max="7"></td>
+          <td><input type="number" name="occupational_therapy_hours" min="0" max="24"></td>
+          <td><input type="number" name="occupational_therapy_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>h. Speech therapy</td>
+          <td><input type="number" name="speech_therapy_days" min="0" max="7"></td>
+          <td><input type="number" name="speech_therapy_hours" min="0" max="24"></td>
+          <td><input type="number" name="speech_therapy_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>i. Day care or day hospital</td>
+          <td><input type="number" name="day_care_days" min="0" max="7"></td>
+          <td><input type="number" name="day_care_hours" min="0" max="24"></td>
+          <td><input type="number" name="day_care_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <td>j. Social worker in home</td>
+          <td><input type="number" name="social_worker_days" min="0" max="7"></td>
+          <td><input type="number" name="social_worker_hours" min="0" max="24"></td>
+          <td><input type="number" name="social_worker_mins" min="0" max="59"></td>
+        </tr>
+        <tr>
+          <th colspan="4">2. SPECIAL TREATMENTS, THERAPIES, PROGRAMS</th>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" /> 0. Not applicable</label></td>
+          <td colspan="3"><label><input type="checkbox" /> 1. Scheduled, all procedures as prescribed</label></td>
+        </tr>
+        <tr>
+          <td colspan="4">If treatments provided, check <b>NONE OF ABOVE</b></td>
+        </tr>
+      
+        <tr>
+          <td><label><input type="checkbox" /> a. Respirator/Respiratory treatments</label></td>
+          <td><label><input type="checkbox" /> b. Physical therapy</label></td>
+          <td><label><input type="checkbox" /> c. Occupational therapy</label></td>
+          <td><label><input type="checkbox" /> d. Speech therapy</label></td>
+        </tr>
+      
+        <tr>
+          <td><label><input type="checkbox" /> a. Respirator for assistive breathing</label></td>
+          <td><label><input type="checkbox" /> b. Alcohol/drug treatment</label></td>
+          <td><label><input type="checkbox" /> c. Radiation</label></td>
+          <td><label><input type="checkbox" /> d. Tracheostomy care</label></td>
+        </tr>
+      
+        <tr>
+          <td colspan="4"><label><input type="checkbox" /> e. Special diet</label></td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">3. MANAGEMENT OF EQUIPMENT (in LAST 3 DAYS)</th>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="equipment_management" value="0" /> 0. Not used</label></td>
+          <td><label><input type="radio" name="equipment_management" value="1" /> 1. Managed on own</label></td>
+          <td><label><input type="radio" name="equipment_management" value="2" /> 2. Fully performed by others</label></td>
+          <td><label><input type="radio" name="equipment_management" value="3" /> 3. Partly by others</label></td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">4. VISITS IN LAST 90 DAYS OR SINCE LAST ASSESSMENT</th>
+        </tr>
+        <tr>
+          <td colspan="4">Number of times admitted to hospital</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="hospital_admissions" /></td>
+          <td colspan="3">Emergency care visits (without overnight stay)</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="emergency_visits" /></td>
+          <td colspan="3">Physician or clinic visits</td>
+        </tr>
+        <tr>
+          <td colspan="4"><input type="checkbox" /> None</td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">5. TREATMENT GOALS</th>
+        </tr>
+        <tr>
+          <td colspan="4">Any treatments that have been in last 30 days or since admission (Yes/No)</td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="treatment_goals" value="0" /> 0. No</label></td>
+          <td><label><input type="radio" name="treatment_goals" value="1" /> 1. Yes</label></td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">6. OVERALL CHANGE IN CARE NEEDS</th>
+        </tr>
+        <tr>
+          <td colspan="4">Self-sufficiency reduced over past 90 days</td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="change_care_needs" value="0" /> 0. No change</label></td>
+          <td><label><input type="radio" name="change_care_needs" value="1" /> 1. Improved</label></td>
+          <td><label><input type="radio" name="change_care_needs" value="2" /> 2. Deteriorated significantly</label></td>
+        </tr>
+      
+        <tr>
+          <th colspan="4">7. TRADE OFFS</th>
+        </tr>
+        <tr>
+          <td colspan="4">Due to limited funds or time, had to make trade-offs</td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" /> a. Medical care</label></td>
+          <td><label><input type="checkbox" /> b. Housing</label></td>
+          <td><label><input type="checkbox" /> c. Medications</label></td>
+          <td><label><input type="checkbox" /> d. Utilities</label></td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" /> e. Food</label></td>
+          <td colspan="3"><label><input type="checkbox" /> f. None of above</label></td>
+        </tr>
+      </table>
+
+      <br>
+      <h3>SECTION Q: MEDICATIONS</h3>
+
+      <table border="1" cellpadding="5">
+        <tr>
+          <th>1. NUMBER OF MEDICATIONS</th>
+          <td colspan="3">Record the number of different medicines (prescriptions and over the counter), including eye drops, taken regularly or on an occasional basis in the LAST 7 DAYS (or since last assessment if more than 7 days).
+            <br>If none, code "0". If more than 20, code "20".</td>
+          <td colspan="3"><input type="number" name="num_of_medications" min="0" max="20"></td>
+        </tr>
+      
+        <tr>
+          <th rowspan="2">2. RECEIPT OF PSYCHOTROPIC MEDICATION</th>
+          <td colspan="3">Psychotropic medications taken in the LAST 7 DAYS (or since last assessment)? <b>Note</b>—Review client's medications within the last 7 days.</td>
+          <td colspan="3"><input type="radio" name="psychotropic_med" value="0"> No
+            <br><input type="radio" name="psychotropic_med" value="1"> Yes</td>
+        </tr>
+        <tr>
+          <td>a. Antipsychotic/neuroleptic</td>
+          <td><input type="checkbox" name="antipsychotic"></td>
+          <td>b. Antidepressant</td>
+          <td><input type="checkbox" name="antidepressant"></td>
+          <td>c. Hypnotic</td>
+          <td><input type="checkbox" name="hypnotic"></td>
+        </tr>
+      
+        <tr>
+          <th rowspan="2">3. MEDICAL OVERSIGHT</th>
+          <td colspan="4">Physician reviewed client’s medications as a whole in LAST 180 DAYS (or since last assessment)?</td>
+          <td colspan="2"><input type="radio" name="medical_oversight" value="0"> No changes with/without review
+            <br><input type="radio" name="medical_oversight" value="1"> New, changed, or altered by physician
+            <br><input type="radio" name="medical_oversight" value="2"> No physician review</td>
+        </tr>
+      <tr></tr>
+        <tr>
+          <th>4. COMPLIANCE / ADHERENCE WITH MEDICATIONS</th>
+          <td colspan="3">Compliance with medications prescribed by physician in the LAST 7 DAYS (including failure to purchase)</td>
+          <td colspan="3"><input type="radio" name="med_compliance" value="0"> Always compliant
+            <br><input type="radio" name="med_compliance" value="1"> Compliant 80% or more of time
+            <br><input type="radio" name="med_compliance" value="2"> Compliant less than 80% of time
+            <br><input type="radio" name="med_compliance" value="3"> No medications prescribed</td>
+        </tr>
+        <tr>
+            <th colspan="1">5. LIST OF ALL MEDICATIONS</th>
+            <td colspan="6">
+                  <p>
+                    List prescribed and nonprescribed medications taken in LAST 7 DAYS (or since
+                    last assessment) <br>
+                    1. By mouth (PO) <br>
+                    2. Sub lingual (SL)<br>
+                    3. Intramuscular (IM) <br>
+                    4. Intravenous (IV) <br>
+                    5. Subcutaneous (SQ) <br>
+                    6. Rectal (R) <br>
+                    7. Topical <br>
+                    8. Inhalation <br>
+                    9. Enteral tube <br>
+                    10. Other <br>
+                    <br><br>
+                    a. Name and Dose—Record the name of the medication and dose ordered. <br>
+                    b. Form: Code the route of Administration using the following list: <br>
+                    c.Number taken—Record the amount of medication administered each time the medication is given<br>
+                    d.Freq: Code the number of times per day, week, or month the medication is administered using the following list:<br>
+                    PRN. As necessary 5D. Five times daily<br>
+                    QH. Every hour QOD. Every other day<br>
+                    Q2H. Every two hours QW. Once each wk<br>
+                    Q3H. Every three hours 2W. Two times every week<br>
+                    Q4H. Every four hours 3W. Three times every week<br>
+                    Q6H. Every six hours 4W. Four times each week<br>
+                    Q8H. Every eight hours 5W. Five times each week<br>
+                    QD. Once daily 6W. Six times each week<br>
+                    BID. Two times daily<br> 1M. Once every month
+                    (includes every 12 hrs)<br> 2M. Twice every month<br>
+                    TID. Three times daily<br> C. Continuous<br>
+                    QID. Four times daily<br> O. Other<br>
+                  </p>
+            </td>
+          </tr>
+          <tr>
+              <td colspan="2">a. Name and Dose</td>
+              <td colspan="2">b. Form</td>
+              <td colspan="2">c. Number Taken</td>
+              <td colspan="2">d. Frequency Taken</td>
+          </tr>
+        <!-- First Medication Row -->
+        <tr>
+            <td colspan="2"><textarea name="medication1_name_dose"></textarea></td>
+            <td  colspan="2">
+                <select name="medication1_form">
+                    <option value="PO">By mouth (PO)</option>
+                    <option value="SL">Sub lingual (SL)</option>
+                    <option value="IM">Intramuscular (IM)</option>
+                    <option value="IV">Intravenous (IV)</option>
+                    <option value="SQ">Subcutaneous (SQ)</option>
+                    <option value="R">Rectal (R)</option>
+                    <option value="TOP">Topical</option>
+                    <option value="Inhalation">Inhalation</option>
+                    <option value="Enteral">Enteral tube</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+            <td colspan="2"><input type="tel" name="medication1_number_taken"></td>
+            <td colspan="2">
+                <select name="medication1_frequency">
+                    <option value="PRN">As necessary (PRN)</option>
+                    <option value="Q4H">Every four hours (Q4H)</option>
+                    <option value="Q6H">Every six hours (Q6H)</option>
+                    <option value="Q8H">Every eight hours (Q8H)</option>
+                    <option value="Q12H">Every twelve hours (Q12H)</option>
+                    <option value="QD">Once daily (QD)</option>
+                    <option value="BID">Twice daily (BID)</option>
+                    <option value="TID">Three times daily (TID)</option>
+                    <option value="QID">Four times daily (QID)</option>
+                    <option value="QW">Once weekly (QW)</option>
+                    <option value="BIM">Twice monthly (BIM)</option>
+                    <option value="QOM">Once every month (QOM)</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <!-- Second Medication Row -->
+        <tr>
+            <td colspan="2"><textarea type="text" name="medication2_name_dose"></textarea></td>
+            <td colspan="2">
+                <select name="medication2_form">
+                    <option value="PO">By mouth (PO)</option>
+                    <option value="SL">Sub lingual (SL)</option>
+                    <option value="IM">Intramuscular (IM)</option>
+                    <option value="IV">Intravenous (IV)</option>
+                    <option value="SQ">Subcutaneous (SQ)</option>
+                    <option value="R">Rectal (R)</option>
+                    <option value="TOP">Topical</option>
+                    <option value="Inhalation">Inhalation</option>
+                    <option value="Enteral">Enteral tube</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+            <td colspan="2"><input type="number" name="medication2_number_taken"></td>
+            <td colspan="2">
+                <select name="medication2_frequency">
+                    <option value="PRN">As necessary (PRN)</option>
+                    <option value="Q4H">Every four hours (Q4H)</option>
+                    <option value="Q6H">Every six hours (Q6H)</option>
+                    <option value="Q8H">Every eight hours (Q8H)</option>
+                    <option value="Q12H">Every twelve hours (Q12H)</option>
+                    <option value="QD">Once daily (QD)</option>
+                    <option value="BID">Twice daily (BID)</option>
+                    <option value="TID">Three times daily (TID)</option>
+                    <option value="QID">Four times daily (QID)</option>
+                    <option value="QW">Once weekly (QW)</option>
+                    <option value="BIM">Twice monthly (BIM)</option>
+                    <option value="QOM">Once every month (QOM)</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <!-- Second Medication Row -->
+        <tr>
+          <td colspan="2"><textarea type="text" name="medication2_name_dose"></textarea></td>
+          <td colspan="2">
+              <select name="medication2_form">
+                  <option value="PO">By mouth (PO)</option>
+                  <option value="SL">Sub lingual (SL)</option>
+                  <option value="IM">Intramuscular (IM)</option>
+                  <option value="IV">Intravenous (IV)</option>
+                  <option value="SQ">Subcutaneous (SQ)</option>
+                  <option value="R">Rectal (R)</option>
+                  <option value="TOP">Topical</option>
+                  <option value="Inhalation">Inhalation</option>
+                  <option value="Enteral">Enteral tube</option>
+                  <option value="Other">Other</option>
+              </select>
+          </td>
+          <td colspan="2"><input type="number" name="medication2_number_taken"></td>
+          <td colspan="2">
+              <select name="medication2_frequency">
+                  <option value="PRN">As necessary (PRN)</option>
+                  <option value="Q4H">Every four hours (Q4H)</option>
+                  <option value="Q6H">Every six hours (Q6H)</option>
+                  <option value="Q8H">Every eight hours (Q8H)</option>
+                  <option value="Q12H">Every twelve hours (Q12H)</option>
+                  <option value="QD">Once daily (QD)</option>
+                  <option value="BID">Twice daily (BID)</option>
+                  <option value="TID">Three times daily (TID)</option>
+                  <option value="QID">Four times daily (QID)</option>
+                  <option value="QW">Once weekly (QW)</option>
+                  <option value="BIM">Twice monthly (BIM)</option>
+                  <option value="QOM">Once every month (QOM)</option>
+                  <option value="Other">Other</option>
+              </select>
+          </td>
+      </tr>
+
+      <!-- Second Medication Row -->
+      <tr>
+        <td colspan="2"><textarea type="text" name="medication2_name_dose"></textarea></td>
+        <td colspan="2">
+            <select name="medication2_form">
+                <option value="PO">By mouth (PO)</option>
+                <option value="SL">Sub lingual (SL)</option>
+                <option value="IM">Intramuscular (IM)</option>
+                <option value="IV">Intravenous (IV)</option>
+                <option value="SQ">Subcutaneous (SQ)</option>
+                <option value="R">Rectal (R)</option>
+                <option value="TOP">Topical</option>
+                <option value="Inhalation">Inhalation</option>
+                <option value="Enteral">Enteral tube</option>
+                <option value="Other">Other</option>
+            </select>
+        </td>
+        <td colspan="2"><input type="number" name="medication2_number_taken"></td>
+        <td colspan="2">
+            <select name="medication2_frequency">
+                <option value="PRN">As necessary (PRN)</option>
+                <option value="Q4H">Every four hours (Q4H)</option>
+                <option value="Q6H">Every six hours (Q6H)</option>
+                <option value="Q8H">Every eight hours (Q8H)</option>
+                <option value="Q12H">Every twelve hours (Q12H)</option>
+                <option value="QD">Once daily (QD)</option>
+                <option value="BID">Twice daily (BID)</option>
+                <option value="TID">Three times daily (TID)</option>
+                <option value="QID">Four times daily (QID)</option>
+                <option value="QW">Once weekly (QW)</option>
+                <option value="BIM">Twice monthly (BIM)</option>
+                <option value="QOM">Once every month (QOM)</option>
+                <option value="Other">Other</option>
+            </select>
+        </td>
+    </tr>
+
+    <!-- Second Medication Row -->
+    <tr>
+      <td colspan="2"><textarea type="text" name="medication2_name_dose"></textarea></td>
+      <td colspan="2">
+          <select name="medication2_form">
+              <option value="PO">By mouth (PO)</option>
+              <option value="SL">Sub lingual (SL)</option>
+              <option value="IM">Intramuscular (IM)</option>
+              <option value="IV">Intravenous (IV)</option>
+              <option value="SQ">Subcutaneous (SQ)</option>
+              <option value="R">Rectal (R)</option>
+              <option value="TOP">Topical</option>
+              <option value="Inhalation">Inhalation</option>
+              <option value="Enteral">Enteral tube</option>
+              <option value="Other">Other</option>
+          </select>
+      </td>
+      <td colspan="2"><input type="number" name="medication2_number_taken"></td>
+      <td colspan="2">
+          <select name="medication2_frequency">
+              <option value="PRN">As necessary (PRN)</option>
+              <option value="Q4H">Every four hours (Q4H)</option>
+              <option value="Q6H">Every six hours (Q6H)</option>
+              <option value="Q8H">Every eight hours (Q8H)</option>
+              <option value="Q12H">Every twelve hours (Q12H)</option>
+              <option value="QD">Once daily (QD)</option>
+              <option value="BID">Twice daily (BID)</option>
+              <option value="TID">Three times daily (TID)</option>
+              <option value="QID">Four times daily (QID)</option>
+              <option value="QW">Once weekly (QW)</option>
+              <option value="BIM">Twice monthly (BIM)</option>
+              <option value="QOM">Once every month (QOM)</option>
+              <option value="Other">Other</option>
+          </select>
+      </td>
+  </tr>
+
+      <!-- Second Medication Row -->
+      <tr>
+        <td colspan="2"><textarea type="text" name="medication2_name_dose"></textarea></td>
+        <td colspan="2">
+            <select name="medication2_form">
+                <option value="PO">By mouth (PO)</option>
+                <option value="SL">Sub lingual (SL)</option>
+                <option value="IM">Intramuscular (IM)</option>
+                <option value="IV">Intravenous (IV)</option>
+                <option value="SQ">Subcutaneous (SQ)</option>
+                <option value="R">Rectal (R)</option>
+                <option value="TOP">Topical</option>
+                <option value="Inhalation">Inhalation</option>
+                <option value="Enteral">Enteral tube</option>
+                <option value="Other">Other</option>
+            </select>
+        </td>
+        <td colspan="2"><input type="number" name="medication2_number_taken"></td>
+        <td colspan="2">
+            <select name="medication2_frequency">
+                <option value="PRN">As necessary (PRN)</option>
+                <option value="Q4H">Every four hours (Q4H)</option>
+                <option value="Q6H">Every six hours (Q6H)</option>
+                <option value="Q8H">Every eight hours (Q8H)</option>
+                <option value="Q12H">Every twelve hours (Q12H)</option>
+                <option value="QD">Once daily (QD)</option>
+                <option value="BID">Twice daily (BID)</option>
+                <option value="TID">Three times daily (TID)</option>
+                <option value="QID">Four times daily (QID)</option>
+                <option value="QW">Once weekly (QW)</option>
+                <option value="BIM">Twice monthly (BIM)</option>
+                <option value="QOM">Once every month (QOM)</option>
+                <option value="Other">Other</option>
+            </select>
+        </td>
+      </tr>
+            <!-- Add more rows for additional medications as needed -->
+        </table>
+
+
+        <!--  -->
+        <br>
+        <h3>SECTION R. ASSESSMENT INFORMATION</h3>
+        <table border="1" cellpadding="5">
+          <tr>
+              <td colspan="4">1. SIGNATURES OF PERSONS COMPLETING THE ASSESSMENT:</td>
+          </tr>
+          <tr>
+              <td>a. Signature of Assessment Coordinator:</td>
+              <td colspan="3"><input type="text" name="assessment_coordinator_signature" style="width: 100%;"></td>
+          </tr>
+          <tr>
+              <td>b. Title of Assessment Coordinator:</td>
+              <td colspan="3"><input type="text" name="assessment_coordinator_title" style="width: 100%;"></td>
+          </tr>
+          <tr>
+              <td>c. Date Assessment Coordinator signed as complete:</td>
+              <td>
+                  <label>Month: <input type="number" name="completion_month" min="1" max="12" style="width: 60px;"></label>
+              </td>
+              <td>
+                  <label>Day: <input type="number" name="completion_day" min="1" max="31" style="width: 60px;"></label>
+              </td>
+              <td>
+                  <label>Year: <input type="number" name="completion_year" min="1900" max="2100" style="width: 80px;"></label>
+              </td>
+          </tr>
+          <tr>
+              <th>d. Other Signatures</th>
+              <th>Title</th>
+              <th>Sections</th>
+              <th>Date</th>
+          </tr>
+          <!-- Additional rows for other signatures -->
+          <tr>
+              <td><input type="text" name="other_signature1"></td>
+              <td><input type="text" name="other_title1"></td>
+              <td><input type="text" name="other_sections1"></td>
+              <td><input type="date" name="other_date1"></td>
+          </tr>
+          <tr>
+              <td><input type="text" name="other_signature2"></td>
+              <td><input type="text" name="other_title2"></td>
+              <td><input type="text" name="other_sections2"></td>
+              <td><input type="date" name="other_date2"></td>
+          </tr>
+          <tr>
+              <td><input type="text" name="other_signature3"></td>
+              <td><input type="text" name="other_title3"></td>
+              <td><input type="text" name="other_sections3"></td>
+              <td><input type="date" name="other_date3"></td>
+          </tr>
+          <tr>
+              <td><input type="text" name="other_signature4"></td>
+              <td><input type="text" name="other_title4"></td>
+              <td><input type="text" name="other_sections4"></td>
+              <td><input type="date" name="other_date4"></td>
+          </tr>
+      </table>
+
+      <button class="submit-button">Submit</button>
+
+    </form>
+
+    <br><br>
+
+    </div>
+  </body>
+</html>

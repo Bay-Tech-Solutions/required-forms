@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js "></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.jpg"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Waldo Street, Suite 2LC<br />
+            Worcester MA 01608<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <form>
+        <!-- Section 1 -->
+        <button class="submit-button">Save Progress</button>
+        <br>
+        <h3>1.</h3>
+        <div class="form-group">
+          <label>Date: <input type="date" name="date" /></label>
+        </div>
+        <div class="form-group">
+          <label>Member Name: <input type="text" name="member_name" /></label>
+          <label>DOB: <input type="date" name="dob" /></label>
+        </div>
+        <div class="form-group">
+          <label
+            >Caregiver Name: <input type="text" name="caregiver_name"
+          /></label>
+          <label
+            >Caregiver Caregiver Telephone Number:
+            <input type="text" name="caregiver_phone_number"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label
+            >Member Full Adress:
+            <textarea rows="3" name="member_full_address"></textarea>
+          </label>
+        </div>
+
+        <!-- Section 2 -->
+        <br />
+        <div class="form-header">2. Can Member:</div>
+        <label>
+          <input type="checkbox" name="recognize_danger" />
+          Recognize signs of danger in the community?
+        </label>
+        <label>
+          <input type="checkbox" name="seek_assistance" />
+          Seek assistance from family members, neighbors should that be
+          required?
+        </label>
+        <label>
+          <input type="checkbox" name="call_911" />
+          Can member call 911?
+        </label>
+
+        <br />
+        <label> Notes:<textarea name="danger_notes" rows="3"></textarea></label>
+
+        <br />
+        <label>
+          2) Can the member communicate clearly during an emergency?
+          <textarea name="communication_notes" rows="3"></textarea>
+        </label>
+
+        <br />
+        <label>
+          3) Can AFC member differentiate strangers from non-strangers?
+          <textarea name="stranger_notes" rows="3"></textarea>
+        </label>
+
+        <br />
+        <label>
+          4) Does the AFC member have street crossing skills?
+          <textarea name="crossing_skills" rows="3"></textarea>
+        </label>
+
+        <br />
+        <label>
+          5) Does the AFC member have safety skills in using household
+          appliances?
+          <textarea name="appliance_skills" rows="3"></textarea>
+        </label>
+
+        <br />
+        <label>
+          6) Is the AFC member capable of evacuating the house within 2 1/2
+          minutes?
+          <label><input type="radio" name="evacuate" value="yes" /> Yes</label>
+          <label><input type="radio" name="evacuate" value="no" /> No</label>
+
+          <br>
+          <label>
+            Describe level of assistance
+            <textarea
+              name="evacuate_assistance"
+              rows="2"
+            ></textarea>
+          </label>
+        </label>
+
+        <br />
+        <label>
+          7) Is there a relocation plan in place in the event of a fire, flood,
+          or other natural/unatural disaster?
+          <label
+            ><input type="radio" name="relocation_plan" value="yes" />
+            Yes</label
+          >
+          <label
+            ><input type="radio" name="relocation_plan" value="no" /> No</label
+          >
+          <textarea name="relocation_notes" rows="2"></textarea>
+        </label>
+
+        <br>
+        <label>Relocation</label>
+        <input type="text" name="relocation">
+
+        <!-- SECTION 3 -->
+         <h3>3.</h3>
+         <div class="form-group">
+            <label>Name: <input type="text" name="name"></label>
+            <label>Relationship to member: <input type="text" name="member_relationship"></label>
+            <label>Phone: <input type="text" name="phone"></label>
+         </div>
+         <label>Address: <input type="text" name="address"></label>
+
+         <!-- SECTION 4 -->
+          <h4>4.</h4>
+          <div class="form-group">
+            <label
+              >AFC Staff Name/Title <input type="text" name="afc_name"
+            /></label>
+            <label>Signature <input type="text" name="signature" /></label>
+            <label>Zip Code: <input type="date" name="date" /></label>
+          </div>
+
+          <button type="submit" class="submit-button">Submit</button>
+          <br><br>
+      </form>
+    </div>
+  </body>
+</html>
