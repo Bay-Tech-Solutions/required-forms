@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <h2>Adult Foster Care Plan of Care</h2>
+      <button type="submit" class="submit-button">Submit</button>
+      <br /><br />
+
+      <form>
+        <div class="form-section">
+          <label>1. Today's Date:</label>
+          <div class="inline">
+            <input type="text" name="todays_date" />
+          </div>
+          <div class="inline">
+            <label>Admission Date:</label>
+            <input type="text" name="admission_date" />
+          </div>
+        </div>
+        <div class="form-section">
+          <div class="inline">
+            <label>Member Name:</label>
+            <input type="text" name="member_name" />
+          </div>
+          <div class="inline">
+            <label>Member Date of Birth:</label>
+            <input type="text" name="member_dob" />
+          </div>
+        </div>
+        <div class="form-section">
+          <label>POC Visit type:</label>
+          <input type="radio" name="poc_visit_type" value="change" /> Change
+          <input type="radio" name="poc_visit_type" value="interim" /> Interim
+          <input type="radio" name="poc_visit_type" value="30-day" /> 30-Day
+          <input type="radio" name="poc_visit_type" value="semi-annual" />
+          Semi-Annual
+          <input type="radio" name="poc_visit_type" value="annual" /> Annual
+          <input type="radio" name="poc_visit_type" value="other" /> Other:
+          <input type="text" name="poc_visit_type_other" class="other-input" />
+        </div>
+        <div class="form-section">
+          <label>2. Advance Directive In Place:</label>
+          <input type="radio" name="advance_directive" value="yes" /> Yes
+          <input type="radio" name="advance_directive" value="no" /> No
+        </div>
+        <div class="form-section">
+          <label>3. If yes, what Advance Directives?</label>
+          <input type="checkbox" name="advance_directives" value="full_code" />
+          Full Code<br />
+          <input type="checkbox" name="advance_directives" value="dnr" /> Do Not
+          Resuscitate (DNR)<br />
+          <input type="checkbox" name="advance_directives" value="dni" /> Do Not
+          Intubate (DNI)<br />
+          <input type="checkbox" name="advance_directives" value="dnh" /> Do Not
+          Hospitalize (DNH)<br />
+          <input type="checkbox" name="advance_directives" value="poa" /> POA –
+          Power of Attorney<br />
+          <input type="checkbox" name="advance_directives" value="hcp" /> Health
+          Care Proxy<br />
+          <input
+            type="checkbox"
+            name="advance_directives"
+            value="legal_guardian"
+          />
+          Legal Guardian:<br />
+          <input
+            type="text"
+            name="legal_guardian_name"
+            class="other-input"
+          /><br />
+          <input type="checkbox" name="advance_directives" value="other" />
+          Other:<br />
+          <input
+            type="text"
+            name="advance_directives_other"
+            class="other-input"
+          />
+        </div>
+
+        <div class="section">
+          <h4>4. Community Support/Outside Services:</h4>
+          <div class="checkbox-group">
+            <label><input type="checkbox" /> Visiting Nurse</label>
+            <label><input type="checkbox" /> Physical Therapy</label>
+            <label><input type="checkbox" /> Occupational Therapy</label>
+            <label><input type="checkbox" /> Speech Therapy</label>
+            <label><input type="checkbox" /> Social Worker in Home</label>
+            <label><input type="checkbox" /> Adult Day Health Care</label>
+            <label><input type="checkbox" /> Meal</label>
+            <label><input type="checkbox" /> Volunteer Services</label>
+            <label><input type="checkbox" /> Other:</label>
+          </div>
+          <textarea></textarea>
+        </div>
+
+        <br />
+        <div class="section">
+          <h3 class="section-title">Care Team Contact Information</h3>
+          <table class="table">
+            <tr>
+              <th></th>
+              <th>Last Name</th>
+              <th>First Name</th>
+              <th>Phone</th>
+              <th>Address</th>
+            </tr>
+            <tr>
+              <td>Primary Caregiver</td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+            </tr>
+            <tr>
+              <td>Alternate Caregiver</td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+            </tr>
+            <tr>
+              <td>Primary Care Physician</td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+            </tr>
+            <tr>
+              <td>AFC Registered Nurse</td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+            </tr>
+            <tr>
+              <td>Case Manager</td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+            </tr>
+            <tr>
+              <td>Other Contact</td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+              <td><textarea rows="1" type="text"></textarea></td>
+            </tr>
+          </table>
+        </div>
+
+        <br />
+        <div class="section">
+          <h4>6. DIAGNOSIS LIST</h4>
+          <textarea type="text" rows="3"></textarea>
+        </div>
+
+        <br />
+        <div class="section">
+          <h4>7. MEDICATION LIST</h4>
+          <textarea type="text" rows="3"></textarea>
+        </div>
+
+        <br />
+        <div class="section">
+          <h4>8. ALLERGIES</h4>
+          <textarea type="text" rows="3"></textarea>
+        </div>
+
+        <br />
+        <div class="section">
+          <h4>9. TREATMENTS</h4>
+          <textarea type="text" rows="3"></textarea>
+        </div>
+
+        <br />
+        <div class="section">
+          <h4>10. NMLOA/MLOA</h4>
+          <textarea type="text" rows="3"></textarea>
+        </div>
+
+        <div>
+          <h2>SCOPE OF AFC SERVICES</h2>
+
+          <h3>Nursing Services and Oversight:</h3>
+
+          <h3>LEVEL I SERVICE MEMBERS:</h3>
+          <p>
+            for members authorized for AFC level I service payment, the nurse
+            must conduct on-site visits every other month, or more often as the
+            member's condition warrants, where such visits alternate with the
+            required visits by the care manager to ensure the member receives
+            one visit by the nurse or care manager every month, as determined by
+            the MDT in accordance with 130 CMR 408.433(B) a Community Health
+            Worker may conduct up to three non-consecutive on-site visits per
+            12-month period in place of the nurse.
+          </p>
+
+          <h3>LEVEL II SERVICE MEMBERS:</h3>
+          <p>
+            for level II service payment, conduct on-site visits every month, or
+            more often as the member's condition warrants, to ensure the member
+            receives one visit by the nurse and one visit by the care manager
+            every month, provided that, as determined by the MDT in accordance
+            with 130 CMR 408.433(B), a Community Health Worker may conduct up to
+            six non-consecutive on-site visits per 12-month period in place of
+            the registered nurse.
+          </p>
+
+          <h2>Case Manager Services and Oversight:</h2>
+
+          <h3>LEVEL I MEMBERS:</h3>
+          <p>
+            for AFC level I service payment, the care manager must conduct
+            on-site visits every other month, or more often as the member's
+            condition warrants, where such visits alternate with the required
+            visits by the nurse to ensure the member receives one visit by the
+            nurse or care manager every month, provided that, as determined by
+            the MDT in accordance with 130 CMR 408.433(B), a Community Health
+            Worker may conduct up to three non-consecutive on-site visits per
+            12-month period in place of the AFC care manager.
+          </p>
+
+          <h3>LEVEL II MEMBERS:</h3>
+          <p>
+            the care manager must conduct on-site visits every month, or more
+            often as the member's condition warrants, to ensure the member
+            receives one visit by the nurse and one visit by the care manager
+            every month, provided that, as determined by the MDT in accordance
+            with 130 CMR 408.433(B), a Community Health Worker may conduct up to
+            six non-consecutive on-site visits per 12-month period in place of
+            the nurse in place of the care manager.
+          </p>
+
+          <br />
+          <h2>ACTIVITIES OF DAILY LIVING</h2>
+
+          <h3>11. ADL Needs</h3>
+          <table>
+            <tr>
+              <th>ADL Needs</th>
+              <th>Level of Care Needed</th>
+              <th>Instructions, Comments, Preferences</th>
+            </tr>
+            <tr>
+              <td>Positioning in Bed / Chair</td>
+              <td><input type="text" name="positioning_level_of_care" /></td>
+              <td><input type="text" name="positioning_comments" /></td>
+            </tr>
+            <tr>
+              <td>
+                Moving- Transferring to/from bed, car, chair, sitting to
+                standing, etc
+              </td>
+              <td><input type="text" name="moving_level_of_care" /></td>
+              <td><input type="text" name="moving_comments" /></td>
+            </tr>
+            <tr>
+              <td>Locomotion/ ambulation Indoor</td>
+              <td>
+                <input type="text" name="locomotion_indoor_level_of_care" />
+              </td>
+              <td><input type="text" name="locomotion_indoor_comments" /></td>
+            </tr>
+            <tr>
+              <td>Locomotion/ Ambulation Outdoor</td>
+              <td>
+                <input type="text" name="locomotion_outdoor_level_of_care" />
+              </td>
+              <td><input type="text" name="locomotion_outdoor_comments" /></td>
+            </tr>
+            <tr>
+              <td>Getting Dressed Upper Body</td>
+              <td>
+                <input type="text" name="dressed_upper_body_level_of_care" />
+              </td>
+              <td><input type="text" name="dressed_upper_body_comments" /></td>
+            </tr>
+            <tr>
+              <td>Getting Dressed Lower Body</td>
+              <td>
+                <input type="text" name="dressed_lower_body_level_of_care" />
+              </td>
+              <td><input type="text" name="dressed_lower_body_comments" /></td>
+            </tr>
+            <tr>
+              <td>Eating & Drinking</td>
+              <td>
+                <input type="text" name="eating_drinking_level_of_care" />
+              </td>
+              <td><input type="text" name="eating_drinking_comments" /></td>
+            </tr>
+            <tr>
+              <td>Toileting</td>
+              <td><input type="text" name="toileting_level_of_care" /></td>
+              <td><input type="text" name="toileting_comments" /></td>
+            </tr>
+            <tr>
+              <td>Incontinence</td>
+              <td><input type="text" name="incontinence_level_of_care" /></td>
+              <td><input type="text" name="incontinence_comments" /></td>
+            </tr>
+            <tr>
+              <td>Bathing & Showering</td>
+              <td>
+                <input type="text" name="bathing_showering_level_of_care" />
+              </td>
+              <td><input type="text" name="bathing_showering_comments" /></td>
+            </tr>
+            <tr>
+              <td>Personal Hygiene</td>
+              <td>
+                <input type="text" name="personal_hygiene_level_of_care" />
+              </td>
+              <td><input type="text" name="personal_hygiene_comments" /></td>
+            </tr>
+          </table>
+
+          <br />
+          <h3>12. If Incontinence, type:</h3>
+          <div class="checkbox-group">
+            <label for="bowel"
+              ><input
+                type="checkbox"
+                id="bowel"
+                name="incontinence_type"
+                value="Bowel"
+              />
+              Bowel</label
+            >
+            <label for="bladder"
+              ><input
+                type="checkbox"
+                id="bladder"
+                name="incontinence_type"
+                value="Bladder"
+              />
+              Bladder</label
+            >
+          </div>
+          <br />
+
+          <h3>13. Use codes: Level of Care Need.</h3>
+          <table>
+            <tr>
+              <th>IADL NEEDS:</th>
+              <th>Level of Care Needed</th>
+              <th>Comments, Preferences</th>
+            </tr>
+            <tr>
+              <td>Housekeeping</td>
+              <td>
+                <textarea rows="1" name="housekeeping_level_of_care"></textarea>
+              </td>
+              <td>
+                <textarea rows="1" name="housekeeping_comments"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Meal Preparation</td>
+              <td>
+                <textarea
+                  rows="1"
+                  name="meal_preparation_level_of_care"
+                ></textarea>
+              </td>
+              <td>
+                <textarea rows="1" name="meal_preparation_comments"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Medication Management</td>
+              <td>
+                <textarea
+                  rows="1"
+                  name="medication_management_level_of_care"
+                ></textarea>
+              </td>
+              <td>
+                <textarea
+                  rows="1"
+                  name="medication_management_comments"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Transportation</td>
+              <td>
+                <textarea
+                  rows="1"
+                  name="transportation_level_of_care"
+                ></textarea>
+              </td>
+              <td>
+                <textarea rows="1" name="transportation_comments"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Shopping</td>
+              <td>
+                <textarea rows="1" name="shopping_level_of_care"></textarea>
+              </td>
+              <td><textarea rows="1" name="shopping_comments"></textarea></td>
+            </tr>
+            <tr>
+              <td>Managing Finances</td>
+              <td>
+                <textarea
+                  rows="1"
+                  name="managing_finances_level_of_care"
+                ></textarea>
+              </td>
+              <td>
+                <textarea rows="1" name="managing_finances_comments"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Phone Use</td>
+              <td>
+                <textarea rows="1" name="phone_use_level_of_care"></textarea>
+              </td>
+              <td><textarea rows="1" name="phone_use_comments"></textarea></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="section">
+          <h3>14. Other Services:</h3>
+          <label for="adult-day-health"
+            ><input type="checkbox" id="adult-day-health" /> Adult Day
+            Health</label
+          >
+          <label for="alternative-placement"
+            ><input type="checkbox" id="alternative-placement" /> Alternative
+            Placement</label
+          >
+          <label for="skilled-nursing-visit"
+            ><input type="checkbox" id="skilled-nursing-visit" /> Skilled
+            Nursing Visit</label
+          >
+          <label for="md-visit"
+            ><input type="checkbox" id="md-visit" /> MD Visit</label
+          >
+          <label for="hospitalized"
+            ><input type="checkbox" id="hospitalized" /> Hospitalized</label
+          >
+          <label for="er-visit"
+            ><input type="checkbox" id="er-visit" /> ER Visit</label
+          >
+          <label for="day-rehabilitation"
+            ><input type="checkbox" id="day-rehabilitation" /> Day
+            Rehabilitation</label
+          >
+          <label for="other"><input type="checkbox" id="other" /> Other</label>
+          <br />
+          <div class="comments">
+            <label for="comments-other-services">Comments:</label>
+            <textarea name="comments-other-services"></textarea>
+          </div>
+        </div>
+
+        <br /><br />
+        <div class="section">
+          <h3>15. Behaviors</h3>
+          <div class="checkbox-group">
+            <label for="wandering"
+              ><input type="checkbox" id="wandering" /> Wandering</label
+            >
+          </div>
+          <div class="checkbox-group">
+            <label for="physically-abusive"
+              ><input type="checkbox" id="physically-abusive" /> Physically
+              Abusive</label
+            >
+          </div>
+          <div class="checkbox-group">
+            <label for="socially-inappropriate"
+              ><input type="checkbox" id="socially-inappropriate" /> Socially
+              Inappropriate</label
+            >
+          </div>
+          <div class="checkbox-group">
+            <label for="verbal-abusive"
+              ><input type="checkbox" id="verbal-abusive" />
+              Verbal/Abusive</label
+            >
+          </div>
+          <div class="checkbox-group">
+            <label for="resistance"
+              ><input type="checkbox" id="resistance" /> Resistance</label
+            >
+          </div>
+          <div class="checkbox-group">
+            <label for="other-behaviors"
+              ><input type="checkbox" id="other-behaviors" /> Other</label
+            >
+          </div>
+          <br />
+          <div class="comments">
+            <label for="comments-behaviors">Comments:</label>
+            <textarea name="comments-behaviors"></textarea>
+          </div>
+        </div>
+
+        <br />
+        <div class="section">
+          <h3>16. Care Transitions</h3>
+          <div class="checkbox-group">
+            <label for="planned-transition"
+              ><input type="checkbox" id="planned-transition" /> Planned
+              Transition</label
+            >
+          </div>
+          <div class="checkbox-group">
+            <label for="unplanned-transition"
+              ><input type="checkbox" id="unplanned-transition" /> Unplanned
+              Transition</label
+            >
+          </div>
+          <div class="comments">
+            <label for="comments-care-transitions">Comments:</label>
+            <textarea name="comments-care-transitions"></textarea>
+          </div>
+        </div>
+
+        <br />
+        <div class="goals">
+          <h2>GOALS</h2>
+          <div class="goal-item">
+            <label for="primary-goal">17. Primary Goal</label>
+            <textarea name="primary-goal"></textarea>
+          </div>
+          <br />
+          <div class="goal-item">
+            <label for="barriers">Barriers</label>
+            <textarea name="barriers"></textarea>
+          </div>
+          <br />
+          <div class="goal-item">
+            <label for="interventions"
+              >Interventions; Goal actions for member, caregiver & staff</label
+            >
+            <textarea name="interventions"></textarea>
+          </div>
+          <br />
+          <div class="goal-item">
+            <label for="measured_outcomes">Measured outcome</label>
+            <textarea name="measured_outcomes"></textarea>
+          </div>
+          <div class="goal-item">
+            <label for="primary-goal"
+              ><strong>18</strong>. Secondary Goal</label
+            >
+            <textarea name="secondary-goal"></textarea>
+          </div>
+          <br />
+          <div class="goal-item">
+            <label for="barriers">Barriers</label>
+            <textarea name="barriers2"></textarea>
+          </div>
+          <br />
+          <div class="goal-item">
+            <label for="interventions2"
+              >Interventions; Goal actions for member, caregiver & staff</label
+            >
+            <textarea name="interventions2"></textarea>
+          </div>
+          <br />
+          <div class="goal-item">
+            <label for="measured_outcomes">Measured outcome</label>
+            <textarea name="measured_outcomes2"></textarea>
+          </div>
+        </div>
+
+        <h2>
+          Assessment of Informed Consent of Self-Administration of Medication
+        </h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>19.</th>
+              <th>Independent (no help needed)</th>
+              <th>Needs cueing and supervision</th>
+              <th>Comments/Preferences/Special Instructions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Member can correctly state the name and read the label of each
+                medication
+              </td>
+              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>Member can state the purpose of each medication</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>Member can state proper time for administration</td>
+              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>
+                Member can demonstrate proper techniques of opening bottles,
+                pouring liquids/applying topical agents, or eye drops
+              </td>
+              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+            <tr>
+              <td>
+                Member can re-order medications, request refills or
+                independently pick up scripts
+              </td>
+              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" /></td>
+              <td><input type="text" style="width: 100%" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="consent-section">
+          <p>
+            <strong>20. Consent:</strong> Member can safely self-administer
+            medications / I have been advised of my right to self-administer my
+            medication until my primary care physician or nurse assessor
+            determines it would not be safe / I have been advised of the
+            benefits and risks of self-medication / I have been advised and
+            understand the policies of self-administration and medication
+            storage. / I wish to self-administer my medications.
+          </p>
+          <label
+            ><input type="radio" name="consent_20" value="yes" /> Yes</label
+          >
+          <label><input type="radio" name="consent_20" value="no" /> No</label>
+        </div>
+
+        <div class="consent-section">
+          <p>
+            <strong>21. Consent:</strong> Member is unable to safely
+            self-administer medications / I have been advised of my right to
+            self-administer my medication until my primary care physician or
+            nurse assessor determines it would not be safe / I have been advised
+            of the benefits and risks of self-medication / I have been advised
+            and understand the policies of self-administration and medication
+            storage / I will have my caregiver supervise/assist/ remind me in
+            the administration of my medication.
+          </p>
+          <label
+            ><input type="radio" name="consent_21" value="yes" /> Yes</label
+          >
+          <label><input type="radio" name="consent_21" value="no" /> No</label>
+        </div>
+
+        <div class="consent-section">
+          <p><strong>22. FIRE SAFETY EVACUATION PLAN</strong></p>
+          <input type="text" style="width: 100%" />
+        </div>
+
+        <div class="consent-section">
+          <p><strong>23. DISCHARGE/LIFE PREFERENCES</strong></p>
+          <input type="text" style="width: 100%" />
+        </div>
+
+        <h2>Education</h2>
+
+        <h3>24. Education Date</h3>
+        <input type="date" name="education_date" style="max-width: 428px;">
+
+        <h2>AFC Level of Service</h2>
+        <strong>
+            25. Based on the care needs above <input type="text" name="client_name" style="width: 16rem;"> (client’s name) is
+            qualified for AFC Level <input type="text" name="client_name" style="width: 4rem;"> services.
+        </strong>
+        <textarea name="" rows="4"></textarea>
+
+        <h2>Plan Of Care Signatures</h2>
+        <div class="form-group">
+          <label for="">THIS PLAN OF CARE FOR (Member Name):
+            <input type="text" name="member_name"
+          /></label>
+          <label for="">HAS BEEN REVIEWED BY ALL PARTIES ON (Date): <input type="date" name="member_date"
+          /></label>
+        </div>
+
+        <div class="form-group">
+            <label for="">Member Name/Legal Guardian Name:
+              <input type="text" name="member_name"
+            /></label>
+            <label for="">Signature:
+              <input type="text" name="member_signature"
+            /></label>
+            <label for="">Date: <input type="date" name="member_date"
+            /></label>
+          </div>
+
+        <div class="form-group">
+          <label for="">Legal/Guardian Name:
+              <input type="text" name="guardian_name"
+            /></label>
+          <label for="">AFC Provider Signature/Name:
+            <input type="text" name="guardian_signature"
+          /></label>
+          <label for="">Date: <input type="date" name="guardian_date" /></label>
+        </div>
+
+        <div class="form-group">
+          <label for="">RN Name:
+            <input type="text" name="rn_signature"
+          /></label>
+          <label for="">Signature:
+            <input type="text" name="rn_signature"
+          /></label>
+          <label for="">Date: <input type="date" name="rn_date" /></label>
+        </div>
+
+        <div class="form-group">
+          <label for="">CM Name:
+            <input type="text" name="cm_signature"
+          /></label>
+          <label for="">Signature:
+            <input type="text" name="cm_signature"
+          /></label>
+          <label for="">Date: <input type="date" name="cm_date" /></label>
+        </div>
+
+        <br />
+        <button type="submit" class="submit-button">Submit</button>
+        <br /><br /><br />
+      </form>
+    </div>
+  </body>
+</html>

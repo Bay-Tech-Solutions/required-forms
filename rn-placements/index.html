@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Home Health Solutions Form</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo" />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <button class="submit-button">Save Progress</button>
+      <br />
+
+      <form>
+        <!-- Section 1 -->
+        <h3>1. Please enter member information.</h3>
+        <div>
+          <label>Date: <input type="date" name="member_date" /></label>
+          <label>Member Name: <input type="text" name="member_name" /></label>
+          <label>Caregiver Name/Relations and Alternate Caregiver: <input type="text" name="caregiver_name" /></label>
+          <label>Member preffered language: <input type="text" name="member_language" /></label>
+        </div>
+
+        <h3>2. Visit Narrative</h3>
+        <label><input type="checkbox" name="placement" /> Placement</label>
+
+        <h3>3. Notes</h3>
+        <textarea name="notes" rows="4"></textarea>
+
+        <h3>4. Initial Home Study: Is the home qualified?</h3>
+        <textarea name="notes" rows="4"></textarea>
+
+        <h3>5. In the last year has the member had</h3>
+        <div>
+            <label><input type="checkbox" value="falls" /> Falls</label>
+            <label><input type="checkbox" value="er_visits" /> ER Visits</label>
+            <label><input type="checkbox" value="urgent_care" /> Urgent Care</label>
+            <label><input type="checkbox" value="hospitalization" /> Placement</label>
+            <textarea name="notes" rows="4"></textarea>
+        </div>
+
+        <h3>6. Medical appointments:</h3>
+        <textarea name="medical_appointments" rows="4"></textarea>
+
+        <h3>7. Allergies:</h3>
+        <textarea name="allergies" rows="4"></textarea>
+
+        <h3>8. Medical Changes:</h3>
+        <div>
+            <label><input type="checkbox" name="medical_changes" value="falls" /> Falls</label>
+            <label><input type="checkbox" name="medical_changes" value="er_visits" /> ER Visits</label>
+            <label><input type="checkbox" name="medical_changes" value="urgent_care" /> Urgent Care</label>
+            <label><input type="checkbox" name="medical_changes" value="hospitalization" /> Placement</label>
+            <textarea name="notes" rows="4"></textarea>
+        </div>
+
+        <h3>9. Assisstive Devices:</h3>
+        <textarea name="assisstive_devices" rows="4"></textarea>
+
+        <h3>10. Changes to:</h3>
+        <div>
+            <label><input type="checkbox" name="_changes" value="oral_health" /> Oral Health</label>
+            <label><input type="checkbox" name="_changes" value="appetite" /> Appetite</label>
+            <label><input type="checkbox" name="_changes" value="weight" /> Weight</label>
+            <label><input type="checkbox" name="_changes" value="dietary_restrictions" /> Dietary Restrictions</label>
+            <textarea name="notes" rows="4"></textarea>
+        </div>
+
+        <h3>11. Skin Integrity:</h3>
+        <textarea name="skin_integrity" rows="4"></textarea>
+
+        <h3>12. Sleeping patterns:</h3>
+        <textarea name="sleeping_patterns" rows="4"></textarea>
+
+        <h3>13. Pain:</h3>
+        <textarea name="pain" rows="4"></textarea>
+
+        <h3>14. Continence:</h3>
+        <textarea name="continence" rows="4"></textarea>
+
+        <h3>15. Address members: • Memory • Sensory • Cognition:</h3>
+        <textarea name="address_members_memory_sensory_cognition" rows="4"></textarea>
+
+
+        <h3>16. Behavioral Psychosocial:</h3>
+        <textarea name="behavioral_psychosocial" rows="4"></textarea>
+
+        <h3>17. Current diagnoses:</h3>
+        <textarea name="current_diagnosis" rows="4"></textarea>
+
+        <h3>18. ADLs and IADLS:</h3>
+        <textarea name="skin_integrity" rows="4"></textarea>
+
+        <h3>19. Does the member have outside services or community support? Please check all that apply:</h3>
+        <div>
+            <label><input type="checkbox" name="_changes" value="vna" /> VNA</label>
+            <label><input type="checkbox" name="_changes" value="day_health_care" /> Day Health Care</label>
+            <label><input type="checkbox" name="_changes" value="meals_on_wheels" /> Meals on Wheels</label>
+            <label><input type="checkbox" name="_changes" value="physical_therapy" /> Physical Therapy</label>
+            <label><input type="checkbox" name="_changes" value="occupational_therapy" /> Occupational Therapy</label>
+            <label><input type="checkbox" name="_changes" value="speech_therapy" /> Speech Therapy</label>
+            <label><input type="checkbox" name="_changes" value="social_worker_in_home" /> Social Worker in Home</label>
+            <label><input type="checkbox" name="_changes" value="volunteer_services" /> Volunteer Services</label>
+            <textarea name="notes" rows="4"></textarea>
+        </div>
+
+        <h3>20. Social Activities</h3>
+        <div>
+            <label><input type="checkbox" name="_changes" value="social_activities" /> Social Contacts</label>
+            <label><input type="checkbox" name="_changes" value="social_activities" /> Personal Relationships</label>
+            <textarea name="notes" rows="4"></textarea>
+        </div>
+
+        <h3>21. Interim POC</h3>
+        <div>
+            <label>Goal: <br> <textarea name="interim_goal" rows="2"></textarea></label>
+            <label>Barriers: <br> <textarea name="interim_barriers" rows="2"></textarea></label>
+            <label>Interventions: <br> <textarea name="interim_interventions" rows="2"></textarea></label>
+            <label>Progress: <br> <textarea name="interim_progress" rows="2"></textarea></label>
+        </div>
+
+        <h3>22. AFC log Education</h3>
+        <textarea name="afc_log_education" rows="3"></textarea>
+
+        <h3>23. CG Stress Management</h3>
+        <textarea name="cgs_management" rows="3"></textarea>
+
+
+        <h3>24. CG Education</h3>
+        <div>
+            <label><input type="checkbox" name="cg_education" value="Review of Member care packet" /> Review of Member care packet</label>
+            <label><input type="checkbox" name="cg_education" value="Review of Caregiver packet" /> Review of Caregiver packet</label>
+        </div>
+
+        <p>Reviewed CG packet:</p>
+        <ul style="list-style: none;">
+            <li>✓ AFC requirements, regulations, Scope of services, Approval process</li>
+            <li>✓ CG responsibilities</li>
+            <li>✓ Provider responsibilities</li>
+            <li>✓ AFC requirements</li>
+            <li>✓ Regulations</li>
+            <li>✓ Scope of services</li>
+            <li>✓ approval process,</li>
+            <li>✓ AFC Provider information</li>
+            <li>✓ Policies and Procedures</li>
+            <li>✓ Delivery of AFC</li>
+            <li>✓ MH Regulations</li>
+            <li>✓ Scope of Services</li>
+            <li>✓ Roles and Responsibilities of AFC Staff and CGs</li>
+            <li>✓ Member Rights</li>
+            <li>✓ Human Rights</li>
+            <li>✓ Immediate Provider notifications of certain events events</li>
+            <li>✓ Emergency Procedures</li>
+            <li>✓ Ethics in caregiving</li>
+            <li>✓ Information about local health, fire, safety, and building codes</li>
+            <li>✓ Techniques of providing safe delivery of ADLs/ iADLs</li>
+            <li>✓ Documentation</li>
+            <li>✓ Observing and reporting changes in condition, critical incidences</li>
+            <li>✓ HIPAA</li>
+            <li>✓ Handling complaints and grievances</li>
+            <li>✓ Home safety</li>
+            <li>✓ Proper body mechanics</li>
+            <li>✓ First Aid/CPR</li>
+            <li>✓ Infection control</li>
+            <li>✓ Universal Precautions</li>
+            <li>✓ Elder Abuse</li>
+            <li>✓ Neglect</li>
+            <li></li>
+        </ul>
+
+        <h3>25. AFC Topics Covered:</h3>
+        <table>
+          <tr>
+            <td><input type="checkbox" name="approval_process"> Approval Process</td>
+            <td><input type="checkbox" name="afc_requirements"> AFC requirements</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="caregiver_responsibility"> Caregiver responsibility</td>
+            <td><input type="checkbox" name="scope_of_services"> Scope of services</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="human_rights"> Human Rights</td>
+            <td><input type="checkbox" name="emergency_procedures"> Emergency Procedures</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="ethics_in_care_giving"> Ethics in care giving</td>
+            <td><input type="checkbox" name="mass_health_regulations"> MassHealth regulations</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="afc_provider_policies"> AFC Provider information, Policies and Procedures</td>
+            <td><input type="checkbox" name="roles_and_responsibilities"> Roles and responsibilities of AFC Staff, Caregiver and Member</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="local_health"> Local health</td>
+            <td><input type="checkbox" name="fire_safety"> Fire safety</td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="checkbox" name="provider_notifications"> Provider notifications of certain events</td>
+          </tr>
+        </table>
+
+        <h3>26. Fire Safety:</h3>
+        <p><input type="checkbox" name="fire_drills_reviewed"> Fire drills reviewed</p>
+        <p><input type="checkbox" name="fire_extinguisher_present"> Fire extinguisher present in the home</p>
+        <h4>Notes:</h4>
+        <textarea name="fire_safety_notes" rows="4" cols="50"></textarea>
+
+        <h3>27. Unsupervised Time approved by AFC RN:</h3>
+        <input type="text" name="unsupervised_time" placeholder="Enter details">
+
+        <h3>28. Eligibility Status:</h3>
+        <p><input type="checkbox" name="mass_health"> Mass health</p>
+        <p><input type="checkbox" name="managed_care_insurance"> Managed Care insurance</p>
+
+        <h3>29. Next RN home visit scheduled for:</h3>
+        <input type="date" name="next_rn_visit">
+
+        <h3>30. RN Name and Signature:</h3>
+        <table>
+          <tr>
+            <td>Clinician Name and Title:</td>
+            <td><input type="text" name="clinician_name" placeholder="Enter name and title"></td>
+          </tr>
+          <tr>
+            <td>Signature:</td>
+            <td><input type="text" name="signature" placeholder="Enter signature"></td>
+          </tr>
+          <tr>
+            <td>Date:</td>
+            <td><input type="date" name="date"></td>
+          </tr>
+        </table>
+
+
+        <button type="submit" class="submit-button">Submit</button>
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsupervised Time Assessment</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <form>
+        <h2>Unsupervised Time Assessment</h2>
+        <div class="section">
+            <label for="date">1. Date:</label>
+            <input type="text" id="date" name="date">
+        </div>
+        <div class="section">
+            <div class="form-group">
+                <label>Member Name: <input type="text" name="member_name"></label>
+                <label>Member Phone #: <input type="text" name="member_phone"></label>
+            </div>
+            <div class="form-group">
+                <label>Caregiver Name: <input type="text" name="caregiver_name"></label>
+                <label>Caregiver Phone #: <input type="text" name="caregiver_phone"></label>
+            </div>
+        </div>
+        <h2>Individual Safety Assessment</h2>
+        <div class="section">
+            <label for="question1">2. Does this member want to be left alone?</label>
+            <textarea id="question1" name="question1"></textarea>
+        </div>
+        <div class="section">
+            <label for="question2">2. Does this member have any conditions or impairments that would prevent them from being left alone?</label>
+            <textarea id="question2" name="question2"></textarea>
+        </div>
+        <br>
+        <div class="section note">
+            <h3>If the first two questions are answered no; no unsupervised time is allowed.</h3>
+        </div>
+        <div class="section">
+            <label for="question3">3. Does the AFC member have basic safety skills? (able to recognize signs of danger in the community; seek assistance should that be required, up to phoning 911, seeking assistance from family members, neighbors or police).</label>
+            <textarea id="question3" name="question3"></textarea>
+        </div>
+        <div class="section">
+            <label for="question4">4. Would the AFC member be able to communicate clearly during an emergency?</label>
+            <textarea id="question4" name="question4"></textarea>
+        </div>
+        <div class="section">
+            <label for="question5">5. Can AFC member differentiate strangers from non-strangers?</label>
+            <textarea id="question5" name="question5"></textarea>
+        </div>
+        <div class="section">
+            <label for="question6">6. Is the AFC member capable of evacuating the house within 2 1/2 minutes?</label>
+            <textarea id="question6" name="question6"></textarea>
+        </div>
+        <div class="section">
+            <label for="question7">7. Does the AFC member have safety skills in using household appliances? Can you describe them?</label>
+            <textarea id="question7" name="question7"></textarea>
+        </div>
+        <div class="section">
+            <label for="question8">8.  Does the AFC member have street crossing skills? Is the member capable of crossing the street independently?</label>
+            <textarea id="question8" name="question8"></textarea>
+        </div>
+        <div class="section">
+            <label for="question9">9. Relocation site? Name, Relationship, Phone#, Address</label>
+            <textarea id="question9" name="question7"></textarea>
+        </div>
+
+        <div class="section">
+            <h3>4. Based on the safety assessment, this member is allowed <span><input type="number" name="hours" style="width: 3rem;"></span> hours maximum (as per AFC regulations) with the following precautions, restrictions and preparation.</h3>
+            <textarea id="question9" name="question7"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <h3>5. Signatures</h3>
+            <div class="form-group">
+                <label for="">Member Name/Legal Guardian Name:
+                  <input type="text" name="member_name"
+                /></label>
+                <label for="">Signature:
+                  <input type="text" name="member_signature"
+                /></label>
+                <label for="">Date: <input type="date" name="member_date"
+                /></label>
+              </div>
+
+              <div class="form-group">
+                <label for="">Caregiver's Name:
+                    <input type="text" name="caregiver_name"
+                  /></label>
+                <label for="">AFC Provider Signature/Name:
+                  <input type="text" name="caregiver_signature"
+                /></label>
+                <label for="">Date: <input type="date" name="caregiver_date" /></label>
+              </div>
+
+              <div class="form-group">
+                <label for="">RN Name:
+                  <input type="text" name="rn_signature"
+                /></label>
+                <label for="">Signature:
+                  <input type="text" name="rn_signature"
+                /></label>
+                <label for="">Date: <input type="date" name="rn_date" /></label>
+              </div>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+        <br /><br /><br />
+      </form>
+    </div>
+  </body>
+</html>

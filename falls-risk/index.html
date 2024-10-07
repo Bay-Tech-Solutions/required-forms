@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falls Risk Assessment</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <h2>Falls Risk Assessment</h2>
+
+      <!-- Section 1 -->
+      <button class="submit-button">Save Progress</button>
+      <br /><br />
+
+      <div class="form-group">
+        <label>Date: <input type="date" name="date" /></label>
+        <label></label>
+      </div>
+
+      <div class="form-group">
+        <label>Name: <input type="text" name="name" /></label>
+        <label>DOB: <input type="date" name="dob" /></label>
+      </div>
+
+      <div>
+        <td>Reason for Assessment:</td>
+        <label
+          ><input type="checkbox" name="assessment_reason" value="admission" />
+          Admission</label
+        >
+        <label
+          ><input type="checkbox" name="assessment_reason" value="annual" />
+          Annual</label
+        >
+        <label
+          ><input type="checkbox" name="assessment_reason" value="post_fall" />
+          Post-Fall</label
+        >
+        <label
+          ><input type="checkbox" name="assessment_reason" value="other" />
+          Other</label
+        >
+      </div>
+      <input type="text" name="other_reason" placeholder="Specify other" />
+
+      <!-- Section 2: Parameters -->
+      <h3>
+        2. Mark appropriate score for each section and total score at bottom.
+      </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>0</th>
+            <th>2</th>
+            <th>4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A. Level of Consciousness/ Mental Status</td>
+            <td>
+              <label
+                ><input type="radio" name="consciousness" value="0" /> Alert and
+                oriented x3</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="consciousness" value="2" />
+                Disoriented x3</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="consciousness" value="4" />
+                Intermittent confusion</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>B. History of Falls (past 3 months)</td>
+            <td>
+              <label
+                ><input type="radio" name="falls_history" value="0" /> No
+                falls</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="falls_history" value="2" /> 1-2
+                falls</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="falls_history" value="4" /> 3 or more
+                falls</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>C. Ambulation/Elimination Status</td>
+            <td>
+              <label
+                ><input type="radio" name="ambulation" value="0" /> Ambulatory &
+                continent</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="ambulation" value="2" /> Chair bound
+                & needs assistance</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="ambulation" value="4" /> Ambulatory &
+                incontinent</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>D. Vision Status</td>
+            <td>
+              <label
+                ><input type="radio" name="vision" value="0" /> Adequate</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="vision" value="2" /> Poor (uses
+                glasses)</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="vision" value="4" /> Legally
+                blind</label
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section 3: Gait and Balance -->
+      <h3>3. Gait and Balance Assessment</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>0</th>
+            <th>1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>E. Gait and Balance</td>
+            <td>
+              <label
+                ><input type="radio" name="gait_balance" value="0" /> Normal
+                gait/balance</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="gait_balance" value="1" /> Balance
+                problem while walking</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>F. Muscular Coordination</td>
+            <td>
+              <label
+                ><input type="radio" name="coordination" value="0" /> No
+                issues</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="coordination" value="1" /> Decreased
+                coordination</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>G. Turn and Jerking Movements</td>
+            <td>
+              <label
+                ><input type="radio" name="turn_movement" value="0" /> Normal
+                turning</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="turn_movement" value="1" />
+                Jerking/Unstable turns</label
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section 4: Blood Pressure Changes -->
+      <h3>4. Blood Pressure and Symptoms</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Change in Symptoms</th>
+            <th>0</th>
+            <th>2</th>
+            <th>4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>No noted drop in blood pressure between lying and standing</td>
+            <td>
+              <label><input type="radio" name="bp_change" value="0" /></label>
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="bp_change" value="2" /> Drop of
+                20mmHg in BP</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="bp_change" value="4" /> Drop +
+                symptoms of increased heart rate</label
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Total Score:</h3>
+      <input type="text" name="total_score" />
+
+      <!-- Section 5: Medications -->
+      <h3>
+        5. Based upon the following types of medications: anesthetics,
+        antihistamines, cathartics, diuretics, antihypertensive,
+        anticonvulsants, benzodiazepines, hypoglycemics, psychotropics,
+        sedative/hypnotics
+      </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Medications</th>
+            <th>0</th>
+            <th>2</th>
+            <th>4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>G. Medications</td>
+            <td>
+              <label
+                ><input type="radio" name="medications" value="0" /> None of
+                these medications</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="medications" value="2" /> Takes 1-2
+                of these medications</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="medications" value="4" /> Takes 3 or
+                more of these medications</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="3">
+              <label
+                ><input type="radio" name="medications" value="extra_care" />
+                Takes additional pain medications requiring extra care</label
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section 6: Predisposing Diseases -->
+      <h3>
+        6. Based upon the following conditions: hypertension, vertigo, CVA,
+        Parkinson’s Disease, loss of limbs, arthritis, osteoporosis, fractures
+      </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Predisposing Diseases</th>
+            <th>0</th>
+            <th>2</th>
+            <th>4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>H. Predisposing Diseases</td>
+            <td>
+              <label
+                ><input type="radio" name="predisposing_diseases" value="0" />
+                None present</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="predisposing_diseases" value="2" />
+                1-2 present</label
+              >
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="predisposing_diseases" value="4" /> 3
+                or more present</label
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Notes Section -->
+      <h3>Notes:</h3>
+      <textarea
+        name="notes"
+        rows="4"
+        cols="50"
+        placeholder="Enter any relevant notes here..."
+      ></textarea>
+
+      <!-- Total Score Section -->
+      <h3>TOTAL SCORE</h3>
+      <p>
+        Score of 0 to 14 = Moderate risk for falls<br />
+        Score of 15 or greater = High risk for falls<br />
+        If a patient scores greater than 14, fall risk assessment results and/or
+        safety/fall prevention interventions must be addressed.
+      </p>
+      <input type="text" name="total_score" placeholder="Enter Total Score" />
+
+      <!-- Section 8: Actions based on score -->
+      <h3>8. Patient has been informed about fall risk assessment results and/or safety/fall prevention
+        recommendations:</h3>
+    
+        <div>
+            <label
+            ><input type="radio" name="intervention" value="education" />
+            Yes</label
+          >
+          <label
+            ><input type="radio" name="intervention" value="referral" />
+            No</label
+          >
+        </div>
+
+        <br />
+
+        <h3>9. If Fall Risk Score of 8 or greater:</h3>
+
+      <div>
+          <label
+            ><input type="checkbox" name="intervention" value="intervation_education" />
+            Intervention already ordered</label
+          >
+          <label
+            ><input type="checkbox" name="intervention" value="intervation_assessed" />
+            Patient has been assessed by this department within 30 days</label
+          >
+          <label
+            ><input type="checkbox" name="intervention" value="_refused_additional_intervention" />
+            Patient refused additional intervention.</label
+          >
+      </div>
+
+      <h3>10. Comments</h3>
+      <textarea name="comments" id=""></textarea>
+
+      <h3>11. Clinician Name and Title</h3>
+      <div class="form-group">
+        <label for=""
+          >Clinician's Name and Title:
+          <input type="text" name="clinician_name"
+        /></label>
+        <label for=""
+          >Signature:
+          <input type="text" name="clinician_name_signature"
+        /></label>
+        <label for=""
+          >Date: <input type="date" name="clinician_date"
+        /></label>
+      </div>
+    </div>
+  </body>
+</html>

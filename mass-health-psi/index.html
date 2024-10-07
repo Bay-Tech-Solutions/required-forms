@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MassHealth Permission Form</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="../assets/logo.png"
+          alt="Star Home Health Solutions Logo"
+          class="logo"
+        />
+        <div class="company-info">
+          <p>
+            Star Home Health Solutions, LLC<br />
+            33 Oak Avenue, Suite 2<br />
+            Worcester MA 01605<br />
+            info@starhomehs.com
+          </p>
+        </div>
+      </div>
+
+      <h2>MassHealth Permission Form</h2>
+      <p>
+        <strong>Use this form</strong> if you want to give MassHealth permission
+        to:
+      </p>
+      <ul>
+        <li>
+          Talk with another person or organization about your eligibility,
+        </li>
+        <li>Share copies of your eligibility notices with them, or</li>
+        <li>
+          Share copies of your records with another person or organization.
+        </li>
+      </ul>
+      <p>
+        <strong>Complete all questions under Section 2</strong> if you want to
+        give MassHealth permission to talk with another person or organization
+        about your eligibility and to share copies of your eligibility notices
+        with them. (Do not complete Section 3 unless you are asking MassHealth
+        to share written copies of your records.) This person or organization
+        could be someone like:
+      </p>
+
+      <ul>
+        <li>a family member, friend, or other trusted person</li>
+        <li>someone who helps take care of you</li>
+        <li>someone who helps you fill out MassHealth forms, or</li>
+        <li>a social worker, lawyer, or health care advocacy group</li>
+      </ul>
+
+      <p>
+        <strong>Complete all questions under Section 3</strong> if you want to
+        give MassHealth permission to share copies of your records with another
+        person or organization. (Complete Section 3 only if you are asking
+        MassHealth to share written copies of your records.) The information
+        included in your records may include:
+      </p>
+
+      <ul>
+        <li>MassHealth claims showing services you have received</li>
+        <li>
+          Past MassHealth applications and related information you’ve sent to us
+        </li>
+        <li>Past MassHealth notices that have been sent to you</li>
+      </ul>
+
+      <p><strong>Do not use this form:</strong> if you want</p>
+      <ul>
+        <li>Information about yourself</li>
+        <li>
+          Information about your children under age 18. (You can usually get
+          this without filling out any forms.),
+        </li>
+        <li>
+          Your eligibility and payment information to be shared with your health
+          care provider. (Your health care provider can get information about
+          your MassHealth eligibility and payment for services provided to you
+          without you filling out any forms.), or
+        </li>
+        <li>
+          To create an appeal representative status related to a Fair Hearing.
+          (You should fill out the appropriate sections on the Fair Hearings
+          Request (FHR-1) form OR complete a current Authorized Representative
+          Designation (ARD) form. Current versions of both forms are available
+          at www.mass.gov/servicedetails/masshealth-member-forms.)
+        </li>
+      </ul>
+
+      <p>
+        Important: If you decide you want to fill out this form, you must fill
+        out all applicable sections. Please print clearly and remember to
+        <strong>sign and date Section 7</strong>. If a legal representative is
+        completing this form, they must
+        <strong>sign and date Section 8</strong>.
+      </p>
+
+      <h3>SECTION 1: Name of MassHealth Applicant or Member</h3>
+      <p>
+        I give permission for MassHealth and its representatives to share the
+        information listed in Section 2 or Section 3 about:
+      </p>
+      <form id="masshealth-form" action="/submit" method="POST">
+        <br /><br />
+        <button class="submit-button">Save Progress</button>
+        <br /><br /><br />
+        <label for="name"
+          >Name of applicant or member whose information is to be shared*</label
+        >
+        <input type="text" id="name" name="name" required />
+
+        <label for="address"
+          >Street* <input type="text" id="address" name="address" required
+        /></label>
+        <div class="form-group">
+          <label for="city"
+            >City* <input type="text" id="city" name="city" required
+          /></label>
+          <label for="state"
+            >State*<input
+              type="text"
+              id="state"
+              name="state"
+              required
+              maxlength="2"
+          /></label>
+          <label for="zip"
+            >Zip* <input type="text" id="zip" name="zip" required maxlength="5"
+          /></label>
+        </div>
+
+        <div class="form-group">
+          <label for="dob"
+            >Date of Birth* <input type="date" id="dob" name="dob" required
+          /></label>
+          <label for="phone"
+            >Telephone Number*
+            <input type="tel" id="phone" name="phone" required
+          /></label>
+        </div>
+        <label for="masshealth-id">
+          MassHealth ID Number (if you have one)
+          <input type="text" id="masshealth-id" name="masshealth-id" />
+        </label>
+
+        <p>
+          <strong>Please Note:</strong> Fields with an asterisk (*) are
+          required. If you do not have a MassHealth ID number, you can give the
+          last four digits of your social security number (SSN), if you have
+          one.
+        </p>
+
+        <br />
+        <h3>
+          SECTION 2: Permission for MassHealth to talk about your eligibility
+          details and share copies of your eligibility notices
+        </h3>
+        <p>
+          The person or organization you want to write in Section 4 will be able
+          to check the boxes below only if you give MassHealth permission:
+        </p>
+        <p>
+          <strong>I give MassHealth permission to do the following:</strong>
+        </p>
+
+        <label for="talk-about-eligibility">
+          <input
+            type="checkbox"
+            id="talk-about-eligibility"
+            name="permissions[]"
+            value="Talk about my eligibility"
+          />
+          I give MassHealth permission to do the following:.
+          <ul>
+            <li>talk about my eligibility details</li>
+            <li>talk about my MassHealth benefits, and</li>
+            <li>
+              share copies of eligibility notices with the person or
+              organization written in <strong>Section 4</strong>.
+            </li>
+          </ul>
+        </label>
+
+        <br />
+        <p>
+          <strong>Please note</strong>. These notices may contain financial
+          information. Check this box only if you want the person or
+          organization in Section 4 to be able to contact MassHealth to get
+          eligibility information and get copies of your eligibility notices. If
+          you check this box, MassHealth will send copies of your eligibility
+          notices to the person or organization in Section 4. They can also ask
+          for copies of your eligibility notices. These notices have information
+          about all members of a household. If you check this box, each member
+          of your household who is 18 years or older will have to complete and
+          sign a separate PSI form.
+        </p>
+        <br />
+
+        <p>
+          Do you also give MassHealth permission to share details about drug and
+          alcohol treatment?
+        </p>
+        <label>
+          <input type="radio" name="drug_details" value="yes" />
+          Yes. MassHealth may share drug and alcohol treatment information.
+        </label>
+
+        <label>
+          <input type="radio" name="drug_details" value="no" />
+          No. MassHealth may not share drug and alcohol treatment information.
+        </label>
+
+        <p>
+          <strong>Please Note</strong>. If you have given MassHealth permission
+          to share your drug and alcohol treatment information for purposes of
+          payment or health care operations activities, the recipient is
+          permitted to further disclose your drug or alcohol treatment
+          information to its contractors, subcontractors, or legal
+          representatives to carry out payment or health care operations on its
+          behalf.
+        </p>
+
+        <br />
+        <div class="section">
+          <h3 class="section-title">
+            SECTION 3 Permission for MassHealth to share written copies of your
+            records
+          </h3>
+          <p>
+            The person or organization written in Section 4 will receive copies
+            of the records described by the checked box below
+          </p>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" /> MassHealth claims showing services you
+              have received from (month/year) to (month/year)</label
+            >
+            <label
+              ><input type="checkbox" /> Past MassHealth applications and
+              related information from (month/year) to (month/year)</label
+            >
+            <label
+              ><input type="checkbox" /> Past MassHealth notices sent to you
+              from (month/year) to (month/year)</label
+            >
+            <label><input type="checkbox" /> Other (please be specific)</label>
+          </div>
+
+          <br /><br />
+          <div class="input-group">
+            <label>Other (please be specific)</label>
+            <textarea rows="1"></textarea>
+          </div>
+          <br />
+          <div class="radio-group">
+            <label
+              >Do you also give MassHealth permission to share drug and alcohol
+              treatment information?</label
+            >
+            <label
+              ><input type="radio" name="drug-alcohol" /> Yes, MassHealth may
+              share copies of drug and alcohol treatment information.</label
+            >
+            <label
+              ><input type="radio" name="drug-alcohol" /> No, MassHealth may not
+              share copies of drug and alcohol treatment information.</label
+            >
+          </div>
+          <br />
+          <div class="note">
+            <strong>Please Note</strong>: If you have given MassHealth
+            permission to share your drug and alcohol treatment information for
+            purposes of payment or health care operations activities, the
+            recipient is permitted to further disclose your drug or alcohol
+            treatment information to its contractors, subcontractors, and/or
+            legal representatives to carry out payment and/or health care
+            operations on its behalf.
+          </div>
+        </div>
+
+        <br />
+        <div class="section">
+          <h3>SECTION 4 Whom do you want us to share information with?</h3>
+          <div class="note">
+            Write the name of ONLY ONE person or organization in this section.
+            You must fill out another PSI form if you want to name more than one
+            person or organization. Fields with an asterisk * are required.
+          </div>
+
+          <br /><br />
+          <div class="form-group">
+            <label>Name of person or organization* <input type="text" /></label>
+            <label
+              >Name of person in organization to whom mail should be sent
+              <input type="text"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label>Street: <input type="text" /></label>
+            <label>City: <input type="text" /></label>
+            <label>State: <input type="text" /></label>
+          </div>
+
+          <div class="form-group">
+            <label>Zip: <input type="text" /></label>
+            <label>Telephone number: <input type="text" /></label>
+            <label>Email: <input type="text" /></label>
+          </div>
+        </div>
+
+        <br />
+        <div class="section">
+          <div class="section-title">
+            <h3>SECTION 5 Why do you want us to share your information?</h3>
+          </div>
+          <div class="input-group">
+            <label
+              >Tell us why you want to share the information listed in Section 2
+              or Section 3. If you leave this section blank, we will assume you
+              mean "at my request."</label
+            >
+            <textarea></textarea>
+          </div>
+        </div>
+
+        <br />
+        <h3 class="section-title">SECTION 6 End of permission</h3>
+        <label
+          >This PSI will end in 12 months unless you write a different date
+          here. Date (mm/dd/yyyy):
+          <span><input type="date" style="max-width: 10rem" /></span
+        ></label>
+
+        <div class="section">
+          <h3>SECTION 7 Your signature</h3>
+          <div class="note">I understand the following:</div>
+          <ul>
+            <li>
+              If the person or organization named in Section 4 gets information
+              from MassHealth, they may be able to share it with others. If they
+              share it with others, the information may no longer be protected
+              by federal and state privacy laws.
+            </li>
+            <li>
+              I need to send this PSI to the appropriate address in Section 9.
+            </li>
+            <li>
+              I may cancel this permission at any time by sending a letter to:
+              <br />Health Insurance Processing Center,<br />
+              PO Box 4405,<br />
+              Taunton, MA 02780
+            </li>
+          </ul>
+        </div>
+
+        <label for="name"
+          >Name of applicant or member (please print):
+          <input type="text" id="name" name="name"
+        /></label>
+        <label for="signature"
+          >Signature of applicant or member<span class="asterisk">*</span>:
+          <input type="text" id="signature" name="signature"
+        /></label>
+        <label for="date"
+          >Date<span class="asterisk">*</span> (mm/dd/yyyy):
+          <input type="date" id="date" name="date" class="short"
+        /></label>
+        <p>
+          Fields with an asterisk <span class="asterisk">*</span> are required.
+        </p>
+
+        <br />
+        <h3>SECTION 8 Signature of Legal Representative</h3>
+        <div class="section-content">
+          <p>
+            Fill out the following section if this form is being filled out by
+            someone who has the legal authority to act on behalf of the
+            applicant or member (such as the parent of a minor child, an
+            authorized eligibility representative, or a legal guardian).
+          </p>
+          <label for="printed-name"
+            >Printed name of person filling out this form
+            <input type="text" id="printed-name" name="printed-name"
+          /></label>
+          <label for="signature-rep"
+            >Signature of person filling out this form <input type="text"
+            id="signature-rep" name="signature-rep"</label
+          >
+          <label for="date-rep"
+            >Date (mm/dd/yyyy):
+            <input type="date" id="date-rep" name="date-rep" class="short"
+          /></label>
+
+          <label for="address"
+            >Address: <input type="text" id="address" name="address"
+          /></label>
+          <label for="phone"
+            >Telephone number: <input type="text" id="phone" name="phone"
+          /></label>
+
+          <label for="authority"
+            >Authority of person filling out this form to act on behalf of the
+            applicant or member<span class="asterisk">*</span>:
+            <input type="text" id="authority" name="authority"
+          /></label>
+
+          <p>
+            If this form is being completed by someone who has legal authority
+            to act on behalf of the applicant or member, such as a legal
+            guardian appointed by a court or power of attorney, a copy of the
+            applicable legal document must be attached.
+          </p>
+        </div>
+
+        <br />
+        <h3>SECTION 9 How do I submit this form?</h3>
+        <div class="section-content">
+          <div class="form-group">
+            <div>
+              <p>Mail your form to:</p>
+              <div class="contact-info">
+                <p>Health Insurance Processing Center</p>
+                <p>PO Box 4405</p>
+                <p>Taunton, MA 02780</p>
+                <p>Fax your form to: (857) 323-8300</p>
+              </div>
+              <p>
+                If you have only checked off boxes in Section 3 to give
+                MassHealth permission to share copies of your claims,
+                application file, notices, or other records, then:
+              </p>
+            </div>
+            <div>
+              <p>
+                Email the PSI to
+                <a href="mailto:privacyofficer@mass.gov"
+                  >privacyofficer@mass.gov</a
+                >
+              </p>
+              <p>or</p>
+              <p>Mail it to:</p>
+              <div class="contact-info">
+                <p>MassHealth Privacy Office</p>
+                <p>One Ashburton Place, Room 1109</p>
+                <p>Boston, MA 02108</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <input type="submit" value="Submit" class="submit-button" />
+        <br /><br /><br />
+      </form>
+    </div>
+  </body>
+</html>

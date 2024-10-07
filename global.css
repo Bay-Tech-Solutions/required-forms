@@ -42,8 +42,24 @@ body {
   float: right;
 }
 
+.checkbox-group {
+  margin-bottom: 10px;
+}
+.checkbox-group input {
+  margin-right: 10px;
+}
+
 .container {
   max-width: 1024px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-sm {
+  max-width: 728px;
   margin: 0 auto;
   background: #fff;
   padding: 20px;
